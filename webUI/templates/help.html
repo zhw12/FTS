@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="shortcut icon" href="http://cs.illinois.edu/sites/all/themes/csdept/favicon.ico" type="image/vnd.microsoft.icon" />
+
+		<title>Faceted Taxonomy Construction and Search</title>
+
+		<!-- Foundation CSS -->
+		<link href="{{url_for('static', filename='css/bootstrap-theme.min.css')}}" rel="stylesheet">
+		<link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+
+		<!-- Customized CSS -->
+		<link href="{{url_for('static', filename='css/SetSearch.css')}}" rel="stylesheet">
+		<style type="text/css">
+		</style>
+	</head>
+
+	<body>
+		<!-- Nav -->
+{% include 'nav.html' %}
+
+		<!-- Main -->
+		<div class="container">
+			<div class="row">
+		        <div class="col-md-12">
+					<div id="main"></div>
+					<br/><br/>
+					<center>
+		        		<a href="{{url_for('index')}}"><img src="{{url_for('static', filename='figures/search.png')}}" width="250" /></a>
+		    			<h1>FTS Functionality Tips</h1>
+		    		</center>
+		    		<br/>
+		            <div>
+                        <center>
+{#                            <h3>Explore the corpus using automatically constructed faceted taxonomy</h3>#}
+                            <h4>Start the demo by clicking buttons on the right of the navigation bar</h4>
+                            <p>Three major functions:</p>
+                            <p>1. Search (used for query concept expansion)</p>
+                            <p>2. Trend (used for topic trend analysis)</p>
+                            <p>3. SetExpan (used for facet completion / set expansion)</p>
+                            <p>4. Taxonomy Exploration (used for taxonomy construction and search)</p>
+                        </center>
+		            </div>
+		            <br>
+					<br><br><br><br><br><br>
+<!-- Footer -->{% include 'footer.html' %}
+		        </div>
+			</div>
+		</div>
+
+	</body>
+	<!-- Attach React components -->
+  	<!-- <script type="text/javascript" src="{{ url_for('static', filename='bundle.js') }}"></script> -->
+	<!-- <script src="http://static.runoob.com/assets/react/react-0.14.7/build/react.min.js"></script>
+	<script src="http://static.runoob.com/assets/react/react-0.14.7/build/react-dom.min.js"></script> -->
+	<!-- <script src="http://static.runoob.com/assets/react/browser.min.js"></script> -->
+	<script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+	<!-- <script src="{{url_for('static', filename='js/npm.js')}}"></script> -->
+	<script type="text/javascript">
+		// [prevent submitting the form when it's empty]
+		var form = $('#search-form');
+		form.on('submit',function(event){
+			event.preventDefault();
+			if($('#keywords')[0].value.length<1)
+				return false;
+			this.submit();
+		})
+	</script>
+</html>

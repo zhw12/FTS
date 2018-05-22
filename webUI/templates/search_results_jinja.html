@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" href="http://cs.illinois.edu/sites/all/themes/csdept/favicon.ico"
+          type="image/vnd.microsoft.icon"/>
+    <title>Faceted Taxonomy Construction and Search</title>
+
+    <!-- Foundation CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap-theme.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.css">-->
+    <!--<link rel="stylesheet"-->
+          <!--href="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.themes.min.css">-->
+
+    <link rel="stylesheet"
+          href="		https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/css/bootstrap-formhelpers.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.min.css"
+          rel="stylesheet"/>
+    <link href="{{ url_for('static', filename='css/bootstrapStyle.css') }}" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.1/bootstrap-editable/css/bootstrap-editable.css">
+    <!-- highlightjs.org -->
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.9.0/styles/default.min.css"> -->
+
+    <!-- Customized CSS -->
+    <!-- <link href="{{url_for('static', filename='css/SetSearch.css')}}" rel="stylesheet"> -->
+    <!-- Following code is used to control the highlight code for different types -->
+    <style type="text/css">
+        .highlight {
+            background-color: yellow;
+        }
+
+        mark {
+            background: orange;
+            color: black;
+            padding: 0;
+        }
+
+        mark.a {
+            background: yellow;
+            color: black;
+        }
+
+        mark.b {
+            background: lightgreen;
+            color: black;
+        }
+
+        mark.c {
+            background: lightpink;
+            color: black;
+        }
+
+        mark.d {
+            background: lightblue;
+            color: black;
+        }
+
+        mark.e {
+            background: #ff6666;
+            color: black;
+        }
+
+        mark.f {
+            background: #ff00ff;
+            color: black;
+        }
+
+        mark.g {
+            background: #5487ff;
+            color: black;
+        }
+
+        mark.h {
+            background: #dfbf9f;
+            color: black;
+        }
+
+        mark.i {
+            background: #99ffcc;
+            color: black;
+        }
+
+        mark.j {
+            background: #00ffff;
+            color: black;
+        }
+
+        mark.k {
+            background: #df9f9f;
+            color: black;
+        }
+
+        mark.r {
+            background: #ff7070;
+            color: black;
+        }
+
+        .fix-autocomplete {
+            padding: 0px !important;
+            margin: 0px;
+            border-width: 0px;
+        }
+
+        .input-grp-autocomplete {
+            padding-bottom: 2px !important;
+        }
+
+        /*#keywords
+        {
+            margin-bottom: 20px !important;
+        }*/
+
+        .easy-autocomplete-container {
+            margin-top: 48px !important;
+        }
+    </style>
+
+</head>
+
+<body>
+<!-- Nav -->
+{% include 'nav.html' %}
+
+<!-- Main -->
+<div class="container" id="highlightArea">
+    <div class="row">
+        <div class="col-md-8">
+            <div id="main"></div>
+            <!-- The search bar -->
+
+            <div style="text-align: center;">
+                <form action="{{ output_json.currentUrl }}" method="post" id="search-form">
+                    {#        <div class="input-group col-md-12 input-grp-autocomplete">#}
+                    <div class="input-group input-group-lg col-md-12">
+                        <select class="js-example-data-ajax form-control js-data-example-ajax select2-hidden-accessible"
+                                multiple="multiple" style="width:100%;"></select>
+                        {#            <select multiple="multiple" style="width:100%; class="form-control js-example-data-ajax select2-hidden-accessible" tabindex="-1" ></select>#}
+                        <span class="input-group-btn">
+                <button class="btn btn-primary btn-lg" type="submit" value="Submit">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </span>
+
+                    </div>
+                    <input hidden="true" type="text" id="keywords" class="form-control input-lg" name="inputData"
+                           placeholder="Query in the form of plain text. " value="{{ output_json.raw_query }}"/>
+                    <input hidden="true" type="number" id="page" name="pageSelect" value="1"/>
+                </form>
+            </div>
+
+
+            {% if output_json.concepts %}
+            <div style="text-align: center;">
+                <div style="margin-top: 10px; margin-bottom: 10px; max-height:102px; overflow-y: hidden;">
+                    <form action="{{ output_json.currentUrl }}" method="post">
+                        {% for concept_index in range(0, 10) if concept_index < output_json.concepts|length %}
+                        <input type="submit" class="btn btn-danger" name="concept"
+                               value="{{ output_json.concepts[concept_index] }}">
+                        {% endfor %} <br/>
+                    </form>
+                </div>
+            </div>
+
+
+
+            <div style="text-align: center;">
+                <p style="color: #808080; "> format: expanded concept, matched paper count, expansion rate </p>
+            </div>
+            {% endif %}
+
+            <!-- The statistsics of results -->
+            <div style="text-align: center; margin-top: 10px;">
+                {% for index in range(1) if index < output_json.hits_paper|length %}
+                <p style="color: #808080; "><font color="orange"> {{ output_json.hits_paper[index] }} </font>
+                    matched papers with score larger than <font
+                            color="orange">{{ output_json.hits_score[index]}}</font></p>
+                {% endfor %}
+            </div>
+
+            <div style="margin-top:10px; margin-bottom:10px;">
+                <div class="col-md-5"></div>
+                <div class="input-group col-md-4">
+                    <input
+                            id="min_score_slider"
+                            class="form-control"
+                            style="margin-right: 10px;"
+                            data-provide="slider"
+                            type="text"
+                            data-slider-min="0"
+                            data-slider-max="20"
+                            data-slider-step="1"
+                            data-slider-value="{{ output_json.min_score}}"/>
+                    {#                    <span class="input-group-btn">#}
+                    {#                        <button class="btn btn-primary" style="margin-left: 10px;" type="button" value="button"#}
+                                                      {#                                onclick="analyze('{{ output_json.raw_query }}', {{ output_json.min_score }})">#}
+                    {#                            Analyze Corpus#}
+                    {#                        </button>#}
+                    {#                    </span>#}
+
+                </div>
+            </div>
+
+            <!-- Result Left -->
+            <div class="context">
+                <!-- <div class="col-md-4"></div> -->
+                <div class="col-md-12">
+                    <div class="result-list">
+                        {% for each_hit_dict in output_json.hits.hits %}
+                        <ul class="list-group">
+                            <!-- Generate each paper under here -->
+                            <li class="list-group-item">
+                                <a target="_blank" href={{ each_hit_dict._source.pdfUrl[0] }}>
+                                    <h4>{{ each_hit_dict._source.title }}</h4></a>
+                                <div class="context_nohighlight_{{ loop.index0 }}">
+                                    <p class="p1" style="margin-bottom: 2px; color: #808080; "><i>
+                                        <b>Authors</b>:
+                                        {% if each_hit_dict._source.authors|length > 0 %}
+                                        <!-- long author lists -->
+
+                                        {% if each_hit_dict._source.authors | length >10 %}
+                                        <span class="shortened">
+				  	{% for author_index in range(10) %}
+                        {{ each_hit_dict._source.authors[author_index] }}
+                        {% if not loop.last %};{% endif %}
+                    {% endfor %}
+                                                        <a class="toggle-full">(All authors)</a>
+				  	</span>
+                                        <span hidden="true" class="full">
+				  	{% for each_author in each_hit_dict._source.authors %}
+                        {{ each_author }}{% if not loop.last %};{% endif %}
+                    {% endfor %}
+                                                        <a class="fold-full">(Show less)</a></span>
+                                        {% else %}
+                                        <!-- regular author lists -->
+                                        <span class="full">
+				  	{% for each_author in each_hit_dict._source.authors %}
+                        {{ each_author }}{% if not loop.last %};{% endif %}
+                    {% endfor %}
+				  	</span>
+                                        {% endif %}
+                                        {% endif %}
+                                        |
+                                        <b>Venue</b>:
+                                        {% if each_hit_dict._source.venue|length > 0 %}
+                                        {{ each_hit_dict._source.venue }}
+                                        {% endif %}
+                                        |
+                                        {% if each_hit_dict._source.year != 0 %}
+                                        <b>Year</b>:
+                                        {{ each_hit_dict._source.year }}
+                                        {% endif %}
+                                        |
+                                        {% if each_hit_dict._source.pdfUrl %}
+                                        <a target="_blank" href={{ each_hit_dict._source.pdfUrl[0] }}> <b> View
+                                            Full Paper </b> </a>
+                                        {% endif %}
+                                    </i>
+                                    </p>
+                                </div>
+                                <p style="margin-bottom: 2px;"><b>Abstract:</b>
+                                    {% if each_hit_dict._source.paperAbstract| length > 300 %}
+                                    <span class="shortened">{{ each_hit_dict._source.paperAbstract | truncate(300, False) }}
+			  	 <a class="toggle-full"> (Show full)</a>
+
+			  	 </span>
+                                    <span class="full" hidden="true">
+			  	 {{ each_hit_dict._source.paperAbstract }}
+			  	 <a class="fold-full"> (Show less) </a>
+			  	 </span>
+                                    {% else %}
+                                    <span class="full">
+			  	 {{ each_hit_dict._source.paperAbstract }}
+			  	 </span>
+                                    {% endif %}
+                                </p>
+                                <!-- <p class="p1" style="margin-bottom:1px;"><b>Matched terms:</b> </p> -->
+                            </li>
+
+                        </ul>
+                        {% endfor %}
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <!-- Result Right -->
+        <div class="col-md-4">
+            <div class="context_entities">
+                <!-- Detected entities in query -->
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-info active">
+                        {#                        <span><b>Taxonomy</b>&nbsp;<a style="color:#FFFFFF; " id="#upload">save</a></span>#}
+                        <b>Taxonomy</b>&nbsp
+                        <button class="btn-primary" type="submit" value="Submit" id="upload">
+                            <i class="glyphicon glyphicon-floppy-disk"></i>
+                        </button>
+                        <button class="btn-primary" type="submit" value="Submit" id="flip-taxonomy">
+                            <i class="glyphicon glyphicon-retweet"></i>
+                        </button>
+
+                    </li>
+                    <div class="zTreeDemoBackground left">
+                        <ul id="treeDemo" class="ztree"></ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+
+
+        </div>
+
+        <div class="col-md-12">
+            <!-- Start pagination -->
+            <nav aria-label="search result navigation" style="text-align:center">
+                <ul class="pagination">
+                    <li>
+                        <a aria-label="Previous" id='prev-btn'>
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    {% for i in range(4) %}
+                    {% if output_json.current_page-4+i >0 %}
+                    <li><a>{{ output_json.current_page-4+i }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                    <li class='active'><a>{{ output_json.current_page }}</a></li>
+                    {% for i in range(4) %}
+                    {% if output_json.total_pages > output_json.current_page+i %}
+                    <li><a>{{ output_json.current_page+i + 1 }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                    {% if output_json.total_pages > output_json.current_page + 4 %}
+                    <li class="disabled"><a>...</a></li>
+                    <li><a>{{ output_json.total_pages }}</a></li>
+                    {% endif %}
+                    <li>
+                        <a aria-label="Next" id='next-btn'>
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                    <!-- <li id="total_pages">Total {{output_json.total_pages}} pages</li> -->
+                </ul>
+            </nav>
+            <!-- End pagination -->
+            <!-- Footer -->{% include 'footer.html' %}
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+<!-- Attach React components -->
+<!-- <script type="text/javascript" src="{{ url_for('static', filename='bundle.js') }}"></script> -->
+<!-- <script type="text/javascript" src="http://static.runoob.com/assets/react/react-0.14.7/build/react.min.js"></script>
+<script type="text/javascript" src="http://static.runoob.com/assets/react/react-0.14.7/build/react-dom.min.js"></script>
+<script type="text/javascript" src="http://static.runoob.com/assets/react/browser.min.js"></script> -->
+
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<!-- <script src="{{url_for('static', filename='js/npm.js')}}"></script> -->
+
+<!-- highlight search keywords -->
+<script type="text/javascript" src="{{ url_for('static', filename='hilitor.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='mark.js') }}"></script>
+<!-- <script type="text/javascript" src="http://www.the-art-of-web.com/hilitor.js"></script> -->
+<!-- <script src="http://johannburkard.de/resources/Johann/jquery.highlight-5.js"></script> -->
+
+<!-- Customized JS -->
+<!-- <script  type="text/javascript" href="{{url_for('static', filename='mystyle.js')}}" rel="stylesheet"></script> -->
+
+
+<!-- Customized JS -->
+<!-- A simple script for pagination -->
+<script src="{{ url_for('static',filename='js/flippage.js') }}"></script>
+<!-- Script for folding long text -->
+<script src="{{ url_for('static',filename='js/shorten.js') }}"></script>
+<!-- Script for easy-autocomplete-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/js/bootstrap-formhelpers.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zTree.v3/3.5.29/js/jquery.ztree.core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zTree.v3/3.5.29/js/jquery.ztree.exedit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zTree.v3/3.5.29/js/jquery.ztree.excheck.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.1/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+
+<script>
+    function analyze(raw_query, min_score) {
+        var json_data = {"raw_query": raw_query, "min_score": min_score};
+        $.ajax({
+            type: "GET",
+            url: "/analyze",
+            data: json_data,
+            dataType: "json",
+            success: function (data) {
+                alert("Start Analyzing...")
+                alert(data);
+                window.open('/generate_taxonomy?raw_query=' + raw_query + '&min_score=' + min_score);
+            }
+        });
+    }
+
+</script>
+
+<script type="text/javascript">
+    // [prevent submitting the form when it's empty]
+
+
+    // // [search to highlight]
+    // var word2Highlight;
+    // document.addEventListener("DOMContentLoaded", function(e) {
+    // 	word2Highlight = new Hilitor("highlightArea");
+    // 	word2Highlight.setMatchType("left");
+    // }, false);
+    //
+    // document.getElementById("keywords").addEventListener("keyup", function(e) {
+    // 	word2Highlight.apply(this.value);
+    // }, false);
+    //
+    // // [load to highlight]
+    // var word2Highlight; // global variable
+    // document.addEventListener("DOMContentLoaded", function(e) {
+    // 	word2Highlight = new Hilitor("content");
+    // 	word2Highlight.apply("{% for each_keyword in output_json.highlight_term_list %}{{ each_keyword }} {% endfor %}");
+    // 	// word2Highlight.apply("machine learning");
+    // 	// word2Highlight.apply("mining");
+    // }, false);
+
+
+    //heighlight left
+    var context = document.querySelector(".context"); // requires an element with class "context" to exist
+    var instance = new Mark(context);
+    {% for each_keyword in output_json.highlight_term_list %}
+    instance.markRegExp(/\b({{ each_keyword.0 }})\b/i, {
+        "separateWordSearch": false,
+        "element": "mark",
+        "className": "{{each_keyword.1}}"
+    });
+    {% endfor %}
+
+    //no highlight on author, journal, year line
+    {% for each_hit_dict in output_json.hits.hits %}
+    var context = document.querySelector(".context_nohighlight_{{loop.index0}}");
+    // requires an element with class "context" to exist
+    var instance = new Mark(context);
+    {% for each_keyword in output_json.highlight_term_list %}
+    instance.unmark("{{ each_keyword.0 }}", {
+        "separateWordSearch": false,
+        "element": "mark",
+        "className": "{{each_keyword.1}}"
+    });
+    {% endfor %}
+    {% endfor %}
+
+
+    var instance = new Mark(context);
+    {% for each_keyword in output_json.highlight_term_list %}
+    instance.markRegExp(/\b{{ each_keyword.0 }}\b/, {
+        "separateWordSearch": false,
+        "element": "mark",
+        "className": "{{each_keyword.1}}"
+    });
+    {% endfor %}
+</script>
+<script>
+    var form = $('#search-form');
+    form.on('submit', function (event) {
+        event.preventDefault();
+        var entity_list = $(".select2 .select2-selection__choice");
+        console.log(entity_list);
+        if (typeof(entity_list[0]) != "undefined") {
+            var raw_query = entity_list[0].title;
+            for (var i = 1; i < entity_list.length; i++) {
+                raw_query = raw_query + " OR " + entity_list[i].title;
+            }
+            $("#keywords")[0].value = raw_query;
+        }
+
+        if ($('#keywords')[0].value.length < 1)
+            return false;
+        this.submit();
+    })
+
+
+    $(".js-example-data-ajax").select2({
+        theme: "bootstrap",
+        ajax: {
+    url: '{{ url_for("phrase_api") }}',
+        dataType: 'json',
+        delay: 250,
+        data: function (params) {
+        return {
+            q: params.term, // search term
+        };
+    },
+    processResults: function (data, params) {
+        // parse the results into the format expected by Select2
+        // since we are using custom formatting functions we do not need to
+        // alter the remote JSON data, except to indicate that infinite
+        // scrolling can be used
+        for (var i in data["suggest"][0]["options"]) {
+            data["suggest"][0]["options"][i]['id'] = data["suggest"][0]["options"][i]['_id'];
+        }
+        return {
+            results: data["suggest"][0]["options"],
+        };
+    },
+    cache: true
+    },
+    placeholder: 'Type your query and select concepts in our system.',
+        escapeMarkup: function (markup) {
+        return markup;
+    }, // let our custom formatter work
+    minimumInputLength: 1,
+        templateResult: formatRepo,
+        templateSelection: formatRepoSelection
+    });
+
+    function formatRepo(repo) {
+        var markup = "<div class='select2-result-repository__description'>" + repo["text"] + "</div>"
+        var markup = repo['text'];
+        return markup;
+    }
+
+    function formatRepoSelection(repo) {
+        return repo['text'];
+    }
+
+
+</script>
+<script type="text/javascript">
+    // Post to the provided URL with the specified parameters.
+    function post(path, parameters) {
+        var form = $('<form></form>');
+
+        form.attr("method", "post");
+        form.attr("action", path);
+
+        $.each(parameters, function (key, value) {
+            var field = $('<input></input>');
+
+            field.attr("type", "hidden");
+            field.attr("name", key);
+            field.attr("value", value);
+
+            form.append(field);
+        });
+
+        // The form needs to be a part of the document in
+        // order for us to be able to submit it.
+        $(document.body).append(form);
+        form.submit();
+    }
+
+
+    var setting = {
+        view: {
+            expandSpeed: "",
+            addHoverDom: addHoverDom,
+            removeHoverDom: removeHoverDom,
+            addDiyDom: addDiyDom,
+            selectedMulti: false,
+            showTitle: false,
+        },
+        edit: {
+            enable: true
+        },
+        data: {
+            simpleData: {
+                enable: true
+            }
+        },
+        callback: {
+            beforeRemove: beforeRemove,
+            beforeRename: beforeRename,
+            onClick: zTreeOnClick,
+            onRename: zTreeOnRename
+        }
+    };
+
+    var log, className = "dark";
+
+    function zTreeOnClick(event, treeId, treeNode) {
+        // click the taxonomy node and search corpus
+        // search under current query plus this node
+        console.log(treeNode ? treeNode.tId + ", " + treeNode.name : "isRoot");
+        console.log(treeNode);
+
+        var tID = treeNode["taxonID"];
+        {#window.open('/search/' + tID);#}
+
+        // var parameters = {"inputData": treeNode.name, "min_score": 0};
+        new_query = "({{ output_json.raw_query }})" + " AND " + "(" +treeNode.name + ")";
+        var parameters = {"inputData": new_query, "min_score": 0};
+        var path = "/search";
+        console.log("parameters", parameters);
+        post(path, parameters)
+
+    };
+
+
+    function beforeDrag(treeId, treeNodes) {
+        return false;
+    }
+
+    function beforeEditName(treeId, treeNode) {
+        className = (className === "dark" ? "" : "dark");
+        showLog("[ " + getTime() + " beforeEditName ]&nbsp;&nbsp;&nbsp;&nbsp; " + treeNode.name);
+        var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+        zTree.selectNode(treeNode);
+        setTimeout(function () {
+            if (confirm("Start node '" + treeNode.name + "' editorial status?")) {
+                setTimeout(function () {
+                    zTree.editName(treeNode);
+                }, 0);
+            }
+        }, 0);
+        return false;
+    }
+
+    function beforeRemove(treeId, treeNode) {
+        className = (className === "dark" ? "" : "dark");
+        showLog("[ " + getTime() + " beforeRemove ]&nbsp;&nbsp;&nbsp;&nbsp; " + treeNode.name);
+        var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+        zTree.selectNode(treeNode);
+        return confirm("Confirm delete node '" + treeNode.name + "' it?");
+    }
+
+    function onRemove(e, treeId, treeNode) {
+        showLog("[ " + getTime() + " onRemove ]&nbsp;&nbsp;&nbsp;&nbsp; " + treeNode.name);
+    }
+
+    function beforeRename(treeId, treeNode, newName, isCancel) {
+        className = (className === "dark" ? "" : "dark");
+        showLog((isCancel ? "<span style='color:red'>" : "") + "[ " + getTime() + " beforeRename ]&nbsp;&nbsp;&nbsp;&nbsp; " + treeNode.name + (isCancel ? "</span>" : ""));
+        if (newName.length == 0) {
+            setTimeout(function () {
+                var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+                zTree.cancelEditName();
+                alert("Node name can not be empty.");
+            }, 0);
+            return false;
+        }
+        return true;
+    }
+
+    function zTreeOnRename(event, treeId, treeNode, isCancel) {
+        var json_data = {
+            "raw_query": "{{ output_json.raw_query }}", "min_score": {{ output_json.min_score }},
+        "new_query": treeNode.name
+    };
+        $.ajax({
+            type: "GET",
+            url: "/paper_count_get",
+            data: json_data,
+            dataType: "json",
+            success: function (data) {
+                treeNode.count = data;
+                $("#diyBtn_space_" + treeNode.tId).text(treeNode.count);
+            }
+        });
+    }
+
+    function onRename(e, treeId, treeNode, isCancel) {
+        showLog((isCancel ? "<span style='color:red'>" : "") + "[ " + getTime() + " onRename ]&nbsp;&nbsp;&nbsp;&nbsp; " + treeNode.name + (isCancel ? "</span>" : ""));
+    }
+
+    function showRemoveBtn(treeId, treeNode) {
+        return !treeNode.isFirstNode;
+    }
+
+    function showRenameBtn(treeId, treeNode) {
+        return !treeNode.isLastNode;
+    }
+
+    function showLog(str) {
+        if (!log) log = $("#log");
+        log.append("<li class='" + className + "'>" + str + "</li>");
+        if (log.children("li").length > 8) {
+            log.get(0).removeChild(log.children("li")[0]);
+        }
+    }
+
+    function getTime() {
+        var now = new Date(),
+            h = now.getHours(),
+            m = now.getMinutes(),
+            s = now.getSeconds(),
+            ms = now.getMilliseconds();
+        return (h + ":" + m + ":" + s + " " + ms);
+    }
+
+    var newCount = 1;
+
+    function addHoverDom(treeId, treeNode) {
+        var sObj = $("#" + treeNode.tId + "_span");
+        if (treeNode.editNameFlag || $("#addBtn_" + treeNode.tId).length > 0) return;
+
+        var addStr = "<span class='button add' id='addBtn_" + treeNode.tId
+            + "' title='add node' onfocus='this.blur();'></span>";
+        sObj.after(addStr);
+
+        var tooltipText = treeNode.name + '\n';
+        if ("keywords" in treeNode) {
+            if (treeNode["keywords"].length) {
+                tooltipText = tooltipText + '--------';
+            }
+            for (var i = 0; i < treeNode["keywords"].length; i++) {
+                tooltipText = tooltipText + '\n' + treeNode["keywords"][i]
+            }
+            sObj[0].title = tooltipText;
+        }
+
+
+        var btn = $("#addBtn_" + treeNode.tId);
+        if (btn) btn.bind("click", function () {
+            var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+            zTree.addNodes(treeNode, {id: (100 + newCount), pId: treeNode.id, name: "new node" + (newCount++)});
+            return false;
+        });
+
+    }
+
+    function removeHoverDom(treeId, treeNode) {
+        $("#addBtn_" + treeNode.tId).unbind().remove();
+        $("#editKeywordBtn_" + treeNode.tId).unbind().remove();
+    }
+
+    function addDiyDom(treeId, treeNode) {
+        var aObj = $("#" + treeNode.tId + "_a");
+        if ($("#diyBtn_" + treeNode.tId).length > 0) return;
+        var editStr = "<span id='diyBtn_space_" + treeNode.tId + "' >" + treeNode.count + "</span>"
+        aObj.after(editStr);
+    }
+    ;
+
+    function selectAll() {
+        var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+        zTree.setting.edit.editNameSelectAll = $("#selectAll").attr("checked");
+    }
+
+    function callback(json) {
+        // $('#response').html('code:'+json['status']['code'] + "\tmessage:" + json['status']['message']);
+        $('#response').html("message:" + json['message']);
+    }
+
+    $(document).ready(function () {
+        var json_data = {"raw_query": "{{ output_json.raw_query }}", "min_score": {{ output_json.min_score }},
+        "flip_taxonomy": {{ output_json.flip_taxonomy }}};
+        console.log('taxonomy_get', json_data);
+        $.ajax({
+            type: "GET",
+            url: "/taxonomy_get",
+            data: json_data,
+            dataType: "json",
+            success: function (data) {
+                console.log(data);
+                var zNodes = data;
+
+                $.fn.zTree.init($("#treeDemo"), setting, zNodes);
+            }
+        });
+
+
+        {#$.fn.zTree.init($("#treeDemo"), setting, zNodes);#}
+        $("#selectAll").bind("click", selectAll);
+
+        $('#upload').click(function () {
+            var treeObj = $.fn.zTree.getZTreeObj("treeDemo");
+            var nodes = treeObj.getNodes();
+            {#var json_str = JSON.stringify(nodes);    //将JSON对象转变成JSON格式的字符串#}
+                var json_str = JSON.stringify({"tree": nodes, "raw_query": "{{output_json.raw_query}}"});    //将JSON对象转变成JSON格式的字符串
+                console.log(json_str);
+                // $.post("/datasave/", json_str, callback, "json");
+                $.ajax({
+                    type: "POST",
+                    url: "/taxonomy_save",
+                    data: json_str,
+                    dataType: "json",
+                    contentType: 'application/json;charset=UTF-8',
+                    success: function (data) {
+                        // alert("successfully upload");
+                        alert(data);
+                    }
+                });
+            });
+
+        var flip_status = 0;
+        $('#flip-taxonomy').click(function () {
+            if(flip_status == 0)
+                flip_status=1;
+            else
+                flip_status=0;
+            var json_data = {"raw_query": "{{ output_json.raw_query }}", "min_score": {{ output_json.min_score }},
+            "flip_taxonomy": flip_status};
+            console.log('taxonomy_get', json_data);
+            $.ajax({
+                type: "GET",
+                url: "/taxonomy_get",
+                data: json_data,
+                dataType: "json",
+                success: function (data) {
+                    console.log(data);
+                    var zNodes = data;
+
+                    $.fn.zTree.init($("#treeDemo"), setting, zNodes);
+                }
+            });
+        });
+
+    });
+
+
+
+
+    var originalVal;
+
+    $('#min_score_slider').slider().on('slideStart', function (ev) {
+        originalVal = $('#min_score_slider').data('slider').getValue();
+    });
+
+    $('#min_score_slider').slider().on('slideStop', function (ev) {
+        var newVal = $('#min_score_slider').data('slider').getValue();
+        if (originalVal != newVal) {
+            {#alert('Value Changed!');#}
+            parameters = {"inputData": "{{ output_json.raw_query }}", "min_score": newVal};
+            path = "{{ output_json.currentUrl }}";
+            console.log("parameters", parameters);
+            post(path, parameters)
+
+        }
+    });
+
+
+</script>
+</html>

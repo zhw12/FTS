@@ -1,0 +1,150 @@
+{  
+   "highlight_term_list":[  
+      "machine",
+      "learning",
+      "mining"
+   ],
+   "hits":{  
+      "hits":[  
+         {  
+            "_score":29.824951,
+            "_type":"id_title_abs",
+            "_id":"31563",
+            "_source":{  
+               "abstract":"data mining machine learning performance data data mining machine learning performance data data mining machine learning performance data ith development penetration data mining within different fields industries many data mining algorithms emerged selection good data mining algorithm obtain best result particular data set become important works well particular data set may work well another goal thesis find associations classification algorithms characteristics data sets first building file data sets characteristics performance number algorithms data set second applying unsupervised clustering analysis file analyze generated clusters determine whether significant patterns six classification algorithms applied data sets three clustering algorithms applied data generated patterns properties clusters formed studied six classification algorithms used oner kernel density",
+               "title":"Data Mining of Machine Learning Performance Data",
+               "title_length":7,
+               "abstract_length":111,
+               "id":31563
+            },
+            "_index":"citerseer_index"
+         },
+         {  
+            "_score":29.824951,
+            "_type":"id_title_abs",
+            "_id":"7108",
+            "_source":{  
+               "abstract":"data mining machine learning statistics databases data mining machine learning statistics databases data mining machine learning statistics databases knowledge discovery databases data mining aim semiautomatic tools analysis large data sets give overview area present research issues especially database angle introduction knowledge discovery databases kdd often called data mining aims discovery useful information large collections data discovered knowledge rules describing properties data frequently occurring patterns clusterings objects database etc data mining emerged visible research development area industry science seems lack methods efficient analysis large data sets current technology makes fairly easy collect data data analysis tends slow expensive suspicion might nuggets useful information hiding masses unanalyzed underanalyzed data therefore semiautomatic methods fo",
+               "title":"Data Mining: Machine Learning, Statistics, and Databases",
+               "title_length":7,
+               "abstract_length":111,
+               "id":7108
+            },
+            "_index":"citerseer_index"
+         },
+         {  
+            "_score":28.802357,
+            "_type":"id_title_abs",
+            "_id":"9638",
+            "_source":{  
+               "abstract":"data mining using mlc machine learning library data mining using mlc machine learning library data mining using mlc machine learning library data mining algorithms including machine learning statistical analysis pattern recognition techniques greatly improve understanding data warehouses becoming widespread paper focus classification algorithms review need multiple classification algorithms describe system called mlc designed help choose appropriate classification algorithm given dataset making easy compare utility different algorithms specific dataset interest mlc provides workbench comparisons also provides library classes aid development new algorithms especially hybrid algorithms multi strategy algorithms algorithms generally hard code scratch discuss design issues interfaces programs visualization resulting classifiers keywords data mining machine learning classification benchmark",
+               "title":"Data Mining using MLC++ - A Machine Learning Library in C++",
+               "title_length":11,
+               "abstract_length":107,
+               "id":9638
+            },
+            "_index":"citerseer_index"
+         },
+         {  
+            "_score":28.15903,
+            "_type":"id_title_abs",
+            "_id":"10520",
+            "_source":{  
+               "abstract":"data mining hypergraph transversals machine learning extended abstract data mining hypergraph transversals machine learning extended abstract data mining hypergraph transversals machine learning extended abstract several data mining problems formulated problems finding maximally specific sentences interesting database first show problem close relationship hypergraph transversal problem analyze two algorithms previously used data mining proving upper bounds complexity first algorithm useful maximally specific interesting sentences small show algorithm also used efficiently solve special case hypergraph transversal problem improving previous results second algorithm utilizes subroutine hypergraph transversals applicable general situations complexity close lower bound problem also relate problems model exact learning computational learning theory use correspondence derive corollaries",
+               "title":"Data mining, Hypergraph Transversals, and Machine Learning (Extended Abstract)",
+               "title_length":9,
+               "abstract_length":104,
+               "id":10520
+            },
+            "_index":"citerseer_index"
+         },
+         {  
+            "_score":27.949577,
+            "_type":"id_title_abs",
+            "_id":"47439",
+            "_source":{  
+               "abstract":"data mining using mlc machine learning library data mining using mlc machine learning library data mining using mlc machine learning library data mining algorithmsincluding machine learning statistical analysis pattern recognition techniques greatly improve understanding data warehouses becoming widespread paper focus classification algorithms review need multiple classification algorithms describe system called designed help choose appropriate classification algorithm given dataset making easy compare utility different algorithms specific dataset interest mlc provides workbench comparisons also provides library classes aid development new algorithms especially hybrid algorithms multi strategy algorithms algorithms generally hard code scratch discuss design issues interfaces programs visualization resulting classifiers",
+               "title":"Data Mining using MLC++: A Machine Learning Library in C ++",
+               "title_length":11,
+               "abstract_length":98,
+               "id":47439
+            },
+            "_index":"citerseer_index"
+         },
+         {  
+            "_score":25.067556,
+            "_type":"id_title_abs",
+            "_id":"43042",
+            "_source":{  
+               "abstract":"propositional first order logic machine learning data mining induction first order rules icl propositional first order logic machine learning data mining induction first order rules icl propositional first order logic machine learning data mining induction first order rules icl last decade machine learning particular data mining become popular world flooded data learning systems however use limited representation examples learned hypotheses dissertation discuss general method upgrade traditional machine learning data mining techniques simple propositional single table representation data knowledge towards powerful first order multi relational representation",
+               "title":"From Propositional to First Order Logic in Machine Learning and Data Mining - Induction of first order rules with ICL",
+               "title_length":20,
+               "abstract_length":85,
+               "id":43042
+            },
+            "_index":"citerseer_index"
+         },
+         {  
+            "_score":24.506626,
+            "_type":"id_title_abs",
+            "_id":"37998",
+            "_source":{  
+               "abstract":"mathematical programming approaches machine learning data mining mathematical programming approaches machine learning data mining mathematical programming approaches machine learning data mining machine learning problems supervised classification unsupervised clustering parsimonious approximation formulated mathematical programs feature selection problem arising supervised classification task effectively addressed calculating separating plane minimizing separation error number problem features utilized support vector machine approach formulated using various norms measure margin separation clustering problem assigning points dimensional real space clusters formulated minimizing piecewise linear concave function polyhedral set problem also formulated novel fashion minimizing sum squared distances data points nearest cluster planes characterizing clusters problem obtaining parsimonious solution linear system right hand side vector may corrupted noise formulated minimizing system residual plus either number nonzero elements solution vector norm solution vector feature selection problem clustering problem parsimonious approximation problem stated minimization concave function polyhedral region solved theoretically justifiable fast finite successive linearization algorithm numerical tests indicate utility efficiency formulations real world databases particular feature selection approach via concave minimization computes separating plane based classifier improves upon generalization ability separating plane computed without feature suppression approach produces ii classifiers utilizing fewer original problem features support vector machin",
+               "title":"Mathematical Programming Approaches To Machine Learning And Data Mining",
+               "title_length":9,
+               "abstract_length":187,
+               "id":37998
+            },
+            "_index":"citerseer_index"
+         },
+         {  
+            "_score":23.77459,
+            "_type":"id_title_abs",
+            "_id":"2252",
+            "_source":{  
+               "abstract":"knowledge mining databases integration machine learning methodologies database technologies knowledge mining databases integration machine learning methodologies database technologies knowledge mining databases integration machine learning methodologies database technologies active research conducted knowledge discovery databases researchers group years many interesting results published prototyped knowledge discovery system dbminer previously called dblearn developed demonstrated several conferences research covers wide spectrum knowledge discovery including study knowledge discovery relational object oriented deductive spatial active databases global information systems development various kinds knowledge discovery methods including attribute oriented induction progressive deepening mining multiple level rules meta rule guided knowledge mining etc techniques discovery various kinds knowledge including generalization characterization discrimination association classification clustering etc application knowledge discovery intelligent query answering multiple layered database construction etc",
+               "title":"Knowledge Mining in Databases: An Integration of Machine Learning Methodologies with Database Technologies",
+               "title_length":13,
+               "abstract_length":118,
+               "id":2252
+            },
+            "_index":"citerseer_index"
+         },
+         {  
+            "_score":21.86385,
+            "_type":"id_title_abs",
+            "_id":"53702",
+            "_source":{  
+               "abstract":"machine learning low level microarray analysis machine learning low level microarray analysis machine learning low level microarray analysis machine learning data mining found multitude successful applications microarray analysis gene clustering classification tissue samples widely cited examples low level microarray analysis often associated pre processing stage within microarray life cycle increasingly become area active research traditionally involving techniques classical statistics paper explores opportunities application machine learning data mining methods several important low level microarray analysis problems monitoring gene expression transcript discovery genotyping resequencing relevant methods ideas machine learning community include semi supervised learning learning heterogeneous data incremental learning",
+               "title":"Machine Learning in Low-level Microarray Analysis",
+               "title_length":6,
+               "abstract_length":97,
+               "id":53702
+            },
+            "_index":"citerseer_index"
+         },
+         {  
+            "_score":21.63493,
+            "_type":"id_title_abs",
+            "_id":"18782",
+            "_source":{  
+               "abstract":"incremental concept learning bounded data mining incremental concept learning bounded data mining incremental concept learning bounded data mining important refinements concept learning limit positive data considerably restricting accessibility input data studied let concept every infinite sequence elements exhausting called positive presentation learning models considered learning machine computes sequence hypotheses target concept positive presentation iterative learning learning machine making conjecture access previous conjecture latest data item coming bounded example memory inference priori fixed learner allowed access making conjecture previous hypothesis memory data items already seen next element coming case feedback identification learning machine making conjecture access previous conjecture latest data item coming basis information compute items",
+               "title":"Incremental Concept Learning for Bounded Data Mining",
+               "title_length":7,
+               "abstract_length":105,
+               "id":18782
+            },
+            "_index":"citerseer_index"
+         }
+      ],
+      "total":6818,
+      "max_score":29.824951
+   },
+   "_shards":{  
+      "successful":1,
+      "failed":0,
+      "total":1
+   },
+   "took":16,
+   "timed_out":False
+}

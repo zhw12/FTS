@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" href="http://cs.illinois.edu/sites/all/themes/csdept/favicon.ico"
+          type="image/vnd.microsoft.icon"/>
+    <title>Faceted Taxonomy Construction and Search</title>
+
+    <!-- Foundation CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap-theme.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.themes.min.css">
+
+    <link rel="stylesheet"
+          href="		https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/css/bootstrap-formhelpers.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.min.css"
+          rel="stylesheet"/>
+    <link href="{{ url_for('static', filename='css/bootstrapStyle.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css">
+    <!-- highlightjs.org -->
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.9.0/styles/default.min.css"> -->
+
+</head>
+
+<body>
+<!-- Nav -->
+{% include 'nav.html' %}
+
+<!-- Main -->
+<div class="container" id="highlightArea">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="main"></div>
+            <!-- The search bar -->
+            <!-- <center><p style="color: #808080; ">Displayed from 1 to {{output_json.hits.hits|length}} of <font color="orange"> {{ output_json.hits.total }} </font> matched papers ( <font color="orange">{{ output_json.took }}</font> milliseconds )</p></center> -->
+
+            <div style="text-align: center; margin-top: 40px;"><p style="color: #808080; ">Taxonomy Path: {{ output_json.path }} </p>
+                {% if output_json.path %}
+                    {% if not output_json.isLastLevel %}
+                        <a href="/pie/{{ output_json.currentTaxonID }}" class="btn btn-primary" role="button"
+                           target="_blank">Subarea Analysis</a>
+                    {% endif %}
+                    <a href="/bar/{{ output_json.currentTaxonID }}" class="btn btn-primary" role="button"
+                       target="_blank">Trend Analysis by Topic</a>
+                    <a href="/country_bar/{{ output_json.currentTaxonID }}" class="btn btn-primary" role="button"
+                       target="_blank">Trend Analysis by Country</a>
+            </div>
+                {% endif %}
+            <br/>
+        </div>
+
+    <div class="row">
+<!-- Footer -->{% include 'footer.html' %}
+    </div>
+</div>
+</div>
+
+</body>
+
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<!-- <script src="{{url_for('static', filename='js/npm.js')}}"></script> -->
+
+<script>
+    function analyze(raw_query, min_score) {
+        var json_data = {"raw_query": raw_query, "min_score": min_score};
+        $.ajax({
+            type: "GET",
+            url: "/analyze",
+            data: json_data,
+            dataType: "json",
+            success: function (data) {
+                alert("Start Analyzing...");
+                alert(data);
+                window.open('/generate_taxonomy?raw_query=' + raw_query + '&min_score=' + min_score);
+            }
+        });
+    }
+
+</script>
+
+<script>
+    var form = $('#search-form');
+    form.on('submit', function (event) {
+        event.preventDefault();
+        var entity_list = $(".select2 .select2-selection__choice");
+        console.log(entity_list);
+        if (typeof(entity_list[0]) != "undefined") {
+            var raw_query = entity_list[0].title;
+            for (var i = 1; i < entity_list.length; i++) {
+                raw_query = raw_query + " OR " + entity_list[i].title;
+            }
+            $("#keywords")[0].value = raw_query;
+        }
+
+        if ($('#keywords')[0].value.length < 1)
+            return false;
+        this.submit();
+    });
+
+</script>
+</html>

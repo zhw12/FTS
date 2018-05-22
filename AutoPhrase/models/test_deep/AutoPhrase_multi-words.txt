@@ -1,0 +1,3755 @@
+0.9550925772	question answering
+0.9476430782	signal processing
+0.9453657530	virtual reality
+0.9449737198	collaborative learning
+0.9448207091	speech recognition
+0.9442667954	signal integrity
+0.9413182681	memory bist
+0.9410399142	motion planning
+0.9404055707	associative memory
+0.9403759745	automatic speech recognition
+0.9393681293	threshold voltage
+0.9374180256	intrusion detection
+0.9371936993	web service
+0.9366093993	integrated circuits
+0.9365860394	mobile phone
+0.9363938541	artificial intelligence
+0.9361287832	face recognition
+0.9357697758	pattern recognition
+0.9357216229	path planning
+0.9354878243	genetic algorithm
+0.9352489381	model checking
+0.9350893302	decision tree
+0.9328271574	object oriented
+0.9322916227	random forest
+0.9322095609	white matter
+0.9320150307	eddy current
+0.9319074539	fuzzy logic
+0.9318508938	convolutional neural network
+0.9317422271	support vector machines
+0.9314033424	recent developments
+0.9312000752	recurrent neural networks
+0.9305839707	web services
+0.9302945321	natural language
+0.9300461496	online communities
+0.9300349595	symbolic execution
+0.9295329682	fault diagnosis
+0.9293145376	web sites
+0.9290307316	finite element
+0.9289125715	web pages
+0.9285189497	reverse engineering
+0.9282767693	fault injection
+0.9280108514	remote sensing
+0.9276733447	tcp ip
+0.9271499363	deep packet inspection
+0.9258567794	convolutional neural networks
+0.9257427195	pattern matching
+0.9255347760	dependency grammar
+0.9250817812	data mining
+0.9250663055	information extraction
+0.9246287466	vector generation
+0.9242216842	risk assessment
+0.9240966257	search engine
+0.9233319625	machine translation
+0.9222355390	genetic algorithms
+0.9218404010	web site
+0.9213971427	reinforcement learning
+0.9209606655	magnetic field
+0.9206750375	phase transitions
+0.9206750324	crosstalk faults
+0.9205577225	source code
+0.9205238065	wireless communications
+0.9197873406	artificial neural networks
+0.9196828134	heat transfer
+0.9195702546	formal verification
+0.9194113938	active contour
+0.9181616458	single event
+0.9174352171	decision making
+0.9174015823	regular expression
+0.9173616998	probability distribution
+0.9170687408	voltage drop
+0.9169331596	distributed computing
+0.9168569614	monte carlo
+0.9165893397	image compression
+0.9160441482	supply voltage
+0.9159722966	mobile robot
+0.9158807538	pattern mining
+0.9157995987	support vector machine
+0.9154081331	hidden web
+0.9152480901	financial services
+0.9140508096	register transfer level
+0.9136475474	autonomous underwater vehicle
+0.9134993874	hidden markov model
+0.9126048403	steady state
+0.9123624182	linear programming
+0.9121260999	natural language processing
+0.9117180353	parallel programming
+0.9115384331	molecular biology
+0.9112702119	web content
+0.9111506396	neural networks
+0.9109377332	scan chain
+0.9097428641	logic automata
+0.9093109072	semantic role
+0.9092714110	underwater vehicles
+0.9091745768	floating point
+0.9091113805	probability collectives
+0.9090634667	quantum gravity
+0.9089553679	social media
+0.9087106483	supervised learning
+0.9084660610	heart rate
+0.9081558629	integrated circuit
+0.9076843716	moore's law
+0.9071564529	wavelet transform
+0.9071501418	edge detection
+0.9071119753	video compression
+0.9067843502	recurrent networks
+0.9066770619	fault tolerant
+0.9066683995	drug delivery
+0.9063019871	gene set
+0.9062375910	neural network
+0.9056262018	variance reduction
+0.9052765749	deep reactive ion etching
+0.9050332308	space exploration
+0.9047910060	electronic commerce
+0.9040354685	basal ganglia
+0.9036041485	parkinson's disease
+0.9035169866	image classification
+0.9033914761	transitive closure
+0.9032408456	working memory
+0.9027516088	mixed signal
+0.9026676798	ad hoc
+0.9023757424	stereo vision
+0.9021367121	state machines
+0.9021296733	content delivery
+0.9020199765	compaction layer
+0.9018669756	code coverage
+0.9016859068	natural language understanding
+0.9013339775	text retrieval
+0.9011329810	recording media
+0.9011291601	web analytics
+0.9007815206	subthalamic nucleus
+0.9005906498	renewable energy
+0.9002328039	gradient descent
+0.8996228280	natural language interfaces
+0.8995894735	silicon debug
+0.8994731837	semi supervised
+0.8992695319	temperature gradients
+0.8992391068	reinforced concrete
+0.8991151886	gene expression
+0.8986555025	trajectory tracking
+0.8983656053	delay faults
+0.8978638093	probe card
+0.8975116952	brain function
+0.8975042227	cmos circuits
+0.8973593363	underwater vehicle
+0.8972121552	delta iddq
+0.8970937471	packet scheduling
+0.8970189612	quiescent current
+0.8968881686	parse trees
+0.8966467518	inertial sensors
+0.8964832138	image processing
+0.8962847729	scan chains
+0.8961784315	esd protection
+0.8961726536	stn dbs
+0.8958922841	deep brain stimulation
+0.8952666403	evolutionary algorithms
+0.8949543247	semantic web
+0.8947926079	dynamically positioned
+0.8947355195	object recognition
+0.8943052581	power dissipation
+0.8938668421	propagation delay
+0.8936973352	web sources
+0.8931905993	problem solving
+0.8930433245	user interface
+0.8928443698	cmos technology
+0.8927615473	shallow water
+0.8924367995	social networks
+0.8922125483	resistive bridging
+0.8921373038	probabilistic models
+0.8920945162	embedded software
+0.8920114473	cell library
+0.8918756401	power supply noise
+0.8918189017	brain imaging
+0.8917475734	input output
+0.8915380304	speaker verification
+0.8915321774	capacitive coupling
+0.8915319402	path selection
+0.8913409236	online service
+0.8913308817	polsar image classification
+0.8912712731	ion thruster
+0.8912558506	cmos ics
+0.8909901099	mobile robots
+0.8908153746	simulated annealing
+0.8906695816	left ventricle
+0.8905329847	web databases
+0.8905015339	yield ramp
+0.8904927452	phase noise
+0.8904295990	transition fault
+0.8900820004	cognitive diversity
+0.8899711798	blood pressure
+0.8898420962	wafer bonding
+0.8896321256	public sector
+0.8896304504	permanent faults
+0.8896159880	game theory
+0.8895577234	social computing
+0.8887428964	pattern selection
+0.8885107043	sequential circuits
+0.8880640419	deep blue
+0.8880151870	shape representation
+0.8879794501	multi objective
+0.8874814380	frequency domain
+0.8872727833	defect coverage
+0.8868465349	water depth
+0.8868072680	low voltage
+0.8866881553	dentate nucleus
+0.8862665500	document repositories
+0.8862174902	crosstalk effects
+0.8861874851	low dimensional
+0.8859754667	intelligent tutoring
+0.8859009062	science education
+0.8858921646	ka band
+0.8855360775	concolic testing
+0.8852114013	sample size
+0.8848207611	crosstalk noise
+0.8847380211	home page
+0.8847158840	ground penetrating radar
+0.8842564440	flip flops
+0.8840121665	eddy current probes
+0.8838572933	serial search
+0.8834582494	code acquisition
+0.8834310231	impulse noise
+0.8833943279	state spaces
+0.8832430189	heat sink
+0.8831545971	fault tolerance
+0.8830595434	ppi extraction
+0.8830142133	emotional labor
+0.8826144480	infrastructure ip
+0.8824945006	human body
+0.8819709886	active learning
+0.8812090949	health care
+0.8807244342	search engines
+0.8806954617	pervasive logic
+0.8804433044	substrate coupling
+0.8804085467	cognitive tutor
+0.8803929500	deaf users
+0.8796666556	cache coherence protocol
+0.8796493248	gray matter
+0.8796164141	word segmentation
+0.8795415044	learner model
+0.8790745552	memory cores
+0.8789657119	machine learning
+0.8789094655	object classification
+0.8786869093	message passing
+0.8784943889	false positives
+0.8783702251	stress migration
+0.8781606993	differential transcription
+0.8777913968	software engineering
+0.8775083148	user interfaces
+0.8772311690	leakage current
+0.8770621048	global optimization
+0.8768391811	optimization problems
+0.8767849923	soft error rate
+0.8765589786	crosstalk fault
+0.8763991513	distributed memory
+0.8761616496	soil moisture
+0.8760849563	state space
+0.8760611346	mobile phones
+0.8760297870	collaborative writing
+0.8753767020	game tree
+0.8752426285	set cover greedy algorithm
+0.8747745109	application layer
+0.8747381974	stress conditions
+0.8745948253	space missions
+0.8745129780	test scheduling
+0.8744673318	xor xnor
+0.8739521304	lake hövsgöl
+0.8735414420	statistically significant
+0.8733592733	lake tahoe
+0.8733028149	chip seq
+0.8732347000	climate change
+0.8732048529	deep space network
+0.8731695303	virtual teams
+0.8727832023	leakage currents
+0.8724246848	query schemas
+0.8723604592	coupling capacitance
+0.8720609701	shared memory
+0.8720024340	crosstalk defect
+0.8718036694	recent advances
+0.8717225434	fiber optic
+0.8717007465	brightness temperature
+0.8711624058	robotic arm
+0.8711577496	brain atlas
+0.8710118520	iddq testing
+0.8709403996	knowledge building
+0.8709345756	flash memory
+0.8705992271	heat flux
+0.8705574716	ring oscillator
+0.8704786223	mixed models
+0.8704023951	cmos processes
+0.8703664513	soft errors
+0.8702246503	turbidity currents
+0.8699958431	oracle database
+0.8696493086	hidden layer
+0.8694578028	timing defects
+0.8693694693	resistive shorts
+0.8693349862	feature descriptor
+0.8692548767	process variation
+0.8692156499	substantia nigra
+0.8687546126	dimensionality reduction
+0.8685427448	long period
+0.8680372193	human brain
+0.8679865532	predicate argument
+0.8676289914	simulation vectors
+0.8675810127	hardware description
+0.8675309309	fault detection
+0.8673141484	social interactions
+0.8667736702	delay fault
+0.8659586663	linguistic knowledge
+0.8658325135	dual damascene
+0.8657740859	geological bodies
+0.8656361740	physical characteristics
+0.8654505876	fault free
+0.8653146118	computational complexity
+0.8647639724	power supply
+0.8646760817	deep belief networks
+0.8646636394	service providers
+0.8643841680	lsi logic
+0.8640703089	information retrieval
+0.8639770333	cognitive radio
+0.8638446096	benchmark circuits
+0.8637821842	transition faults
+0.8637719610	t1 weighted
+0.8634872633	visual representations
+0.8632892235	mechanical properties
+0.8632043428	concurrent programs
+0.8631076604	scan path
+0.8629145197	tactile sensing
+0.8625115923	manufacturing yield
+0.8624793534	general purpose
+0.8621764680	logic bist
+0.8616802308	water constituents
+0.8615673966	digital image
+0.8614738038	guarded algebraic data types
+0.8614612176	nanometer technologies
+0.8612813297	path delay
+0.8611564619	sales representatives
+0.8611149972	sensor networks
+0.8609471640	sea surface
+0.8608567863	earthquake source
+0.8607709640	bn feature
+0.8607380663	qualitative case
+0.8605700280	syntactic analysis
+0.8605260923	multiple representations
+0.8604458380	core xquery
+0.8602092873	ip cores
+0.8601459453	delay defects
+0.8599339013	higher education
+0.8599328095	asynchronous circuits
+0.8597983249	pass fail
+0.8595977749	cold regions
+0.8595904196	word order
+0.8595774028	dual task
+0.8594845951	parallel computing
+0.8593611994	fault coverage
+0.8590415092	propagation delays
+0.8590139879	compressive strength
+0.8588051323	sensor network
+0.8587420861	image sequences
+0.8586708196	fixed point
+0.8585349133	multi layer
+0.8583269181	optical interconnects
+0.8581302973	currency options
+0.8581279611	single event effects
+0.8576694713	transient signal analysis
+0.8576692037	magnetic resonance
+0.8575216537	high precision
+0.8573706900	performance assessment
+0.8573431319	clock skew
+0.8570419901	microwave radiometer
+0.8569963586	closed loop
+0.8569951041	crosstalk defects
+0.8567547582	online grooming
+0.8566807158	imaging modalities
+0.8566338177	outcome density
+0.8566308367	power distribution
+0.8565665065	operating conditions
+0.8563852592	ground truth
+0.8561673657	gas bearings
+0.8561551996	medical imaging
+0.8559807327	video games
+0.8559761843	embedded memories
+0.8558898953	color constancy
+0.8553560635	knowledge base
+0.8545374150	high dimensional
+0.8540197660	graphical user interface
+0.8540167742	worst case
+0.8534927690	hybrid architecture
+0.8534205410	mr images
+0.8533427346	resistive opens
+0.8532831202	architectural patterns
+0.8532806386	global virtual
+0.8531628166	intra die
+0.8529107345	information technology
+0.8528269279	power grid
+0.8528031372	lane changing
+0.8525941149	string matching
+0.8520672487	vlsi circuits
+0.8520653643	training samples
+0.8520553513	rank aggregation
+0.8520093578	pattern generator
+0.8516576347	li bist
+0.8516075883	ant colony
+0.8515751950	feedback control
+0.8513632880	cross validation
+0.8510765831	contact prediction
+0.8510051565	instruction set
+0.8508289734	velocity obstacle
+0.8505708430	urban canyons
+0.8503747061	supply voltages
+0.8503318943	yield learning
+0.8501770099	yag laser
+0.8501676218	double couple
+0.8500871984	multiple choice
+0.8499741624	finite element method
+0.8496049143	sleep stages
+0.8495366865	reading comprehension
+0.8494512230	formal specification
+0.8493418722	mixed gas
+0.8493090025	data compression
+0.8492603598	cover free families
+0.8492141814	abox reasoning
+0.8490908030	programming language
+0.8490083063	autonomic failure
+0.8489593708	bacterial communities
+0.8487580234	diffuse white matter injury
+0.8487010967	spike sorting
+0.8485563833	high speed
+0.8484630994	requirements analysis
+0.8483730339	pd patients
+0.8482131896	path delays
+0.8481950332	invariant features
+0.8480744165	atlantic spotted
+0.8478911338	object oriented programs
+0.8477345559	lower bound
+0.8477050692	remotely sensed
+0.8476235401	reading comprehension tests
+0.8475320680	energy efficient
+0.8475085366	buffer insertion
+0.8474248100	embedded memory
+0.8472930227	domain specific
+0.8472751003	leaf nodes
+0.8472727713	high school
+0.8470245203	binding pockets
+0.8470116865	test collection
+0.8470051576	wrapper induction
+0.8468055371	ice bed interface
+0.8466958469	accurate modeling
+0.8462078368	circuit design
+0.8461338339	chinese room problem
+0.8460812209	satellite channel model
+0.8458705315	feasibility tests
+0.8451910631	chinese question answering
+0.8451864102	syntactic features
+0.8448956841	crosstalk coupling
+0.8448461281	social network
+0.8446414033	data management
+0.8445031720	force feedback
+0.8444181994	high throughput
+0.8443939430	fitness sharing
+0.8443877299	usability evaluation
+0.8441701975	image watermarking
+0.8441508769	sea floor
+0.8440495919	scan cells
+0.8439891449	area overhead
+0.8439592381	protein interactions
+0.8438246112	prior information
+0.8437220185	salesman problem
+0.8437136290	tile scheduling
+0.8432058460	strict complementarity gaps
+0.8431552415	aspect ratio
+0.8431477966	alpha beta
+0.8430078062	xml documents
+0.8427471056	concurrency bug
+0.8427026292	job commitment
+0.8426684401	resource utilization
+0.8425030271	extreme learning
+0.8424649325	l7 filter
+0.8421547612	speaker diarization
+0.8421172279	pattern count
+0.8418800267	rent parameter
+0.8416242551	c2 traffic
+0.8414819698	document centric
+0.8413260708	belief space
+0.8412521242	big data
+0.8405478642	regression analysis
+0.8401632282	operating frequency
+0.8398092783	moving object
+0.8397284558	hypothesis testing
+0.8396428548	finite automata
+0.8394067691	source localization
+0.8393987359	physical defects
+0.8392646755	registration algorithms
+0.8392207437	logic gates
+0.8390680961	max pooling
+0.8389209685	statistical post processing
+0.8387681100	eeg signals
+0.8386362967	search algorithms
+0.8385621718	ultimate capacity
+0.8383226230	open source
+0.8380892065	standard cell
+0.8380119676	driving types
+0.8379715489	scene context
+0.8375873626	periodic behavior
+0.8375158615	false positive
+0.8374045042	transient signals
+0.8370081142	yield loss
+0.8367722922	software architectures
+0.8367592662	source trees
+0.8365314708	hand crafted
+0.8364382392	transhumeral amputees
+0.8363874748	unlabeled data
+0.8363326771	shape from shading
+0.8362739635	activation patterns
+0.8362673738	path delay fault testing
+0.8362361838	mobile devices
+0.8359193290	end user
+0.8358595951	shift registers
+0.8356895894	current ratio
+0.8352965471	high frequency
+0.8351598762	extraction patterns
+0.8351567173	logic synthesis
+0.8350151806	software dsm
+0.8348602289	magnetic resonance imaging
+0.8348499562	power consumption
+0.8347483169	deep drawing
+0.8346460636	deep learning
+0.8345424132	outlier rejection
+0.8344852924	parallel processing
+0.8344705961	feature sizes
+0.8344513865	audio features
+0.8343478707	pdtp expression
+0.8342932328	ship squat
+0.8342153114	pathway analysis
+0.8342046404	visual information
+0.8339952917	safety critical
+0.8337358534	local minima
+0.8336212174	transfer learning
+0.8335501758	usability testing
+0.8333648679	search strategy
+0.8333132330	phase space
+0.8332064423	pre defined
+0.8332002420	great promise
+0.8328049643	previously published
+0.8325930314	vlsi designs
+0.8325477351	parallel algorithms
+0.8324284000	guard ring
+0.8323176629	hidden units
+0.8318873248	micro gyroscope
+0.8317973560	fine grained
+0.8311166774	spatially local
+0.8309572546	mr brain images
+0.8306377422	fold cross validation
+0.8306157256	clock scheduling
+0.8305381567	global routing
+0.8304719430	power constrained
+0.8301645070	space communication
+0.8300789784	motor symptoms
+0.8296408821	crop growth models
+0.8294304520	acoustic modeling
+0.8292622660	learning styles
+0.8288445225	goal directed
+0.8285004877	monad algebra
+0.8283027088	defect free
+0.8280975700	prior knowledge
+0.8278050832	turing test
+0.8274857674	range finders
+0.8274305413	delta i ddq
+0.8272854297	data set
+0.8270749019	temperature dependence
+0.8267755123	long range
+0.8265022322	web search
+0.8261331691	information processing
+0.8260791322	fuzzy lithology
+0.8256949974	objective function
+0.8255655314	oracle big data connectors
+0.8251689534	short term
+0.8250938982	fault models
+0.8250921685	findings suggest
+0.8247729482	micro architectural
+0.8247226253	pseudo random
+0.8246630987	digital circuits
+0.8245505435	reactive ion etching
+0.8242698329	minor containment
+0.8241310728	spoken dialogue
+0.8239334768	knowledge representation
+0.8238689253	bacterial abundance
+0.8236993551	em algorithm
+0.8236762842	end users
+0.8236608214	feed forward
+0.8232945312	solar wind
+0.8232578647	statistical timing
+0.8232349194	triple channel uwb based cognitive radio
+0.8231325930	branch coverage
+0.8229060588	collaborative technology
+0.8228535676	concurrency bugs
+0.8227944382	comparative study
+0.8226059494	peer to peer
+0.8225889203	dvb rcs
+0.8224848290	ieee standard
+0.8224296141	mm wave
+0.8223994987	preterm infants
+0.8222581106	rna seq
+0.8221546107	previous works
+0.8221501290	deep sea
+0.8219557448	geometric variations
+0.8216015476	dependency tree
+0.8215536356	low power
+0.8214315948	labeled data
+0.8212293642	case study
+0.8211253475	copyright protection
+0.8210612706	test set
+0.8207180013	early stages
+0.8205696855	timing failures
+0.8205595257	interests include
+0.8204935329	deep neural networks
+0.8204775262	poorly understood
+0.8202284349	protein interaction
+0.8201715148	research group
+0.8200992222	parameter estimation
+0.8200592736	causal learning
+0.8196621018	error rates
+0.8195200354	data structures
+0.8192382410	multi agent
+0.8191797717	undergraduate students
+0.8190257918	hardware overhead
+0.8189680641	switching activity
+0.8188720802	path delay fault
+0.8187434156	students learn
+0.8182625641	real life
+0.8177079767	syntactic information
+0.8174602770	standard deviation
+0.8172585207	formal methods
+0.8171608478	long term
+0.8169165035	peak load
+0.8166061686	design reuse
+0.8165597220	segmentation algorithm
+0.8163902422	carrier phase
+0.8163335437	higher levels
+0.8162029657	automatically generated
+0.8160801378	big data connectors
+0.8160700921	generalization ability
+0.8160199750	high resolution
+0.8159241148	feature space
+0.8158252978	transient faults
+0.8156545954	copies bear
+0.8156403135	composite web services
+0.8150091440	generative models
+0.8149272564	software testing
+0.8147963251	mosfet model
+0.8147167116	deep space
+0.8143507100	test generation
+0.8143416408	random simulation
+0.8143407617	gate count
+0.8142844815	residue depth
+0.8142781477	years ago
+0.8140702329	semiconductor manufacturing
+0.8138020639	bit level
+0.8137093600	witness string
+0.8136816013	rapid naming
+0.8136013844	supply current
+0.8135150333	copy number
+0.8133667636	pulling force
+0.8131824373	fir filter
+0.8128675689	fully connected
+0.8119252188	neuroanatomic structures
+0.8118370986	semiconductor industry
+0.8117744927	software development
+0.8113337138	neural network architecture
+0.8113059789	basis function
+0.8112173358	lane change
+0.8109593761	test suite
+0.8108967024	critical path selection
+0.8108733555	protein protein
+0.8107221678	adaptive test
+0.8106958041	soc design
+0.8105841578	term equivalent
+0.8105529842	memory accesses
+0.8103418770	job descriptions
+0.8100993986	test sets
+0.8098332032	neutrino telescope
+0.8098316569	automatic test pattern generation
+0.8097007768	fault model
+0.8096316472	failure mechanisms
+0.8095994254	significant improvements
+0.8091907533	implementation details
+0.8090857313	bold signal
+0.8084751588	data analysis
+0.8084337290	higher order
+0.8084117195	post processing
+0.8083104140	trade offs
+0.8081912551	oracle big data
+0.8081720874	silicon area
+0.8081382138	low frequency
+0.8081140176	high performance
+0.8079670190	alternate test
+0.8076470651	design tools
+0.8072531917	ω stable
+0.8071497723	neural nets
+0.8070739482	template based
+0.8067533860	16s rrna
+0.8066813993	error rate
+0.8066220039	abc logitboost
+0.8061465421	anorectic women
+0.8056084229	rt level
+0.8055924440	peak strain
+0.8055661487	major bottleneck
+0.8055014334	deep linguistic
+0.8054597094	normal operation
+0.8053935369	laser range
+0.8050781982	search algorithm
+0.8049413239	defect detection
+0.8046474819	operating frequencies
+0.8044358643	low cost
+0.8044090648	electrical parameters
+0.8042031818	model checker
+0.8041824550	spatial correlation
+0.8037979683	software programs
+0.8035762280	ii acknowledgments
+0.8033372160	current ratios
+0.8030620873	synchronous designs
+0.8029597925	hybrid pt sa
+0.8026976647	starting point
+0.8026954721	wire length
+0.8025777925	gate level
+0.8019386696	power optimization
+0.8018129440	pre trained
+0.8013091254	small delay defects
+0.8012276760	jaw muscle
+0.8010950528	performance evaluation
+0.8008627732	functional requirements
+0.8007275492	principal component analysis
+0.7998879094	deep rootstalk crops
+0.7997469501	multipath distortions
+0.7994617880	test pattern generation
+0.7994514307	moisture content
+0.7994381860	test vectors
+0.7990293624	key features
+0.7989272642	_ _ _ _ _ _
+0.7986202632	protein protein interactions
+0.7985801854	noise margins
+0.7985567480	cross section
+0.7984750936	ultra low
+0.7983266157	constant support
+0.7982623741	leakage power
+0.7982465904	ip blocks
+0.7980196247	delay variations
+0.7978519682	brain images
+0.7977525699	shopping orientations
+0.7976772642	_ _ _ _ _
+0.7976698897	diffuse white matter
+0.7970523326	capture power
+0.7969650489	small scale
+0.7967652142	tongue line
+0.7967052600	cmos process
+0.7966077948	micron technology
+0.7963566777	software design
+0.7961996904	group testing
+0.7958448292	bist techniques
+0.7952900995	significant correlation
+0.7949128578	process integration
+0.7946747850	deep submicron technologies
+0.7943498201	data sets
+0.7940678706	manufacturing process
+0.7940441398	chironomid communities
+0.7939973379	exposed residues
+0.7939411546	unsupervised learning
+0.7938866495	learning outcomes
+0.7938433288	magnetic resonance images
+0.7936481248	deep reasoning questions
+0.7932587178	scan enable
+0.7932473335	remote agent
+0.7927380129	genome wide
+0.7927050905	solid state magnetic
+0.7924124402	design flow
+0.7921623991	process variations
+0.7918543318	cost effective
+0.7914975149	test bed
+0.7913374459	requires prior specific permission
+0.7907673989	model integration
+0.7906362445	closely related
+0.7905990371	large scale
+0.7905561018	case studies
+0.7903093983	recent studies
+0.7901282173	scheduling algorithm
+0.7898795023	static analysis
+0.7898670557	experimental evaluation
+0.7893014321	secondary structure
+0.7889148725	lacunar infarcts
+0.7889026742	small rna
+0.7886790408	deep water
+0.7865776194	scan based designs
+0.7863728367	timing aware atpg
+0.7860585528	bold contrast fmri
+0.7858768419	hug machine
+0.7854515269	scheduling problem
+0.7854316897	financial support
+0.7853165839	deep submicron vlsi
+0.7850200064	image phenotype
+0.7846316422	bist controller
+0.7843539479	bridging faults
+0.7830517888	dft features
+0.7828896701	real world
+0.7821199789	problem instances
+0.7816982302	newly developed
+0.7815157247	crosstalk defect coverage
+0.7813820917	model differentiation
+0.7813481910	solid state
+0.7812824295	evolutionary testing
+0.7809276765	power saving
+0.7801876233	successfully applied
+0.7801422865	attack patterns
+0.7796405512	moving object data
+0.7795997910	paper discusses
+0.7786705142	ir simulation
+0.7786192929	research laboratory
+0.7786143750	continuation height
+0.7781788023	polsar image
+0.7773587533	delay tests
+0.7768754060	binding affinity
+0.7766817175	negative bold
+0.7766255710	deep submicron era
+0.7765737508	privacy sensitive audio
+0.7761292412	single layer
+0.7756161445	privacy sensitive audio features
+0.7752945800	test quality
+0.7750942132	white matter injury
+0.7742616220	real time scheduling theory
+0.7738181375	deep waters
+0.7735647620	timing related defects
+0.7727518099	deep breathing
+0.7721732518	meta models
+0.7717870294	data collection
+0.7713296516	technology nodes
+0.7712024746	model checkers
+0.7711911881	test methodologies
+0.7710435347	gui test
+0.7705357711	semantic analysis
+0.7701316936	important issue
+0.7700902389	test case
+0.7697698485	ω stable theories
+0.7694904163	thesis presents
+0.7691653285	deep submicron
+0.7687206794	16s rrna gene
+0.7685075940	temporal information
+0.7680929994	design automation
+0.7679878583	deep reactive ion
+0.7663621888	hadoop 
+0.7661554557	research center
+0.7655003234	deep syntactic
+0.7651503910	random testing
+0.7651039680	semantic information
+0.7644096069	gulf of mexico
+0.7640001594	web based
+0.7630342080	technology development
+0.7628533438	design cycle
+0.7625899426	scan based
+0.7616193933	high density
+0.7614194573	peak power
+0.7611505273	significantly higher
+0.7609114031	graph based
+0.7607911324	autonomous vehicles
+0.7600085359	convolutional neural
+0.7586810136	deep thought 88
+0.7584910226	packet inspection
+0.7579659485	 oracle
+0.7573002334	layer 5 neurons
+0.7571181473	training set
+0.7568538399	frequency range
+0.7560708328	deep semantic
+0.7554852051	wafer level
+0.7547055520	classification accuracy
+0.7546734891	fsm based
+0.7545818360	formal analysis
+0.7542826481	high level
+0.7538938853	fabrication process
+0.7519137068	chinese text
+0.7513969503	static timing analysis
+0.7513322681	orders of magnitude
+0.7500206311	relation extraction
+0.7486256502	deep architectures
+0.7484373083	deep neural network
+0.7482218630	manufacturing test
+0.7479992939	feature learning
+0.7465642532	deep convolutional neural network
+0.7446706468	training program
+0.7444074228	training data
+0.7436288556	xml data
+0.7422003118	evaluation shows
+0.7419520568	model based testing
+0.7407069787	deep submicron cmos
+0.7404773738	field testing
+0.7402798703	signal to noise ratio
+0.7398803895	main issues
+0.7395602424	pattern generation
+0.7394539620	test cases
+0.7393067821	granted without fee provided
+0.7392792453	critical path
+0.7380966860	deep belief network
+0.7376492892	test data volume
+0.7373402944	test equipment
+0.7371176784	ground penetrating
+0.7369601566	principal component
+0.7368583916	data processing
+0.7367649592	design complexity
+0.7366452115	robot interaction
+0.7362690489	design methodology
+0.7362365557	continuous speech
+0.7361536610	increasingly important
+0.7348887702	fault modeling
+0.7342559191	development tools
+0.7340605303	analysis tools
+0.7339000133	simulation results
+0.7334562310	deep sequencing
+0.7330186139	privacy sensitive
+0.7325388669	functional delay
+0.7320347305	deep infaunal
+0.7316349510	learning environment
+0.7312790435	high order
+0.7309732559	solving problems
+0.7297195608	test chip
+0.7293083985	preliminary results
+0.7284857014	empirical methods
+0.7278049585	high temperature
+0.7273805007	previous studies
+0.7271470315	learning algorithms
+0.7266380148	degree of freedom
+0.7258974318	test patterns
+0.7257266416	efficient methods
+0.7254360418	circuit delay
+0.7251720399	autonomous mobile
+0.7241642425	low level
+0.7240546850	test scheduling algorithm
+0.7239452005	discrete naming
+0.7235912223	achieving high
+0.7232044441	test suites
+0.7230761962	inquiry based
+0.7226393995	test escapes
+0.7215739735	micro gas
+0.7208245208	research methods
+0.7206378374	deep brain structures
+0.7201719264	extensive tests
+0.7187818344	human computer interaction
+0.7187204765	deep space exploration
+0.7185742901	deep syntactic and semantic indicators
+0.7182053375	set size
+0.7173666796	high quality
+0.7171777659	additional information
+0.7171035778	stuck at fault
+0.7169568531	image analysis
+0.7165932315	problem sizes
+0.7161541841	timing aware
+0.7159852994	linguistic information
+0.7155073693	deep belief
+0.7147030829	circuit simulation
+0.7144130657	high accuracy
+0.7126635644	bold contrast
+0.7124064268	paper reports
+0.7120902977	previously proposed
+0.7115757788	deep neural nets
+0.7112326689	low complexity
+0.7110935394	physical design
+0.7109735548	brain structures
+0.7108728391	deep earth
+0.7100390259	power reduction
+0.7098117465	results reveal
+0.7090224493	functional testing
+0.7087003802	process technologies
+0.7080828562	cmos technologies
+0.7073083951	semiconductor technology
+0.7066417377	syntactic and semantic
+0.7059003618	search space
+0.7047495978	spammers and promoters
+0.7037460092	test program
+0.7032878911	machine learning problems
+0.7032861877	language model
+0.7031368543	constraint based
+0.7019524737	traditional approaches
+0.7019344183	simulation based
+0.7019311695	patients with parkinson's disease
+0.7017791302	design for testability
+0.7016527417	deep submicron designs
+0.7010429330	aware atpg
+0.7005499599	network architecture
+0.6993398884	deep web
+0.6989314083	higher accuracy
+0.6981463019	information structure
+0.6977566027	deep sub micron cmos
+0.6969627286	test structures
+0.6959711005	tree search
+0.6959662884	research project
+0.6957044402	high levels
+0.6954624465	stuck at faults
+0.6951307162	tree based
+0.6946712778	circuit performance
+0.6935284214	vlsi design
+0.6929579282	statistical tests
+0.6913182882	deep parser
+0.6905768442	machine learning algorithms
+0.6901985102	promising results
+0.6896077894	process technology
+0.6880536575	domain knowledge
+0.6880257895	advantages and disadvantages
+0.6880003331	deep sleep
+0.6878227197	field tests
+0.6873724317	computer vision
+0.6870853820	memory performance
+0.6863267179	delay fault model
+0.6859115955	research community
+0.6856508446	deep sub micron technologies
+0.6849981808	small delay
+0.6845812347	delay fault testing
+0.6844648355	recently developed
+0.6843986605	roadmap for semiconductors
+0.6841574526	takes into account
+0.6831920140	experimental results
+0.6820184703	statistical analysis
+0.6820006317	optimization techniques
+0.6817481508	digital and analog
+0.6811980888	timing models
+0.6807321055	branch and bound
+0.6800675198	experimental results demonstrate
+0.6789339615	low power design
+0.6787376420	deep structure
+0.6781705970	learning approaches
+0.6752678854	image data
+0.6748030675	data structure
+0.6746575789	pattern tests
+0.6723587634	test coverage
+0.6719152289	test methodology
+0.6715007911	circuit parameters
+0.6702188978	current state
+0.6701742536	text to text
+0.6688489968	higher level
+0.6687599936	delay testing
+0.6685466228	recent research
+0.6675006145	knowledge based
+0.6643900411	hardware based
+0.6612070184	mining techniques
+0.6604948250	ultra high
+0.6601191549	test challenges
+0.6579577674	model based development
+0.6578836220	test methods
+0.6577115734	results obtained
+0.6549004894	timing analysis
+0.6547899210	results showed
+0.6547506319	step by step
+0.6544463086	digital design
+0.6541879870	real world applications
+0.6522280958	non rigid registration
+0.6513178318	end to end
+0.6506154016	comments and suggestions
+0.6487535757	test mode
+0.6478126739	block test
+0.6459502103	pil fill
+0.6454518562	existing methods
+0.6450399646	simulation method
+0.6449641864	deep understanding
+0.6415678481	mr brain
+0.6404555346	test pattern
+0.6397153917	method called
+0.6394727809	planning algorithms
+0.6394429223	deep submicron technology
+0.6392704811	results suggest
+0.6381247612	future research
+0.6378179710	intelligent tutoring system
+0.6355327993	published results
+0.6348725529	test cost
+0.6348664673	post test
+0.6334007164	deep brain
+0.6313718381	bold signal changes
+0.6305500607	delay fault test
+0.6304687297	previous research
+0.6292811595	intelligent tutoring systems
+0.6279652912	experimental tests
+0.6276409794	results demonstrate
+0.6273842732	a viterbi decoder
+0.6262501057	based method
+0.6246034463	deep hierarchical
+0.6229123327	deep sub micron
+0.6215594378	experiment results
+0.6202630794	software based self
+0.6193677006	time series
+0.6162967105	barnard 68
+0.6156264689	significant reduction
+0.6143102288	based methods
+0.6134222854	data flow
+0.6132366013	model based
+0.6130574891	i ddq
+0.6098200301	web data
+0.6067768075	off road autonomous vehicles
+0.6063877846	test compression
+0.6047461973	delay and power
+0.6043278570	self image congruity
+0.6042786742	deep transfer
+0.6040376788	figure 1 shows
+0.6036178846	deep rootstalk
+0.6035597041	chip networks
+0.6027646493	language understanding
+0.6019437812	times faster
+0.6000122294	deep implications
+0.5989838252	deep inside
+0.5957906089	order of magnitude
+0.5939514353	iddq test
+0.5931493725	matching algorithm
+0.5927710399	experimental data
+0.5921737177	paper introduces
+0.5911339380	based approaches
+0.5909016862	interconnect test
+0.5904396053	in urban environments
+0.5894014673	deep level
+0.5884205407	task specific
+0.5870330492	data extraction
+0.5837465309	shown in fig
+0.5834754718	control algorithm
+0.5833526973	learning process
+0.5827681613	proof of concept
+0.5792152963	design for test
+0.5787092612	non double couple
+0.5777965640	design verification
+0.5771667994	signal to noise
+0.5769078539	neural network based
+0.5766232240	deep sub micron technology
+0.5754809120	least squares
+0.5739377643	trade offs involved in
+0.5722117102	phrase structure
+0.5709753844	computer chess
+0.5701412124	real data
+0.5698424139	preterm infants at
+0.5694046078	test vector
+0.5686828257	based approach
+0.5686532107	deep structures
+0.5678494818	data collected
+0.5663946106	difficult task
+0.5655264882	test results
+0.5651569351	level of abstraction
+0.5649982010	test problems
+0.5647642991	computer science
+0.5626392540	deep networks
+0.5614350749	testing process
+0.5605900920	design process
+0.5603252793	image based
+0.5602553211	test data
+0.5596203804	important role
+0.5587282709	learning techniques
+0.5586950550	information systems
+0.5583722415	test process
+0.5569416345	proposed method
+0.5559220774	rule based
+0.5555902479	reliability test
+0.5554385130	profit or commercial advantage and
+0.5550365244	deep knowledge
+0.5517137958	deep and shallow
+0.5502463519	learning algorithm
+0.5497426220	self explanation
+0.5490335264	the stn location
+0.5461965303	testing methods
+0.5458733742	performance analysis
+0.5442982654	2d ois
+0.5439586086	circuit under test
+0.5437177668	wide range
+0.5430672754	deep integration
+0.5400583416	single chip
+0.5382482453	teaching and learning
+0.5370995886	v dd
+0.5370869075	front end
+0.5356228438	sub micron cmos
+0.5347828435	related defects
+0.5347212338	modeling and simulation
+0.5344997774	test sequence
+0.5332759150	the normal equation
+0.5331013897	test sequences
+0.5312947370	random field
+0.5290875333	language processing
+0.5276073157	test application
+0.5266349796	hard copies of
+0.5257443333	test method
+0.5250326625	1 cm depth
+0.5236289993	decision support
+0.5215700991	based techniques
+0.5202658045	development and testing
+0.5199317424	embedded systems
+0.5186327406	trade off
+0.5180551624	training and testing
+0.5155968290	training and test
+0.5144436349	computer supported
+0.5128827708	the hug machine
+0.5128808773	point of view
+0.5126914564	network on chip
+0.5124394823	yield and reliability
+0.5121072293	recent years
+0.5117396350	features extracted
+0.5112273698	analysis methods
+0.5103819847	off line
+0.5096050667	global and local
+0.5096037372	based model
+0.5093398423	° c
+0.5090679709	data communication
+0.5079786533	the remote agent
+0.5079087843	& mu
+0.5078658751	sub micron technologies
+0.5074998309	next generation
+0.5073746434	learning problems
+0.5061864951	ddq testing
+0.5044799276	deep processing
+0.5044167287	run time
+0.5041455796	computer aided
+0.5038983117	fast and accurate
+0.5010023525	model testing
+0.5004798165	non volatile
+0.4986815805	improve performance
+0.4962649412	& # 60
+0.4962528927	model parameters
+0.4959207806	test environment
+0.4955949487	experimental design
+0.4945307266	non determinism
+0.4939792855	ultra deep
+0.4901937565	input data
+0.4837824113	quality and reliability
+0.4833841280	proposed technique
+0.4822365553	i ddq testing
+0.4816757437	based test
+0.4806552516	ever increasing
+0.4800308099	dynamic power
+0.4794246993	c + +
+0.4788296594	measurement and analysis
+0.4777734927	noun +
+0.4776438314	shallow and deep
+0.4741597886	developed and tested
+0.4733498713	paper describes
+0.4726175422	test power
+0.4716742298	design and implementation
+0.4708867110	application specific
+0.4687118066	deep reasoning
+0.4685797004	current based
+0.4683878142	issues related to
+0.4675557897	fault testing
+0.4672928703	non linearity
+0.4665138566	far field
+0.4663572357	random test
+0.4659324265	self healing
+0.4653597886	develop and test
+0.4643124436	3d reconstruction
+0.4631067284	depends strongly on
+0.4630232516	test algorithm
+0.4618916764	proposed approach
+0.4572385563	crosstalk test
+0.4559116046	t e
+0.4550034924	deep thought
+0.4549935998	on line testing
+0.4535108030	computer mediated
+0.4523020106	the hybrid pt sa
+0.4519290540	test application time
+0.4515662552	testing method
+0.4494190070	wide variety of
+0.4486577845	& #
+0.4485539810	the negative bold
+0.4455077638	deep convolutional
+0.4454868531	experimental results show
+0.4441388042	features extracted from
+0.4430140845	based technique
+0.4429355658	s elms
+0.4412604366	analysis techniques
+0.4397027718	circuits and systems
+0.4384361271	built in self test
+0.4359784560	test algorithms
+0.4353499704	and discrete naming
+0.4349627431	for relation extraction
+0.4342354055	real time
+0.4342066212	test structure
+0.4335110253	volume changes
+0.4329065913	model development
+0.4291201360	design techniques
+0.4287917145	publicly available
+0.4283540168	on chip networks
+0.4260978402	et al
+0.4250500354	v t
+0.4250448053	sub micrometer
+0.4221097095	delay test
+0.4213213975	case based
+0.4200977575	cm 2
+0.4182079016	90 nm
+0.4176326105	learning methods
+0.4165577428	near surface
+0.4163744068	soc test
+0.4159074703	the deep start
+0.4124259217	complex systems
+0.4113914900	server side
+0.4096376069	i besocratic i
+0.4094746094	greater than
+0.4091375880	test conditions
+0.4086138857	channel model
+0.4080277094	data volume
+0.4063003549	non linear
+0.4063002068	dynamic data
+0.4049683230	p 0.001
+0.4036068528	broad range of
+0.4031041300	based testing
+0.4027887986	art performance on
+0.4027336704	designed to test
+0.4027316009	figure 1
+0.4025148334	non destructive
+0.4021071849	figure 2
+0.4000937101	the s elms
+0.3986519771	high degree of
+0.3978045921	deep gratitude
+0.3972492416	back end
+0.3970262282	de types
+0.3956643294	device under test
+0.3951660967	important implications for
+0.3948110555	well edge
+0.3917454695	well suited
+0.3894789607	great deal of
+0.3892094273	non parametric
+0.3888471102	i ddt
+0.3876646195	freely available
+0.3874249089	great interest
+0.3851906025	unsupervised learning of
+0.3836413656	fault based
+0.3824412888	off road
+0.3824119278	on chip memory
+0.3819885334	the left ventricle
+0.3814343866	non equilibrium
+0.3813287063	human computer
+0.3811951948	faster than
+0.3776281653	the solar wind
+0.3764505725	clear understanding of
+0.3749331322	the heat sink
+0.3745047092	large number
+0.3725037279	for speaker diarization in
+0.3724773233	i ddq test
+0.3723070965	test patterns for
+0.3707915382	diagnostic system
+0.3704862316	p 0.05
+0.3697909521	full parsing
+0.3694366192	a rule based
+0.3678053313	notification systems
+0.3665817597	recent advances in
+0.3662442698	current testing
+0.3620780606	v & v
+0.3611043528	learning processes
+0.3606065862	deep insight
+0.3605570776	deep analysis of
+0.3605095994	based fault
+0.3590626594	proposed methodology
+0.3566122427	soft errors in
+0.3564656158	special thanks
+0.3540667440	technology roadmap for
+0.3535673683	large amounts of
+0.3532532590	a graphical user interface
+0.3530727641	data types
+0.3530696687	time consuming
+0.3530622781	r distribution
+0.3523968504	table 1
+0.3508907063	this article presents
+0.3506342393	high fault
+0.3495309036	a major challenge
+0.3471756622	this paper proposes
+0.3447564477	important aspects of
+0.3446829876	b s
+0.3438394557	this paper presents
+0.3424032139	at speed testing
+0.3416505935	+ +
+0.3410120195	while maintaining
+0.3397120776	permission to make digital or
+0.3395241922	aspect ratio of
+0.3379949986	standard deviation of
+0.3373664446	non motor
+0.3361875081	deep start
+0.3355934452	the proposed scheme
+0.3349563196	self image
+0.3342691271	the worst case
+0.3337595490	based approach for
+0.3332136196	at term equivalent
+0.3328528705	n =
+0.3310349218	satellite data
+0.3307749917	connections between
+0.3286624686	signal changes
+0.3275136581	top down
+0.3271445397	efficient test
+0.3266743946	becomes increasingly
+0.3252802937	even though
+0.3247898953	the scene context
+0.3243476338	performance analysis of
+0.3240753306	the paper presents
+0.3233255351	3 d
+0.3232466723	the proposed technique
+0.3227883628	significant improvements in
+0.3226532382	w =
+0.3215951842	test solution
+0.3213765887	goodness of
+0.3206024129	the customer's
+0.3198050443	hybrid systems
+0.3195889003	critical systems
+0.3195560110	deep insight in
+0.3181473898	this paper describes
+0.3174766110	re use
+0.3171872377	proposed algorithm
+0.3162296879	measurement and analysis of variability in
+0.3160316530	a single chip
+0.3155559318	at mit
+0.3152728142	deep understanding of
+0.3145544893	15 years
+0.3138877963	signal analysis
+0.3138462085	operating system
+0.3136015267	significant reduction in
+0.3125248215	three dimensional
+0.3122315186	test signal
+0.3121939385	no longer
+0.3119203584	whole brain
+0.3115947953	approach based on
+0.3112634686	into account
+0.3108939649	the design phase
+0.3107908182	second order
+0.3098030520	the proposed algorithm
+0.3068601646	performance results
+0.3034602700	stuck at
+0.3033880804	f and b
+0.3023821251	commonly used
+0.3019251549	the proposed methodology
+0.3009923096	i o
+0.3007071861	the advent of deep submicron
+0.2996397651	based designs
+0.2993693962	a b s t r
+0.2993563012	a test suite
+0.2992829725	using deep neural networks
+0.2991228209	deep gratitude to
+0.2990884530	wish to express
+0.2982994499	encouragement throughout
+0.2982821993	in recent years
+0.2976850592	c c + +
+0.2971996714	divided into
+0.2970541155	receiving system
+0.2954940731	to copy otherwise
+0.2952796524	deep insight into
+0.2950516316	method based
+0.2946923162	the proposed method
+0.2937518032	difference between
+0.2936229706	very deep submicron
+0.2934493076	relationships between
+0.2927953185	polynomial time
+0.2917129938	an efficient method
+0.2908733408	incorporated into
+0.2905163876	large data
+0.2902167615	correlation between
+0.2899364218	level features
+0.2897235924	the proposed approach
+0.2896540074	an important role
+0.2893953631	burn in
+0.2889248674	embedded system
+0.2888765448	different kinds
+0.2879413838	learning models
+0.2873831688	experimental results on
+0.2872740548	testing results
+0.2861921547	cad systems
+0.2859337555	small number of
+0.2852626561	the subthalamic nucleus
+0.2850537462	an important component
+0.2847660525	of random forest
+0.2821396085	results indicate
+0.2815072962	large number of
+0.2814321178	layer 5
+0.2811043016	in patients with parkinson's disease
+0.2806832911	very deep sub micron
+0.2806227058	a low cost
+0.2803477024	e r
+0.2795299866	similarity between
+0.2789001704	an efficient
+0.2781740825	larger than
+0.2778553034	s t r
+0.2765570285	last few years
+0.2758476308	to achieve high
+0.2746603825	last year
+0.2738217270	design space
+0.2730040963	dedication to
+0.2724793336	insights into
+0.2715924751	a pre trained
+0.2710142259	effect on
+0.2706119886	based development
+0.2704295213	a case study
+0.2699450496	n best
+0.2699156669	activity during
+0.2695894057	spacing between
+0.2676884613	relations between
+0.2675945426	s parameters
+0.2663132541	o n
+0.2658918109	become increasingly
+0.2657357263	neural networks for
+0.2656847381	take into account
+0.2654164971	widely used
+0.2642744935	easy to use
+0.2638524112	an adaptive test
+0.2635220705	wish to thank
+0.2629230290	a low power
+0.2613739777	a 4
+0.2610319871	wide range of
+0.2610316193	component analysis
+0.2595724832	execution time
+0.2589513176	the proposed framework
+0.2577885226	correlations between
+0.2570706052	ranging from
+0.2562131238	so called
+0.2548537618	information about
+0.2545435429	a fault tolerant
+0.2542913601	distinguish between
+0.2542272829	an analogy
+0.2537882410	this paper addresses
+0.2519588262	method based on
+0.2503680768	set of tests
+0.2502578398	do not necessarily
+0.2502557133	software based
+0.2496678607	fault coverage and
+0.2495831856	cpu time
+0.2491474020	until now
+0.2484720690	fall into
+0.2479184430	interactions between
+0.2474964592	classified into
+0.2474079900	well established
+0.2471504372	knowledge about
+0.2469741974	insight into
+0.2465702466	deals with
+0.2464457857	a small number
+0.2454729429	differences between
+0.2441402135	aims at
+0.2440258385	p +
+0.2433685599	and fault tolerance
+0.2432520367	few years
+0.2432043733	on chip
+0.2424407636	caused by
+0.2421343820	first order
+0.2409927566	a high level
+0.2403745241	so far
+0.2401549691	help students
+0.2392624550	important role in
+0.2389981726	determine whether
+0.2389441842	the trade offs
+0.2386417523	very promising
+0.2384178474	this paper introduces
+0.2382490687	derived from
+0.2379581441	network based
+0.2368448082	circuits p
+0.2363706766	using deep neural
+0.2363667577	two dimensional
+0.2349811327	gap between
+0.2349287698	relatively small
+0.2348350538	based on
+0.2329950316	obtained from
+0.2328597712	tests performed
+0.2320637655	not well understood
+0.2319195134	p =
+0.2316432544	software system
+0.2309764492	algorithm based on
+0.2307054960	1 cm
+0.2306262219	aiming at
+0.2305973006	first and foremost
+0.2304028370	focused on
+0.2298372644	time to market
+0.2286310080	this paper reports
+0.2274159917	based upon
+0.2272162947	m cmos
+0.2271604151	a test chip
+0.2269766649	the last decade
+0.2268876467	like to express
+0.2265247300	i n
+0.2264259528	suited for
+0.2253618544	methods based on
+0.2250901473	tested on
+0.2247665602	very large
+0.2240376146	achieve better
+0.2240035753	test error
+0.2233636621	the world's
+0.2227076140	characterized by
+0.2227048566	work for personal or classroom use
+0.2226837366	achieved by
+0.2214682105	fault detection and
+0.2213471593	on line
+0.2210147756	built in self
+0.2208516241	of working memory
+0.2207973915	processing applications
+0.2181838179	the vc
+0.2177700337	in situ
+0.2170212516	like to thank professor
+0.2165220606	the source trees
+0.2162482671	previous work
+0.2162114952	to date
+0.2156875213	in deep submicron cmos
+0.2155821138	compared to
+0.2155229471	perform better
+0.2152594464	technique based on
+0.2150821138	compared with
+0.2144068980	this paper studies
+0.2139766360	a difficult task
+0.2136025801	this book
+0.2134767154	lower than
+0.2130463496	leads to
+0.2129151253	dependence on
+0.2129085493	serious problem
+0.2127754655	first page
+0.2124448664	rather than
+0.2121271133	a deep neural network
+0.2110249231	the state space
+0.2106344392	in deep sub micron technologies
+0.2092166639	in deep submicron
+0.2089806210	a low dimensional
+0.2082981502	did not
+0.2081923949	to post on servers
+0.2080227859	the semiconductor industry
+0.2074983981	deep knowledge of
+0.2074000098	autonomous systems
+0.2065482442	the model parameters
+0.2063650484	focus on
+0.2055178055	the paper describes
+0.2045659442	the earliest
+0.2042463441	the deep web
+0.2039730532	deep packet
+0.2035178024	i p i
+0.2026464397	the deep sea
+0.2026053934	not necessarily
+0.2021062614	first year
+0.2008383371	applications such as
+0.2007277788	responsible for
+0.2006428889	serves as
+0.1997835894	the test cost
+0.1996555201	results show
+0.1994864923	all or part of
+0.1992744652	a deep analysis
+0.1989265582	significantly better
+0.1984193132	the i ddq
+0.1982189073	in deep submicron technologies
+0.1980675951	in most cases
+0.1974318453	at speed
+0.1973217064	this chapter
+0.1973141480	not made or distributed for
+0.1966360993	deep neural
+0.1965823888	high test
+0.1958223636	results from
+0.1954730931	the preferential
+0.1950771844	most likely
+0.1943636853	depending on
+0.1943283218	the high level
+0.1936475633	impact on
+0.1936136891	techniques such as
+0.1931103018	the user to
+0.1927706867	well understood
+0.1922007113	a novel algorithm
+0.1917439043	the kat
+0.1916858638	referred to as
+0.1898150878	in many applications
+0.1897295439	the gate level
+0.1893998242	a priori
+0.1891660351	this article
+0.1890370757	relies on
+0.1889315082	the test set
+0.1885952477	an exploratory
+0.1882972404	c t
+0.1881872899	self test
+0.1878553443	difficult to
+0.1871913560	tested using
+0.1860884826	focuses on
+0.1859448928	this paper
+0.1859234639	2 d
+0.1858937556	the fault coverage
+0.1858833719	well defined
+0.1856589447	the training data
+0.1855705076	better understand
+0.1851240296	to embed
+0.1849774942	the test scheduling
+0.1849214840	s t
+0.1835694439	ability to
+0.1835560215	generated by
+0.1824973443	effective way
+0.1815642794	software systems
+0.1814427855	efficient method
+0.1807952923	the power supply
+0.1806959078	provided by
+0.1806092605	with autism
+0.1805177952	the test data
+0.1803875609	real time systems
+0.1803810836	relying on
+0.1799332520	significantly different
+0.1797743300	does not require
+0.1796458326	the other hand
+0.1788154673	test time
+0.1787322116	hundreds of
+0.1783083584	one or more
+0.1780708820	a large scale
+0.1776648977	each layer
+0.1774261754	this thesis
+0.1767961754	part of speech
+0.1762700066	an alternative
+0.1757880043	approach to
+0.1746425472	interaction between
+0.1743156374	each step
+0.1740235504	correspond to
+0.1737623957	depend on
+0.1733555079	generated from
+0.1730289331	a new test
+0.1729957452	dealing with
+0.1727589729	case study of
+0.1725206528	the ptsp
+0.1723373672	comparison between
+0.1723337204	paid to
+0.1722949650	a real world
+0.1720533021	at least
+0.1719654884	attempting to
+0.1719367625	closer to
+0.1710317876	system verification
+0.1700973032	time scales
+0.1694669868	automation systems
+0.1691600971	represented by
+0.1691179718	system test
+0.1690028023	consisted of
+0.1682776468	tasks such as
+0.1677356345	& v
+0.1675743949	a genetic algorithm
+0.1672354692	an intelligent
+0.1670382401	an explicit
+0.1669764626	short time
+0.1669494831	contribute to
+0.1669381739	electronic systems
+0.1662957496	in many cases
+0.1654118733	provide good
+0.1650700877	of machine learning
+0.1650413221	well known
+0.1646175658	a test set
+0.1644313737	accounts for
+0.1642261264	applied to
+0.1641546512	many interesting
+0.1640552596	lead to
+0.1638784216	state of
+0.1634669824	set of
+0.1627314746	space time
+0.1626945295	in deep sub micron technology
+0.1622735384	depends on
+0.1619775597	communication between
+0.1618856327	want to thank
+0.1616758491	prediction using
+0.1616635615	extracted from
+0.1613659742	effects on
+0.1607934194	of test patterns
+0.1603513839	algorithm for
+0.1603262716	an application
+0.1602045274	data systems
+0.1601700201	try to
+0.1596328042	resulting from
+0.1594768862	a new method
+0.1590086062	obtained by
+0.1588338488	system on chip
+0.1587004048	system level
+0.1586373698	refers to
+0.1583687618	aimed at
+0.1583229421	two phase
+0.1579035239	apart from
+0.1576506477	information from
+0.1565562235	test system
+0.1563823375	of deep submicron vlsi
+0.1558878544	motivated by
+0.1555384936	engaged in
+0.1553652120	suffer from
+0.1548036628	a deep insight
+0.1547759975	performed on
+0.1544713498	susceptible to
+0.1544363554	control system
+0.1543645381	data from
+0.1542318017	arising from
+0.1540770729	running time
+0.1533943038	a deep understanding
+0.1533564868	do not
+0.1533497418	the telescope
+0.1529377773	imposed by
+0.1526526418	the design process
+0.1526373698	percentage of
+0.1524829602	many students
+0.1518012972	tend to
+0.1517881709	unable to
+0.1516242505	as well as
+0.1509250389	the neural network
+0.1506206245	this dissertation
+0.1505463831	squat in
+0.1502844657	measurement and analysis of
+0.1501692023	focusing on
+0.1500578339	one way
+0.1496894353	more accurate
+0.1496688844	vulnerable to
+0.1494553080	digital systems
+0.1493925796	supported by
+0.1492758520	confluence of
+0.1490975374	in order to improve
+0.1489916387	for validation of
+0.1487208146	of test cases
+0.1486051821	the emergence
+0.1485204498	two decades
+0.1480803059	very hard
+0.1480280808	less than
+0.1480100478	better than
+0.1479775633	used to identify
+0.1475445876	now known
+0.1471478017	an adaptive
+0.1467407919	seeks to
+0.1465523861	opposed to
+0.1465045241	used to generate
+0.1462083942	the experimental results
+0.1454809049	act as
+0.1451062189	equipped with
+0.1447741838	able to
+0.1447399319	rely on
+0.1447250533	does not
+0.1446491860	and foremost
+0.1443547308	on top of
+0.1443242510	concerned with
+0.1442614570	the cshmm
+0.1438975215	the most common
+0.1438533770	system testing
+0.1438249720	the existence of
+0.1435657886	the full citation on
+0.1435245408	automatic test
+0.1433697123	perform well
+0.1429888154	like to thank
+0.1427716820	first step
+0.1421583053	the surface of
+0.1421583053	the results of
+0.1418277286	operate at
+0.1417661178	differs from
+0.1415681178	the fabrication process
+0.1414291241	these techniques
+0.1413504283	trained on
+0.1413499409	patients with
+0.1412309904	designed using
+0.1408919386	the results suggest
+0.1406409427	the tsv
+0.1405632573	millions of
+0.1404991130	refer to
+0.1403624838	to respond
+0.1401217031	very limited
+0.1399834334	the deep submicron
+0.1398916387	or to redistribute to
+0.1392082722	model based on
+0.1390181586	treated with
+0.1388969060	produced by
+0.1386956347	this study
+0.1386230977	driven by
+0.1385160840	relationship between
+0.1381769698	and motivational
+0.1375368417	number of different
+0.1373513827	computer based
+0.1369018733	systems on chip
+0.1368249720	the question of
+0.1368249720	the challenge of
+0.1367688931	this problem
+0.1367039717	three methods
+0.1364509723	these methods
+0.1364380383	large amount of
+0.1359597235	an improved
+0.1359499254	viewed as
+0.1359190266	take advantage of
+0.1357772716	very few
+0.1356918707	computer architecture
+0.1354765280	considered as
+0.1349316539	integrated into
+0.1345872463	three main
+0.1339460687	designed to
+0.1338859710	in addition
+0.1336585506	combined with
+0.1330884765	an overview
+0.1329722861	i o i
+0.1325601313	response to
+0.1325333252	under test
+0.1323648686	associated with
+0.1323168877	divide and
+0.1318656186	coupling between
+0.1317036525	number of
+0.1317003158	very difficult
+0.1314250587	to detect
+0.1307564308	aims to
+0.1304859019	in very deep submicron
+0.1303752309	well suited to
+0.1303155247	navigation system
+0.1301787521	this notice and
+0.1299591612	an automated
+0.1299573723	serve as
+0.1298981674	used to evaluate
+0.1297280361	an effective
+0.1295730681	for hadoop
+0.1295483378	computer simulation
+0.1292201752	to present
+0.1291787910	i p
+0.1291501659	to reduce
+0.1286778073	based learning
+0.1282118616	the bn
+0.1281668841	time scale
+0.1281294401	m 2
+0.1279298651	more complex
+0.1279081146	use case
+0.1270696429	the advent
+0.1270553198	for on chip
+0.1267825104	interpreted as
+0.1264128396	resulted in
+0.1259738020	use cases
+0.1258916387	with respect to
+0.1258916387	the parameters of
+0.1258916387	the power of
+0.1253625950	starting from
+0.1252637399	more efficient
+0.1249316539	obtained through
+0.1249135595	away from
+0.1248916387	the domain of
+0.1247949865	performed by
+0.1247770028	able to accurately
+0.1246933894	indebted to
+0.1246472809	to improve
+0.1246248811	these problems
+0.1245863320	method for
+0.1240814689	a key role in
+0.1239391361	more difficult
+0.1237440076	to cope with
+0.1236529987	techniques for
+0.1232534781	respond to
+0.1232368102	the u.s
+0.1223963450	those obtained
+0.1219408882	expected to
+0.1217512099	a proof of concept
+0.1216371816	exposed to
+0.1216178498	related to
+0.1214260378	illustrated by
+0.1212619320	devoted to
+0.1209248266	tutoring system
+0.1209143940	do not require
+0.1205563254	very little
+0.1204113689	tends to
+0.1200139947	this approach
+0.1199501455	a new
+0.1199332039	a possible
+0.1195928873	+ 1
+0.1195912545	these issues
+0.1195504593	continue to
+0.1192659808	much better
+0.1191825784	used to train
+0.1190888344	regardless of
+0.1189737910	version of
+0.1189392055	list of
+0.1189227661	most popular
+0.1188029673	the needle
+0.1187990023	1 introduction
+0.1186820433	to better understand
+0.1184342176	an ongoing
+0.1183365939	in vivo
+0.1180192718	corresponds to
+0.1179709988	an industrial
+0.1176790386	emergence of
+0.1173422313	a 6
+0.1173248289	close to
+0.1172739800	to maximize
+0.1169119279	the whole brain
+0.1168953484	then compared
+0.1168628972	this method
+0.1165370630	in deep sub micron
+0.1165005129	due to
+0.1163263230	the time to
+0.1162248099	often requires
+0.1160735467	the illuminant
+0.1158059510	easy to
+0.1155968066	an ic
+0.1155698529	widely used in
+0.1154385130	amounts of
+0.1153667194	takes into
+0.1152599851	an extended
+0.1146294717	in terms of
+0.1145562137	design and implementation of
+0.1142875622	different ways
+0.1141140815	an object
+0.1140827235	this research
+0.1140294386	such networks
+0.1137927228	characterization of
+0.1134076998	the main contribution of
+0.1130740263	regard to
+0.1130097396	advantage of
+0.1127794376	induced by
+0.1127654172	methodology for
+0.1126954981	look at
+0.1125886991	system designers
+0.1124521474	parameters such as
+0.1124166016	understanding of
+0.1123418047	to compute
+0.1122332680	learning from
+0.1121294717	in order to
+0.1120766195	a neural network
+0.1119864414	such as
+0.1118659445	the finger
+0.1114165950	do so
+0.1111962292	to retrieve
+0.1109444532	involved in
+0.1107492633	for removing
+0.1106790670	analysis of
+0.1102713562	dealt with
+0.1099803406	the advent of deep
+0.1099629849	new types
+0.1098509363	deep sub
+0.1098195297	one hand
+0.1097185130	absence of
+0.1096728820	benefit from
+0.1093165898	most effective
+0.1093032545	want to
+0.1092909692	an overview of
+0.1092478470	to control
+0.1092189170	a hybrid
+0.1090476622	properties of
+0.1086009729	the art
+0.1084909918	under development
+0.1082034921	the shelf
+0.1080294145	testing time
+0.1078942714	the suitability of
+0.1078887914	recognized as
+0.1076524471	servers or
+0.1076397221	system performance
+0.1076325631	supposed to
+0.1074006775	experiments on
+0.1071787521	in conjunction with
+0.1070522770	comparison of
+0.1069457769	these technologies
+0.1069434026	the deep space
+0.1068073852	to overcome
+0.1067348626	to identify
+0.1066360702	higher than
+0.1065277158	deal with
+0.1064707705	funded by
+0.1063886201	advances in
+0.1062347059	very low
+0.1058178201	a novel design
+0.1054350814	much more
+0.1052065261	portion of
+0.1050056797	similar to
+0.1048218478	a c t
+0.1046770651	two different
+0.1046473540	technique for
+0.1044288817	a deep
+0.1042608099	the scope of
+0.1040402570	but rather
+0.1037796387	in order to determine
+0.1037367690	gratitude to
+0.1036200191	the circuit under test
+0.1033882759	so as to
+0.1031787521	in spite of
+0.1030726608	reduction in
+0.1030045177	capable of
+0.1028435065	a research
+0.1026686410	of peanut
+0.1025783326	show significant
+0.1025603772	grateful to
+0.1025283273	a study
+0.1025065204	to address
+0.1024830806	increase in
+0.1024686580	a comparative
+0.1024019010	in section
+0.1023685301	an interactive
+0.1022798355	affected by
+0.1022465830	in 3
+0.1021606533	an important
+0.1020509322	and encouragement throughout
+0.1019447581	suited to
+0.1017252512	representation of
+0.1015218064	of computer science
+0.1013065612	of breakdowns
+0.1011590736	in order to provide
+0.1011446737	2 3
+0.1009979934	at http
+0.1009857518	an evolutionary
+0.1008969745	model for
+0.1008233179	created by
+0.1007323384	the deep sub micron
+0.1006054334	coupled with
+0.1003254444	introduced by
+0.1001358099	the performances of
+0.1000566376	consequences of
+0.0999791003	a traditional
+0.0999764546	scheme for
+0.0998961714	according to
+0.0995635567	i n i
+0.0993863519	all three
+0.0993716003	contamination of
+0.0993089880	used to
+0.0991787521	in combination with
+0.0991339062	a text
+0.0990877669	kinds of
+0.0989652106	these tools
+0.0988101608	result in
+0.0987504640	well for
+0.0987145951	of artists
+0.0985499628	only one
+0.0985219642	a causal
+0.0984641107	a supervised
+0.0981669593	emphasis on
+0.0981610554	looking at
+0.0981532484	influenced by
+0.0980716125	to collect
+0.0978373666	levels of
+0.0975762865	combinations of
+0.0973570874	widely used for
+0.0972902970	a large number of
+0.0972658910	the dimensionality
+0.0970526363	and not
+0.0966325814	management system
+0.0965875335	used to test
+0.0965570963	the 3d
+0.0963897996	to break
+0.0961787521	in comparison to
+0.0961130089	decrease in
+0.0960952870	features such as
+0.0957863104	evaluated using
+0.0957702698	needed to
+0.0956839336	under different
+0.0956222382	evaluated by
+0.0953977666	thousands of
+0.0953154408	these faults
+0.0951358099	the limitations of
+0.0950745854	the functionality of
+0.0949350031	an outcome
+0.0948555726	complex system
+0.0948352935	this project
+0.0948330469	the activities of
+0.0948330469	the issue of
+0.0947750719	different types
+0.0947514779	a single
+0.0947455822	very high
+0.0947252512	characteristics of
+0.0946637772	required to
+0.0945559940	defined by
+0.0943718649	advice and
+0.0941995854	the execution of
+0.0941995854	the result of
+0.0941995854	the dynamics of
+0.0941888962	to create
+0.0941787521	the architecture of
+0.0940745854	the present work
+0.0940379358	differences in
+0.0940076151	consisting of
+0.0939521596	an information
+0.0938958298	developed to
+0.0937775269	a gui
+0.0937162607	followed by
+0.0936526798	each other
+0.0935460877	at test time
+0.0934718733	methods for
+0.0934373092	a probabilistic
+0.0931995854	a sample of
+0.0931995854	the approach of
+0.0931787521	a factor of
+0.0930630304	framework for
+0.0929758076	the pc
+0.0926698614	very important
+0.0925153287	design for
+0.0924899846	report on
+0.0924048248	a scalable
+0.0923949623	the european
+0.0923148482	interested in
+0.0922280718	a novel
+0.0921995854	the output of
+0.0921995854	the space of
+0.0921995854	the reliability of
+0.0921358099	the direction of
+0.0920745854	the framework of
+0.0920745854	the basis of
+0.0919763977	a typical
+0.0918764717	this work
+0.0918688083	to test
+0.0918480413	engage in
+0.0918457506	consistent with
+0.0917005601	the formula
+0.0916166887	other approaches
+0.0915546218	more accurately
+0.0914469663	system design
+0.0912691340	to determine
+0.0912123838	measured by
+0.0911787521	the order of
+0.0911358099	the predictions of
+0.0910873030	to solve
+0.0910745854	the subject of
+0.0910500501	a chip
+0.0909459471	determined by
+0.0908763923	very deep
+0.0908173892	impact of
+0.0907295361	to automate
+0.0907207415	in order to reduce
+0.0906158062	used as
+0.0905647862	access to
+0.0903284080	detection system
+0.0902282783	an attempt
+0.0901995854	the depth of
+0.0901995854	the focus of
+0.0901995854	the introduction of
+0.0901995854	the problems of
+0.0899387636	consists of
+0.0899140739	attempt to
+0.0898487456	these defects
+0.0897221197	a prototype
+0.0896575725	this hypothesis
+0.0896084466	results on
+0.0895952828	to carry
+0.0895455870	an array of
+0.0895385694	to learn
+0.0895297855	the large
+0.0893766582	very effective
+0.0892557741	shown to
+0.0892226461	an experimental
+0.0890563545	very small
+0.0889691249	to achieve
+0.0887060658	in 6
+0.0886297470	a comprehensive
+0.0885726932	the time to market
+0.0885116936	more important
+0.0884725963	many years
+0.0882651332	to continue
+0.0882463032	account for
+0.0882303827	the fgmos
+0.0882070223	on wafer
+0.0881107326	these features
+0.0879412636	in order to achieve
+0.0875860371	more and more
+0.0875569317	an algorithm
+0.0875461816	interactions with
+0.0874144528	new problems
+0.0874019845	parts of
+0.0873006107	not sufficient
+0.0872885694	to build
+0.0872440795	vision system
+0.0870581633	a novel approach
+0.0869332039	only for
+0.0869253769	become more
+0.0868907845	implemented in
+0.0868105709	led to
+0.0866662252	development of
+0.0864968134	an extension of
+0.0863743709	a task
+0.0862871311	made to
+0.0862605177	to reproduce
+0.0861284054	new technologies
+0.0859799183	to generate
+0.0859413559	a temperature
+0.0859171613	prediction of
+0.0856634031	this report
+0.0856381799	not least
+0.0855812710	the f
+0.0854634895	more specifically
+0.0854222985	types of
+0.0853042731	a wide range of
+0.0849778639	time complexity
+0.0847061650	this technology
+0.0847048683	trained by
+0.0846940407	to develop
+0.0846216117	these results
+0.0844981331	for system on
+0.0844232155	only with
+0.0843230574	the book
+0.0842611115	means of
+0.0841453095	to evaluate
+0.0839919008	compensate for
+0.0839749748	new design
+0.0839649626	taken into
+0.0838766387	used to solve
+0.0837922992	success in
+0.0835305038	the first page
+0.0835101223	to provide
+0.0834324751	a case
+0.0829429551	an agent
+0.0829281229	resulting in
+0.0828037617	used for
+0.0827929851	new generation
+0.0826188004	relating to
+0.0825825186	given for
+0.0825807732	good performance
+0.0825032757	dependent on
+0.0824264061	the relationship between
+0.0822132392	tests show
+0.0820839277	relative to
+0.0820016601	these effects
+0.0819240223	kind of
+0.0818777227	a project
+0.0817511976	or even
+0.0813848578	of gravity
+0.0813753632	attributed to
+0.0811870102	the device under test
+0.0809846391	to develop and test
+0.0809052256	not only
+0.0808814996	a function
+0.0808039785	devices such as
+0.0806138825	the last few
+0.0805812507	an art
+0.0805473546	to construct
+0.0804395320	the most effective
+0.0804261577	the use of
+0.0801778286	attempted to
+0.0801553281	an early
+0.0801505352	features from
+0.0800628076	these algorithms
+0.0799928738	fabricated using
+0.0797823467	the last few years
+0.0796883475	a method
+0.0796512897	new method
+0.0796476434	these designs
+0.0795644433	an intermediate
+0.0795283260	an existing
+0.0794426232	to better
+0.0793239964	to search
+0.0792515193	evaluation of
+0.0792267212	bugs in
+0.0791332382	this methodology
+0.0791275907	a deep understanding of
+0.0791138052	leading to
+0.0790946025	prone to
+0.0790659079	for training and testing
+0.0789651067	the problem of
+0.0786353368	interacting with
+0.0784994222	variations in
+0.0784839225	system on
+0.0783465136	as long
+0.0782980848	in most
+0.0782829266	the most important
+0.0781567904	determination of
+0.0780474770	new algorithm
+0.0778461302	inspired by
+0.0777526195	on board
+0.0777444656	the em
+0.0777058601	composed of
+0.0776739292	interact with
+0.0775648907	suitable for
+0.0775170688	the presence of
+0.0774525599	in computer vision
+0.0773926800	a hardware
+0.0773702257	hard to
+0.0773409003	also presented
+0.0773288344	consist of
+0.0773109785	of interest
+0.0771976328	the victim
+0.0771686966	system by
+0.0769960917	the context of
+0.0768164674	prior to
+0.0768029542	more challenging
+0.0766524281	good results
+0.0766472325	effect of
+0.0766305017	a sequence of
+0.0765749520	the concept
+0.0765290150	the international
+0.0763911959	appears to
+0.0763489752	layers at
+0.0762527084	improvement in
+0.0762379768	a brief
+0.0762241073	novel design
+0.0761509893	different levels of
+0.0760567734	these circuits
+0.0758981194	the next generation
+0.0757801299	loss of
+0.0756892561	more robust
+0.0754755660	to execute
+0.0753733511	m deep
+0.0753605966	an underwater
+0.0752962603	used to describe
+0.0752441662	a ship
+0.0752190880	such systems
+0.0752094051	new approach
+0.0751891930	the various
+0.0751647754	developed by
+0.0751228454	either in
+0.0750874999	not always
+0.0749786955	approach allows
+0.0749462508	under study
+0.0747341315	very deep sub
+0.0746197678	an artificial
+0.0745383805	new approaches
+0.0744383099	this reason
+0.0743188388	fraction of
+0.0742562988	integrated or
+0.0741967477	control systems
+0.0739994471	to resolve
+0.0739857572	to foster
+0.0739312991	only in
+0.0738235630	an energy
+0.0737792602	the performance of
+0.0737759843	to propose
+0.0737509174	the same
+0.0736939205	some cases
+0.0736563959	in fact
+0.0736172114	also tested
+0.0735922105	implementation of
+0.0735850298	these approaches
+0.0735810165	mixture of
+0.0733933812	the test
+0.0733760327	a model
+0.0732971983	to avoid
+0.0723687122	time domain
+0.0723587991	first of
+0.0723256024	the number
+0.0723046848	an input
+0.0722909025	these patterns
+0.0721487125	to predict
+0.0720548417	one class
+0.0720331887	information into
+0.0720261020	new framework
+0.0719754493	time constraints
+0.0719369075	by extending
+0.0718285808	these challenges
+0.0717079755	these findings
+0.0717077877	also known as
+0.0716764050	the deep
+0.0715023332	also like to thank
+0.0714418788	sources of
+0.0714277662	like to thank all
+0.0713928211	better performance
+0.0712315758	the most popular
+0.0712269084	i s
+0.0711027277	only to
+0.0710913457	shift from
+0.0710359757	a 3d
+0.0709929299	approach for
+0.0708463965	to analyze
+0.0707677665	more effective
+0.0706746434	1 shows
+0.0706530901	billions of
+0.0706136324	an evaluation
+0.0705759659	type of
+0.0704403707	ease of
+0.0704096088	the author
+0.0703599026	need for
+0.0701947493	a series of
+0.0701587160	a consequence
+0.0701530211	part of
+0.0701191238	to extract
+0.0699969184	more than
+0.0698907882	a compact
+0.0698600108	the model
+0.0696738433	take into
+0.0696020880	abundance of
+0.0696009203	of automation systems
+0.0695024444	an architecture
+0.0695022221	tries to
+0.0694451070	to facilitate
+0.0694104236	three different
+0.0693295090	range from
+0.0693290449	information on
+0.0692700352	an integrated
+0.0690897402	sensitive to
+0.0690896253	collected from
+0.0690309609	deep into
+0.0690278941	these tests
+0.0689540128	this algorithm
+0.0689212195	an excellent
+0.0685797391	architecture for
+0.0683783692	more traditional
+0.0681130266	to calculate
+0.0680657541	in different ways
+0.0680010510	of changes in
+0.0679535843	to cope
+0.0677512421	none of
+0.0676918418	but also
+0.0675845310	aspects of
+0.0671779163	t i
+0.0670103206	the number of
+0.0669737381	gradients in
+0.0668247256	also to
+0.0665705793	nature of
+0.0664394838	views of
+0.0663830553	description of
+0.0663323056	as possible
+0.0663057136	adapted to
+0.0662986935	the process of
+0.0662814039	to bring
+0.0662575385	capability of
+0.0662541838	an improvement
+0.0662518169	a parallel
+0.0662001015	signals from
+0.0661167322	introduction in
+0.0660955776	fabricated by
+0.0660602706	most important
+0.0660159368	two major
+0.0660140211	not significantly
+0.0659764038	families of
+0.0659623052	for instance
+0.0658975112	the system in
+0.0658449694	to investigate
+0.0658275907	a lot of
+0.0657634914	learned from
+0.0657538887	defined as
+0.0656887673	a built in
+0.0656352293	all cases
+0.0656162504	expectations of
+0.0655209862	to determine whether
+0.0653855114	an open
+0.0652347758	becomes more
+0.0651987258	a result
+0.0651830779	two approaches
+0.0651615050	input from
+0.0651293646	a repository
+0.0651168257	attached to
+0.0650967471	done by
+0.0649932416	research on
+0.0649641666	to write
+0.0649490782	to deal
+0.0649008626	a first
+0.0648745336	an approach
+0.0647148327	growth of
+0.0647011027	suppression of
+0.0646291204	at fault
+0.0645720997	the design
+0.0645491822	to support
+0.0645204287	i sub
+0.0644814400	added to
+0.0644221193	to perform
+0.0643622425	tests for
+0.0643203807	as compared to
+0.0642935954	an arbitrary
+0.0642604966	an array
+0.0642248061	changes in
+0.0640860353	seems to
+0.0640422581	faults in
+0.0639643774	collected by
+0.0639382928	basis for
+0.0638430131	two years
+0.0638387859	to obtain
+0.0637312714	time on
+0.0636152238	this process
+0.0636047831	a small number of
+0.0635681237	proven to
+0.0634814400	applicable to
+0.0634178309	a test
+0.0633976616	used in
+0.0633421783	new types of
+0.0632905573	agreement with
+0.0632790704	a voice
+0.0632784055	the performance
+0.0631488294	the original
+0.0631260497	the internet
+0.0631121221	the workshop
+0.0631118093	also performed
+0.0630042525	an area
+0.0629647741	in order to test
+0.0629577820	proportional to
+0.0629549852	this technique
+0.0629147145	seek to
+0.0628932049	the orientation of
+0.0628133276	applied at
+0.0628127074	the design of
+0.0627631953	the dependability
+0.0627511519	the aim of
+0.0626889557	these applications
+0.0626609273	members of
+0.0625860110	stimulation on
+0.0625769275	to navigate
+0.0624201189	algorithms for
+0.0622803995	efficacy of
+0.0622550306	to assess
+0.0621718461	the subthreshold
+0.0621609240	the influence of
+0.0620942603	the target system
+0.0620204270	line of
+0.0619853365	during training
+0.0618526173	tests at
+0.0617895928	a common
+0.0616018882	this fact
+0.0614851728	subject to
+0.0614379337	the ability of
+0.0614316585	the problem
+0.0614205426	restricted to
+0.0614033686	this question
+0.0613458384	the learner
+0.0612499552	the impact of
+0.0612173990	a way
+0.0611546597	a major
+0.0610948619	the ultimate
+0.0610798404	to find
+0.0610321091	a range of
+0.0609118947	a large
+0.0609025895	an increase
+0.0608973772	this field
+0.0608710596	and often
+0.0608338722	conception of
+0.0607928186	by means of
+0.0607541427	operates on
+0.0606543342	influence on
+0.0604924682	becoming more
+0.0604598860	to discover
+0.0604330040	two methods
+0.0603973100	an implementation
+0.0603365152	estimation of
+0.0603149242	assumed to
+0.0603092670	of warm
+0.0602544168	to recover
+0.0602544168	to grow
+0.0601813348	the effects of
+0.0601698645	the authors
+0.0601609240	the objective of
+0.0601265431	as follows
+0.0599642833	volumes of
+0.0599062579	an experiment
+0.0597230576	the whole
+0.0597224793	designed as
+0.0596759456	class of
+0.0592562291	an analysis
+0.0591513775	the behavior of
+0.0590538443	effects of
+0.0590025478	model of
+0.0589416941	to promote
+0.0589206531	also demonstrate
+0.0588363761	performed at
+0.0588254444	representations of
+0.0587671769	predicted by
+0.0587206174	to distinguish
+0.0586601566	opportunities for
+0.0585210991	used to perform
+0.0585004533	comes from
+0.0584973298	novel approach
+0.0584920123	as well as for
+0.0583737344	to maintain
+0.0583442889	forms of
+0.0583386224	tool for
+0.0583171713	a simple
+0.0582956598	known for
+0.0582524478	the same time
+0.0582451335	found to
+0.0581792913	important for
+0.0581347871	cope with
+0.0580863169	used to improve
+0.0580472331	an image
+0.0579854412	not only to
+0.0578698033	to understand
+0.0578629280	a question
+0.0578284504	a string
+0.0578253290	images from
+0.0578228896	a new approach
+0.0576971073	combination of
+0.0576356000	the re
+0.0575829933	perspective on
+0.0575613392	run on
+0.0575331235	the need for
+0.0574238869	a random
+0.0574215616	interpretation of
+0.0574194211	application of
+0.0574072469	to make
+0.0573359606	changes with
+0.0573156681	variety of
+0.0573040697	amount of
+0.0572429396	a novel approach to
+0.0571725423	to teach
+0.0571281387	behavior of
+0.0571205762	design by
+0.0571195070	an attempt to
+0.0571126480	an effect
+0.0570203385	a multi
+0.0569610509	but also to
+0.0569606446	a need
+0.0569497303	a small
+0.0569456352	based self
+0.0569386519	a variety of
+0.0569254871	the next
+0.0568766183	aspect of
+0.0568187941	a layer
+0.0567961363	testability of
+0.0567663082	this issue
+0.0567581015	trying to
+0.0567565899	written in
+0.0567321352	a solution
+0.0567270922	to help
+0.0566707828	to accommodate
+0.0566590811	superior to
+0.0566484417	the right
+0.0566030912	the solar
+0.0565893797	to minimize
+0.0565349025	the heart
+0.0564448615	even more
+0.0563740476	to ensure
+0.0563319648	come from
+0.0563274635	the increase in
+0.0562811988	any other
+0.0562346716	search for
+0.0562178735	this task
+0.0561295737	proved to
+0.0560736241	the system
+0.0560510113	of up to
+0.0560318908	the field
+0.0559978143	to integrate
+0.0559926917	accessible to
+0.0559848745	in order
+0.0558566157	comparable to
+0.0558142502	models for
+0.0557582766	to recognize
+0.0557210713	to infer
+0.0557042828	on average
+0.0556777138	employed to
+0.0556473724	family of
+0.0556196634	the 2d
+0.0555803074	solution to
+0.0555792699	to model
+0.0554659094	an example
+0.0553828874	derived by
+0.0553737344	to verify
+0.0553704309	the quality of
+0.0553403598	level of
+0.0552930026	the development of
+0.0552510603	a few
+0.0552403598	knowledge of
+0.0552046277	construction of
+0.0551764660	this area
+0.0551691246	the task
+0.0550898705	not yet
+0.0550552780	also like to
+0.0549865796	modification of
+0.0549304310	guided by
+0.0548086783	an average
+0.0547342636	problem as
+0.0547246426	the main
+0.0546780467	algorithm with
+0.0545960288	for testing of
+0.0544160294	the product
+0.0543531569	proposed system
+0.0543155891	these experiments
+0.0542416480	and up to
+0.0542146690	design of
+0.0542019820	by applying
+0.0541362838	found between
+0.0541347457	pieces of
+0.0541215919	discovery of
+0.0540680441	the accuracy of
+0.0540088623	to screen
+0.0539658091	the past
+0.0538991020	asked to
+0.0538565265	implications of
+0.0536851019	needed for
+0.0536802538	interest in
+0.0536358771	a broad
+0.0536344412	part in
+0.0535750268	implemented on
+0.0534518693	stored in
+0.0534415153	a low
+0.0534349994	assigned to
+0.0534345299	this purpose
+0.0534180928	to eliminate
+0.0534121527	the input
+0.0533733077	a pilot
+0.0533658939	a deep knowledge of
+0.0533621337	the spacecraft
+0.0533485152	an unsupervised
+0.0533336750	or not
+0.0531450119	an objective
+0.0530498151	to locate
+0.0530256249	comments on
+0.0529928281	the test time
+0.0529215223	the purpose of
+0.0529107840	a standard
+0.0528891092	an exact
+0.0528668586	grateful for
+0.0528379882	trained using
+0.0528248770	to use
+0.0527923195	a state of
+0.0526691309	a wide variety of
+0.0526205872	conducted on
+0.0525463897	deep within
+0.0525298254	a real time
+0.0524905338	a significant
+0.0524794297	to include
+0.0524705206	to thank all
+0.0524510856	in deep sub
+0.0524222231	different approaches
+0.0524190913	useful to
+0.0524005793	to read
+0.0523669530	formulas for
+0.0523056384	the ease
+0.0522634141	a high
+0.0521074251	to turn
+0.0520844852	a set of
+0.0519778775	in computer science
+0.0519677863	performance of
+0.0519269934	an abstract
+0.0519013775	the complexity of
+0.0518042996	learning with
+0.0517953359	tens of
+0.0517193778	not well
+0.0517021488	an autonomous
+0.0516900585	the impedance
+0.0516174696	to adapt
+0.0516021578	bound on
+0.0515993254	a total of
+0.0515954131	but only
+0.0515507424	a function of
+0.0515436528	in particular
+0.0515003869	useful for
+0.0514264334	also provides
+0.0514220613	to complete
+0.0514168428	two types of
+0.0513987797	the first time
+0.0513337875	to lead
+0.0513201699	as shown
+0.0512494696	the overall
+0.0512039932	to become
+0.0509760759	to handle
+0.0508548933	all of
+0.0508344223	this case
+0.0506507340	the effect of
+0.0505608173	a method to
+0.0505499327	extraction from
+0.0505247592	and so
+0.0504321724	for recognizing
+0.0503357133	an additional
+0.0502636630	member of
+0.0502140929	this scheme
+0.0502024669	verification of
+0.0501115494	of variability in
+0.0500726155	the first one
+0.0500403180	accuracy on
+0.0500198410	requirements for
+0.0499626168	more likely to
+0.0499363021	a system
+0.0498524654	in patients with
+0.0498228210	a type
+0.0497623966	distribution of
+0.0493744116	a group
+0.0493294353	by introducing
+0.0492419174	approach with
+0.0491256723	procedure for
+0.0490151310	the notion
+0.0489819621	a system for
+0.0489512323	an iterative
+0.0489109819	system for
+0.0488731915	by adding
+0.0488136519	the effectiveness of
+0.0488054310	recorded as
+0.0487918504	the proposed
+0.0487916458	rise to
+0.0487687921	and yet
+0.0487417930	the proposed system
+0.0487417837	as part of
+0.0486964142	problem of
+0.0486852442	developed for
+0.0485814169	an innovative
+0.0484419934	not available
+0.0482943673	the advent of
+0.0482530123	the copyright
+0.0480992415	the development
+0.0480903602	the field of
+0.0480747120	to adjust
+0.0480593398	department of
+0.0480520133	to look for
+0.0480085701	required for
+0.0480001544	amount of time
+0.0479517815	out of
+0.0479230848	work of
+0.0479049544	and so on
+0.0478826896	interaction with
+0.0478783827	a fuzzy
+0.0478432891	to meet
+0.0477937133	developed using
+0.0477274835	known as
+0.0476394273	the scene
+0.0473389910	an optimization
+0.0473151043	currently in
+0.0473109701	role in
+0.0472730094	for example
+0.0472495945	an essential
+0.0471233173	the outcome of
+0.0471215223	a combination of
+0.0471013377	to remove
+0.0470826475	this phenomenon
+0.0470620270	corresponding to
+0.0470070382	strategy for
+0.0469500194	an exponential
+0.0468548933	and more
+0.0468254191	the case
+0.0467946789	the system's
+0.0467531102	to mark
+0.0467419575	the corresponding
+0.0467159975	an approach to
+0.0467137090	but not
+0.0466706598	to describe
+0.0466654373	and locally
+0.0466467327	in addition to
+0.0466320854	to yield
+0.0466156899	to explore
+0.0466127536	the skin
+0.0465989588	all possible
+0.0465754427	errors in
+0.0464347508	this way
+0.0464190965	profile of
+0.0463974293	a difficult
+0.0463856425	presented to
+0.0463656881	to implement
+0.0463545196	the link
+0.0462978507	referred to
+0.0462817978	relation to
+0.0462359684	well on
+0.0461896909	the set of
+0.0461510675	only on
+0.0461218207	view of
+0.0461095425	to leverage
+0.0461019350	adoption of
+0.0460789703	first time
+0.0460442654	research in
+0.0460266831	structure for
+0.0459957323	the soil
+0.0459387820	estimates of
+0.0459129702	an empirical
+0.0459074190	to protect
+0.0458618228	only at
+0.0457866838	assessment of
+0.0457847286	a good
+0.0457755402	to extend
+0.0457324973	work in
+0.0456269625	method to
+0.0456230905	and also
+0.0456152704	computer system
+0.0455776703	a safe
+0.0455503921	source of
+0.0455397116	the success of
+0.0455341162	a global
+0.0454366508	a great deal of
+0.0454049544	to work with
+0.0453590564	checking for
+0.0453364348	example of
+0.0453295064	the particular
+0.0451999137	the efficiency of
+0.0451409992	of consciousness
+0.0450779254	experiments with
+0.0450479527	designed in
+0.0450162633	a number of
+0.0450129446	a powerful
+0.0449897798	chance of
+0.0449670525	generations of
+0.0449077235	tested with
+0.0448733794	a t
+0.0448538547	the majority
+0.0447769649	the relationship
+0.0447723760	a fundamental
+0.0446836461	the location of
+0.0446187054	a particular
+0.0446131285	to keep
+0.0446099864	available in
+0.0445744126	a specific
+0.0445484047	used during
+0.0444971982	the direct
+0.0444919754	detection of
+0.0444709792	the absence of
+0.0444631758	area of
+0.0444337603	to access
+0.0444198431	a formal
+0.0444104564	integrated with
+0.0443198167	the appropriate
+0.0443194830	a tool
+0.0442664411	not just
+0.0442596716	tools for
+0.0442460101	the dependence
+0.0442410845	the course of
+0.0442005684	an opportunity
+0.0441434529	possible by
+0.0441376937	form of
+0.0441302298	control for
+0.0441106693	the story
+0.0441013377	to prevent
+0.0440371500	proposed by
+0.0439960216	in practice
+0.0439145132	the final
+0.0438716096	to derive
+0.0438656983	roadmap for
+0.0438576182	need to
+0.0438441810	the outcome
+0.0438243668	subset of
+0.0437852924	by combining
+0.0437409739	the potential
+0.0437178965	numbers of
+0.0436836066	to post
+0.0436447194	to produce
+0.0436072658	this end
+0.0435816476	the near
+0.0435748770	a given
+0.0435646983	testing for
+0.0435613253	different types of
+0.0435408801	seem to
+0.0434714234	comparison with
+0.0434391505	the importance of
+0.0434244135	control of
+0.0433298452	improvements in
+0.0433107699	reconstruction of
+0.0432697550	dependence of
+0.0432665206	edges of
+0.0432642594	the usual
+0.0432511295	study on
+0.0432087591	the ability to
+0.0431775770	impossible to
+0.0431772400	the latest
+0.0430319173	the capacity
+0.0430246774	these new
+0.0430066802	center of
+0.0430064152	necessary to
+0.0429006936	to monitor
+0.0428770461	the primary
+0.0428591731	percent of
+0.0428537912	parameters from
+0.0428338197	literature on
+0.0428127919	to look
+0.0427497273	information at
+0.0427250792	the concept of
+0.0427060972	accuracy of
+0.0426723811	the verification of
+0.0426698430	the university of
+0.0425820875	help to
+0.0425397009	to examine
+0.0425354964	a necessary
+0.0425164672	to gain
+0.0424851318	code to
+0.0424824159	to enable
+0.0424774298	the target
+0.0424584373	identified as
+0.0424093443	efficiency of
+0.0423884843	quality of
+0.0423767885	like to
+0.0423535036	this paper focuses on
+0.0423491838	introduced in
+0.0422994007	the selection of
+0.0422812250	the best
+0.0421978645	the meaning of
+0.0421853752	the highest
+0.0420801379	to estimate
+0.0420580348	performed using
+0.0419100328	approaches to
+0.0419064823	utilization of
+0.0418582785	the class of
+0.0418329617	the fact
+0.0416994266	a systematic
+0.0416800794	the need of
+0.0416667149	this type of
+0.0416646983	design with
+0.0416463192	to apply
+0.0416385779	the latter
+0.0416271292	an optimal
+0.0415958161	a clear
+0.0415759662	use of
+0.0415452652	the entire
+0.0415029249	to segment
+0.0415020648	at most
+0.0414287638	of abstraction
+0.0414281400	component of
+0.0414202468	the feasibility of
+0.0413737542	enough to
+0.0413733168	along with
+0.0413474417	faults on
+0.0413316502	together with
+0.0413158624	to test for
+0.0411900295	to assist
+0.0411735450	to optimize
+0.0411388510	and even
+0.0411161543	the influence
+0.0410873215	a range
+0.0409755908	platform for
+0.0409561764	piece of
+0.0409561764	realization of
+0.0409530803	tested by
+0.0409423556	the role of
+0.0409380454	a pair of
+0.0409378456	to take
+0.0409333816	an increase in
+0.0409295260	to satisfy
+0.0408893140	the largest
+0.0408491919	the subthalamic
+0.0408455214	measurement of
+0.0408306731	to define
+0.0407270295	in turn
+0.0406916119	the estimation of
+0.0406029241	the year
+0.0405911422	each new
+0.0405899342	and then
+0.0405566901	an initial
+0.0404217503	to speed
+0.0404201737	limited by
+0.0404081420	the substrate
+0.0403845790	permission to
+0.0403275108	a measure of
+0.0403212810	controller for
+0.0403045930	to respond to
+0.0402653172	a graphical
+0.0402574739	improved by
+0.0402499527	an important role in
+0.0402434447	the lack of
+0.0402139738	new approach to
+0.0402123214	a way to
+0.0402025060	the nature of
+0.0401528220	the side
+0.0401022500	the analysis of
+0.0400567077	occurrence of
+0.0400546561	the red
+0.0400465443	a wide
+0.0400181453	a zero
+0.0400123380	network with
+0.0399261457	a standardized
+0.0397594074	program at
+0.0397526909	different from
+0.0396997125	performance on
+0.0396509326	the identification of
+0.0395710967	and therefore
+0.0395632857	addition to
+0.0395187249	instead of
+0.0394878134	the known
+0.0394513496	side of
+0.0394501865	the advantage
+0.0394336252	a throughput of
+0.0394281700	to manage
+0.0394127028	demand for
+0.0393716658	digital or
+0.0393444073	an independent
+0.0393349337	done using
+0.0393337932	the size of
+0.0393203518	an error
+0.0392746908	to focus on
+0.0392705505	a person
+0.0392507691	this document
+0.0392093061	often used
+0.0391930109	the state of
+0.0391738313	phases of
+0.0391581703	the design and implementation of
+0.0391503796	a new approach for
+0.0391438836	the most
+0.0391147214	to enhance
+0.0390686422	to run
+0.0390681213	to tackle
+0.0389795845	the other
+0.0389753894	the given
+0.0389661558	the length of
+0.0389312325	navigation in
+0.0389051595	the response of
+0.0389007569	unit for
+0.0388110621	far from
+0.0387766365	coverage for
+0.0387586655	a commercial
+0.0387395775	versions of
+0.0386675805	the measurement of
+0.0386133100	an established
+0.0386114630	deal of
+0.0385517853	by measuring
+0.0385424178	achieved with
+0.0384740369	an accurate
+0.0384641656	an example of
+0.0384281700	to quantify
+0.0384056381	to work
+0.0383853657	similarity of
+0.0383446210	attempts to
+0.0383367436	exploration of
+0.0383351922	to simulate
+0.0383266740	a student
+0.0383206548	an active
+0.0382850125	support for
+0.0382355355	the user's
+0.0382174463	a practical
+0.0382081567	the amount of
+0.0381685345	problem with
+0.0381340059	likely to
+0.0381051533	the normal
+0.0380906083	a huge
+0.0380788693	the planner
+0.0379856511	the likelihood
+0.0379825754	networks with
+0.0379766911	evaluated on
+0.0379436575	the mean
+0.0379402048	the teacher
+0.0379122511	the treatment of
+0.0379079229	to follow
+0.0378777852	many of
+0.0378360410	the severity of
+0.0376987835	a class of
+0.0376456503	problems in
+0.0376411571	possible to
+0.0376175805	the management of
+0.0375740316	the results from
+0.0375636971	testing of
+0.0375186946	the former
+0.0375097235	the construction of
+0.0374695026	the intersection of
+0.0374277246	to sample
+0.0374095720	a group of
+0.0373081345	diagnosis for
+0.0372946095	new generation of
+0.0372814628	to guarantee
+0.0372289302	a decision
+0.0372144329	the maximal
+0.0371981117	performance with
+0.0371825044	choice of
+0.0371477505	periods of
+0.0371022820	stages of
+0.0370321210	the receiver
+0.0370140811	tested in
+0.0369868493	task of
+0.0368890032	a method for
+0.0368826703	to deal with
+0.0368631926	potential to
+0.0368572754	work with
+0.0368322694	trained with
+0.0367769614	described in
+0.0366967340	to express
+0.0366547733	over time
+0.0366463192	to measure
+0.0366168519	the great
+0.0365812168	the need to
+0.0365461489	capabilities of
+0.0365383941	to establish
+0.0365255352	alternative to
+0.0365010052	property of
+0.0364933091	to compare
+0.0364780493	to characterize
+0.0364579902	the design and
+0.0364347317	except for
+0.0364089248	defects in
+0.0364020161	running on
+0.0363083022	the application of
+0.0362878684	the types of
+0.0362757109	a detailed
+0.0362736651	the validity of
+0.0362694721	to study
+0.0362458057	built in
+0.0362313943	the construction
+0.0361648337	to do
+0.0361308331	promise for
+0.0361001823	a generic
+0.0360924173	a dataset
+0.0360496171	the structure of
+0.0360384664	generation of
+0.0360239677	to realize
+0.0360233888	applicability of
+0.0359957512	this opportunity
+0.0359382548	language with
+0.0358812189	the detection of
+0.0358597754	the dependence of
+0.0357993067	a real
+0.0357945685	light on
+0.0357721907	the outer
+0.0357243704	an evaluation of
+0.0357049021	the thalamus
+0.0356351772	the case of
+0.0356092946	an appropriate
+0.0355688762	region of
+0.0355679644	many more
+0.0355625125	proposed as
+0.0355583218	increases in
+0.0355471155	integration of
+0.0354661075	presented as
+0.0354527176	a self
+0.0353862358	center for
+0.0353622454	as part
+0.0353599995	the differential
+0.0353145522	the study of
+0.0353082383	to capture
+0.0352606271	delays on
+0.0352598833	this leads to
+0.0352597990	a strong
+0.0352269986	a unified
+0.0351900067	this material
+0.0351479728	a valuable
+0.0351203921	minutes of
+0.0351203921	copies of
+0.0351148059	known to
+0.0350814588	the last
+0.0350649036	the notion of
+0.0350437271	to train
+0.0349846729	or better
+0.0348750820	learned in
+0.0348607732	of freedom
+0.0348597754	the possibility of
+0.0348097149	sense of
+0.0348025044	extent of
+0.0347857708	means for
+0.0347775733	the diagnosis of
+0.0347316311	correlated with
+0.0347160140	opportunity for
+0.0345893958	need of
+0.0345489592	ratio of
+0.0345010867	to face
+0.0344984679	relevant to
+0.0344958562	the effect
+0.0344826339	the literature
+0.0344716213	the specified
+0.0344676196	a model for
+0.0344601769	to consider
+0.0344405943	range of
+0.0344366165	to cover
+0.0344247426	this kind of
+0.0343891469	penetration of
+0.0343829747	the testing of
+0.0343798131	these two
+0.0343008086	used by
+0.0342900576	study of
+0.0342541580	assumption of
+0.0341902541	the operation of
+0.0341696856	a general
+0.0341663484	just as
+0.0341638570	to validate
+0.0341575781	a semi
+0.0341318741	characteristic of
+0.0341101078	key to
+0.0340693020	a framework for
+0.0340343960	lies in
+0.0340264421	the likelihood of
+0.0340203935	to classify
+0.0340023893	to market
+0.0339854908	the key
+0.0339744022	to demonstrate
+0.0339721629	the assumption
+0.0338291020	a reference
+0.0337971860	a unique
+0.0337688435	a manner
+0.0337109298	the left
+0.0336780347	approach on
+0.0336388847	the first
+0.0336222894	reports on
+0.0335477547	seen as
+0.0335313313	case of
+0.0334927388	correlation with
+0.0334821077	the probe
+0.0334816521	pairs of
+0.0333711252	a large amount of
+0.0333678466	damage to
+0.0333397364	a great
+0.0332202519	in comparison with
+0.0331974517	a subset of
+0.0331407435	degree of
+0.0330927531	to guide
+0.0330676249	a lot
+0.0330170764	age of
+0.0330041447	calculation of
+0.0329480317	section on
+0.0329338901	proof of
+0.0328237810	history of
+0.0327556549	a total
+0.0327483881	the course
+0.0327389113	a long
+0.0327225714	a custom
+0.0327191863	a remote
+0.0326812189	the advantage of
+0.0326419243	searching for
+0.0326411080	behaviour of
+0.0325473969	the integration of
+0.0325276780	the intrinsic
+0.0324506743	the experimental results show
+0.0324213958	in relation to
+0.0323956304	mode of
+0.0323884179	the capabilities of
+0.0323878087	as if
+0.0323740705	working with
+0.0323445105	the contents of
+0.0323074562	the presence
+0.0322209317	utilized for
+0.0321722407	a simplified
+0.0321398405	results in
+0.0321397593	the controller
+0.0321344844	to combine
+0.0321313324	to develop and
+0.0321133086	the implications of
+0.0320621717	look for
+0.0320092915	to check
+0.0320020139	and long
+0.0320002172	to interact with
+0.0319757156	the long
+0.0318747771	a virtual
+0.0318713533	code for
+0.0317801388	reason for
+0.0317615390	this type
+0.0317258190	a methodology
+0.0316814517	to play
+0.0316493236	a key
+0.0316279125	extended to
+0.0316116132	wish to
+0.0316097971	definition of
+0.0315640733	the world
+0.0314657973	the development and
+0.0314367932	applicable for
+0.0313718291	the beginning
+0.0313657215	extension of
+0.0313138640	much of
+0.0312977256	point of
+0.0312951254	included in
+0.0312479096	a promising
+0.0312271858	demonstrated by
+0.0312270916	a manufacturing
+0.0312036662	position of
+0.0311329279	majority of
+0.0311091736	the basis for
+0.0311086170	possibility of
+0.0311056762	tool in
+0.0310263484	process of
+0.0309819260	a technique for
+0.0309056948	opportunity to
+0.0308870111	the utility of
+0.0308723641	propose to
+0.0307965462	knowledge on
+0.0307485579	stability of
+0.0306708433	linked to
+0.0306010539	given by
+0.0305747272	a proof
+0.0305076874	computation of
+0.0304674280	attention to
+0.0304518810	the emergence of
+0.0303853773	as shown in
+0.0303377357	selection of
+0.0302865400	the available
+0.0302630125	a flexible
+0.0302416355	the form of
+0.0301851602	the idea of
+0.0301727915	or less
+0.0301276981	connected to
+0.0300886206	top of
+0.0300821446	creation of
+0.0300623387	measure of
+0.0300524750	a fast
+0.0300417011	to exploit
+0.0300359687	a tool for
+0.0300059092	the degree of
+0.0299877637	work on
+0.0299740591	way of
+0.0299688374	not made
+0.0299526981	applies to
+0.0299367739	evidence of
+0.0298960134	presence of
+0.0298764333	response of
+0.0298674533	in case of
+0.0298539449	to incorporate
+0.0298398519	and only
+0.0297314225	designed for
+0.0296827198	the evolution of
+0.0296720771	the intersection
+0.0296349517	a lack of
+0.0295861102	made by
+0.0295805754	the probability of
+0.0295634946	to operate
+0.0294607710	the work of
+0.0294570940	to search for
+0.0294295527	back to
+0.0293662896	a form of
+0.0293175612	critical for
+0.0292808126	tested for
+0.0292710077	the maximum
+0.0292444909	capacity of
+0.0291689430	variability in
+0.0291489468	shown in
+0.0291402729	robust to
+0.0291349517	in contrast to
+0.0291120609	implications for
+0.0290948040	validity of
+0.0290869602	given to
+0.0290559752	to record
+0.0290137811	the aim
+0.0288504701	solutions for
+0.0288482703	a direct
+0.0287889488	bist for
+0.0287544685	the co
+0.0286351218	up to
+0.0286344398	to form
+0.0286254741	the combination of
+0.0286176960	effectiveness of
+0.0285375512	to drive
+0.0284987557	built on
+0.0284930056	currents in
+0.0284890885	the art in
+0.0284177431	a substantial
+0.0284108522	and tested for
+0.0283869447	a suitable
+0.0283470138	a separate
+0.0283387183	mechanisms for
+0.0283164829	activity in
+0.0282374178	intended for
+0.0281710100	improvement of
+0.0281381190	directly to
+0.0281313498	to show
+0.0280992414	the difficulty
+0.0279622504	generalization of
+0.0279592862	the distribution of
+0.0279324456	to correct
+0.0278951759	the difficulty of
+0.0278945603	completion of
+0.0278383617	a model of
+0.0278070462	dedicated to
+0.0277857703	a popular
+0.0277384709	the possibility
+0.0276290848	recovery of
+0.0276267248	to increase
+0.0275452588	the level of
+0.0275157115	described by
+0.0275130742	a central
+0.0274145522	the cost of
+0.0273388247	complexity of
+0.0272994007	the range of
+0.0272976713	taken from
+0.0272662090	treatment of
+0.0271980847	the desired
+0.0271221757	life on
+0.0270958832	a comparison
+0.0270789028	helpful for
+0.0270287219	considered in
+0.0270194909	outcomes of
+0.0270098172	neurons in
+0.0269358369	meaning of
+0.0269269561	to illustrate
+0.0269028463	the severity
+0.0268526802	area for
+0.0268385067	to represent
+0.0268047993	the role
+0.0267901928	effective for
+0.0267877276	significance of
+0.0267449702	little or
+0.0267342516	to introduce
+0.0266453098	to choose
+0.0265889127	appear to
+0.0265649389	to deliver
+0.0265358014	a reliable
+0.0264961374	the calculation of
+0.0264554008	an approach for
+0.0264282057	to focus
+0.0263617833	requirement for
+0.0262759478	the top
+0.0262132520	to prove
+0.0261655229	the vast
+0.0261635222	base for
+0.0261392707	the value of
+0.0261041125	the widespread
+0.0260764592	reported in
+0.0260712201	a modified
+0.0259387440	a corresponding
+0.0259242784	savings in
+0.0258953098	to reveal
+0.0258632165	directions for
+0.0258600915	represented in
+0.0258572754	work for
+0.0257342046	to allow
+0.0257099146	challenge for
+0.0256143110	to ask
+0.0255623004	in contrast
+0.0254985770	field of
+0.0253894571	intended to
+0.0252959894	the goal of
+0.0252694447	associated to
+0.0252422799	the goal
+0.0252269563	summary of
+0.0251426992	capability to
+0.0250836669	point for
+0.0250452588	the type of
+0.0249203098	to reach
+0.0248809455	an overall
+0.0247842333	the second
+0.0246957081	to conduct
+0.0246275627	very different
+0.0246224083	the potential to
+0.0245753538	fabricated in
+0.0245462107	the fabrication
+0.0245278177	a fixed
+0.0244854391	a basic
+0.0244560788	a rich
+0.0244431549	to ground
+0.0244392083	the difference between
+0.0243304600	and testing of
+0.0243279826	made in
+0.0242615390	to end
+0.0242076613	a short
+0.0241846017	developments in
+0.0241761579	allowing for
+0.0241582607	correctness of
+0.0240745955	the majority of
+0.0240535666	a serious
+0.0240148623	needs to
+0.0240134510	the recovery of
+0.0239274915	sum of
+0.0238677646	the third
+0.0236452234	a certain
+0.0236343661	the creation of
+0.0236205490	a specified
+0.0235043793	a rule
+0.0234697031	appear in
+0.0234467280	done in
+0.0234355542	investigated in
+0.0233222481	presented in
+0.0233169500	the inner
+0.0233001646	lack of
+0.0232459293	the importance
+0.0232426883	the investigation
+0.0232001455	outcome of
+0.0231561894	idea of
+0.0231385150	modeling of
+0.0231343661	the availability of
+0.0230879898	the definition of
+0.0230742833	contained in
+0.0230150710	the area of
+0.0228198937	a part of
+0.0227648917	strategies for
+0.0227596973	planning in
+0.0227465903	constraints on
+0.0227242797	identified in
+0.0226914395	the associated
+0.0226913075	or more
+0.0226733560	cause of
+0.0226728277	the completion of
+0.0226608837	necessary for
+0.0224917884	employed for
+0.0224333727	course of
+0.0224021674	feasibility of
+0.0223293774	important to
+0.0223125082	to explain
+0.0223083502	rate of
+0.0222906302	role of
+0.0222703041	the characteristics of
+0.0222437766	way to
+0.0221613442	observed in
+0.0221241055	to think
+0.0220262323	period of
+0.0219917496	identification of
+0.0219903959	allows for
+0.0219696769	effort to
+0.0219660068	the actual
+0.0219437669	goal of
+0.0219033789	especially in
+0.0218419224	tolerance of
+0.0217279725	essential to
+0.0216571067	solution for
+0.0216181487	place in
+0.0215983878	crucial for
+0.0215652949	to further
+0.0214970127	usage of
+0.0214423294	structure of
+0.0214265481	even in
+0.0213823254	to review
+0.0213296585	a result of
+0.0213225658	this year
+0.0213084730	aim to
+0.0213041987	the advantages of
+0.0212914746	introduction to
+0.0212694022	the calculation
+0.0211899634	and thus
+0.0211237733	studied in
+0.0211175753	line with
+0.0211086441	available for
+0.0210433874	difference of
+0.0210277216	and hence
+0.0210131190	mechanism for
+0.0209748475	importance in
+0.0209479491	consideration of
+0.0209364984	size of
+0.0209115024	the above
+0.0208802547	generated in
+0.0208161155	the evaluation of
+0.0207939037	as well
+0.0207333797	methodology to
+0.0206097389	alternative for
+0.0205239420	and out
+0.0205144209	the need
+0.0204869403	evaluated for
+0.0204185619	tested to
+0.0204070032	reflected in
+0.0204068909	writing to
+0.0203814187	the investigation of
+0.0203566855	the rate of
+0.0203152629	the benefits of
+0.0202905781	strength of
+0.0202768014	the contribution of
+0.0202586527	patterns for
+0.0202237733	potential for
+0.0201036911	to get
+0.0200977274	experience in
+0.0200420923	employed in
+0.0200251724	available at
+0.0200087062	technologies for
+0.0199580461	investigation of
+0.0199505902	utility of
+0.0198977783	the ratio of
+0.0198788674	to give
+0.0198744902	step in
+0.0198660507	difficult for
+0.0198132489	expressed in
+0.0197603135	proposed to
+0.0197566264	availability of
+0.0197434897	scores for
+0.0197051718	orientation of
+0.0196448326	advantages of
+0.0196206326	annotation of
+0.0195430887	found in
+0.0194237270	language for
+0.0194063495	critical to
+0.0194002503	occur in
+0.0193906633	considered to
+0.0193638602	signal to
+0.0193460906	a third
+0.0193241776	series of
+0.0192179442	to see
+0.0192139835	to know
+0.0191852033	the necessary
+0.0191837098	array of
+0.0191379530	links to
+0.0191368455	allows to
+0.0191281296	selection for
+0.0191159810	demonstrated to
+0.0190978302	approximation of
+0.0190800614	seen in
+0.0190669169	addressed in
+0.0190498475	importance of
+0.0187508344	available to
+0.0186199614	the combination
+0.0185480042	effectiveness in
+0.0184729053	transformation of
+0.0184231239	the idea
+0.0183979510	presented for
+0.0181785906	a comparison of
+0.0181327118	the validity
+0.0181266374	a full
+0.0180965844	function of
+0.0180787858	a useful
+0.0180769765	cost of
+0.0180667747	concern in
+0.0180437162	concept of
+0.0180356584	value of
+0.0180056414	difficulty in
+0.0179751146	benefits of
+0.0179751146	contribution of
+0.0179459580	discussed in
+0.0179226915	requirements on
+0.0179191242	optimized for
+0.0178903647	formed in
+0.0178628383	composition of
+0.0177051718	deviation of
+0.0176516190	evolution of
+0.0175500853	especially for
+0.0175192216	even with
+0.0175178803	overview of
+0.0173284849	pair of
+0.0173215822	delays in
+0.0173067419	the generation of
+0.0172644503	university of
+0.0171785906	the potential of
+0.0170669169	deployed in
+0.0170538263	spectrum of
+0.0170437162	length of
+0.0170305268	performed to
+0.0170219771	influence of
+0.0169534849	throughput of
+0.0169403647	inherent in
+0.0168742040	collection of
+0.0168009999	ability of
+0.0166971935	distributed for
+0.0165682864	useful in
+0.0163905317	the feasibility
+0.0162560953	degrees of
+0.0161500216	to thank
+0.0161360066	operation of
+0.0161315887	lot of
+0.0160498475	purpose of
+0.0157516946	probability of
+0.0157192532	objective of
+0.0156180720	the implementation of
+0.0154342431	aim of
+0.0153284849	helps to
+0.0153125341	management of
+0.0153063495	variation in
+0.0151500216	down to
+0.0150450138	success of
+0.0148802547	issue in
+0.0143919366	difficulty of
+0.0122239443	scheduling for
+0.0119187301	causes of
+0.0119143849	location of
+0.0119143849	means to
+0.0114520415	and faster
+0.0111628827	and less

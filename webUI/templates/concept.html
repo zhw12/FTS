@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="shortcut icon" href="http://cs.illinois.edu/sites/all/themes/csdept/favicon.ico" type="image/vnd.microsoft.icon" />
+
+		<title>Faceted Taxonomy Construction and Search</title>
+
+		<!-- Foundation CSS -->
+		<link href="{{url_for('static', filename='css/bootstrap-theme.min.css')}}" rel="stylesheet">
+		<link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+
+		<!-- Customized CSS -->
+		<link href="{{url_for('static', filename='css/SetSearch.css')}}" rel="stylesheet">
+		<style type="text/css">
+		</style>
+	</head>
+
+	<body>
+		<!-- Nav -->
+{% include 'nav.html' %}
+
+		<!-- Main -->
+		<div class="container">
+			<div class="row">
+		        <div class="col-md-12">
+					<div id="main"></div>
+					<br/><br/>
+					<center>
+		        		<a href="{{url_for('index')}}"><img src="{{url_for('static', filename='figures/search.png')}}" width="250" /></a>
+		    			<h1>Faceted Taxonomy Construction and Search</h1>
+		    		</center>
+		    		<br/>
+		            <div ><center>
+		            	<!-- Here is the main search bar -->
+									<form action="search" method="post" id="search-form">
+			                <div class="input-group col-md-10">
+			                    <input type="text" id="keywords" class="form-control input-lg" name="inputData" placeholder="Type your query and search the whole corpus, or click the button and explore the corpus"/>
+			                    <span class="input-group-btn">
+			                        <button class="btn btn-info btn-lg" type="submit" value="Submit">
+			                            <i class="glyphicon glyphicon-search"></i>
+			                        </button>
+			                    </span>
+			                </div>
+                            <div class="choose-a-corpus">
+			                	<h3>Corpus:
+				                    <select name = "corpus">
+									  <option value="DBLP">DBLP</option>
+{#									  <option value="ToPMine">ToPMine</option>#}
+									</select>
+								</h3>
+							</div>
+                            <a href="/tree" class="btn btn-primary" role="button" target="_blank">Click to explore corpus</a>
+
+			            </form>
+
+                    </center>
+		            </div>
+		            <br>
+		            <!-- <script type="text/javascript">alert("hihihi");</script> -->
+					<br><br><br><br><br><br>
+<!-- Footer -->{% include 'footer.html' %}
+		        </div>
+			</div>
+		</div>
+
+	</body>
+	<!-- Attach React components -->
+  	<!-- <script type="text/javascript" src="{{ url_for('static', filename='bundle.js') }}"></script> -->
+	<!-- <script src="http://static.runoob.com/assets/react/react-0.14.7/build/react.min.js"></script>
+	<script src="http://static.runoob.com/assets/react/react-0.14.7/build/react-dom.min.js"></script> -->
+	<!-- <script src="http://static.runoob.com/assets/react/browser.min.js"></script> -->
+	<script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+	<!-- <script src="{{url_for('static', filename='js/npm.js')}}"></script> -->
+	<script type="text/javascript">
+		// [prevent submitting the form when it's empty]
+		var form = $('#search-form');
+		form.on('submit',function(event){
+			event.preventDefault();
+			if($('#keywords')[0].value.length<1)
+				return false;
+			this.submit();
+		})
+	</script>
+</html>

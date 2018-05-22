@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="shortcut icon" href="http://cs.illinois.edu/sites/all/themes/csdept/favicon.ico" type="image/vnd.microsoft.icon" />
+		<title>Faceted Taxonomy Construction and Search</title>
+
+		<!-- Foundation CSS -->
+		<link href="{{url_for('static', filename='css/bootstrap-theme.min.css')}}" rel="stylesheet">
+		<link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+
+		<!-- highlightjs.org -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.18/c3.min.css">
+
+		<link href="{{url_for('static', filename='css/SetSearch.css')}}" rel="stylesheet">
+
+		<!-- Customized CSS -->
+		<link href="{{url_for('static', filename='css/SetSearch.css')}}" rel="stylesheet">
+		<!-- Following code is used to control the highlight code for different types -->
+		<style type="text/css">
+			.highlight {
+				background-color: yellow;
+			}
+			mark {
+				background: orange;
+				color: black;
+				padding: 0;
+			}
+			mark.a {
+				background: yellow;
+				color: black;
+			}
+			mark.b {
+				background: lightgreen;
+				color: black;
+			}
+			mark.c {
+				background: lightpink;
+				color: black;
+			}
+			mark.d {
+				background: lightblue;
+				color: black;
+			}
+			mark.e {
+				background: #ff6666;
+				color: black;
+			}
+			mark.f {
+				background: #ff00ff;
+				color: black;
+			}
+			mark.g {
+				background: #5487ff;
+				color: black;
+			}
+			mark.h {
+				background: #dfbf9f;
+				color: black;
+			}
+			mark.i {
+				background: #99ffcc;
+				color: black;
+			}
+			mark.j {
+				background: #00ffff;
+				color: black;
+			}
+			mark.k {
+				background: #df9f9f;
+				color: black;
+			}
+			mark.r {
+				background: #ff7070;
+				color: black;
+			}
+
+		</style>
+		<style>
+			.legend rect {
+				fill: white;
+				opacity: 0.4;
+			}
+
+			path.slice {
+				transition: fill-opacity 0.4s ease;
+			}
+
+			.slice-label {
+				cursor: pointer;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+		<!-- Nav -->
+{% include 'nav.html' %}
+
+		<!-- Main -->
+		<div class="container" id="highlightArea">
+			<div class="row">
+		        <div class="col-md-12">
+					<div id="main"></div>
+
+
+
+	<!-- <div style="margin-top: 20px;">
+		{% if output_json.path%}
+		<center><p style="color: #808080; ">Taxonomy Path: {{output_json.path}} </p></center>
+		{% endif %}
+	</div> -->
+
+	<div style="margin-top: 20px;">
+			<center>
+				<div id="pieChart"></div>
+			</center>
+	</div>
+
+<!-- Footer -->{% include 'footer.html' %}
+
+		        </div>
+			</div>
+		</div>
+
+	</body>
+	<!-- Attach React components -->
+  	<!-- <script type="text/javascript" src="{{ url_for('static', filename='bundle.js') }}"></script> -->
+	<!-- <script type="text/javascript" src="http://static.runoob.com/assets/react/react-0.14.7/build/react.min.js"></script>
+	<script type="text/javascript" src="http://static.runoob.com/assets/react/react-0.14.7/build/react-dom.min.js"></script> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.6/react.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.6/react-dom.js"></script>
+	<script src="https://npmcdn.com/react@15.6.2/dist/react-with-addons.min.js"></script>
+	<script src="https://npmcdn.com/prop-types@15.6.0/prop-types.min.js"></script>
+	<script src="http://static.runoob.com/assets/react/browser.min.js"></script> -->
+
+	<script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+	<!-- <script src="{{url_for('static', filename='js/npm.js')}}"></script> -->
+	<!-- <script src="https://d3js.org/d3.v3.js"></script> -->
+	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/d3/4.7.2/d3.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/d3pie@0.2.1/d3pie/d3pie.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.min.js"></script> -->
+	<script type="text/javascript" src="{{ url_for('static', filename='js/d3.v4.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/d3pie.min.js') }}"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.18/c3.min.js"></script> -->
+
+	<!-- highlight search keywords -->
+	<!-- <script type="text/javascript" src="{{ url_for('static', filename='hilitor.js') }}"></script> -->
+	<script type="text/javascript" src="{{ url_for('static', filename='mark.js') }}"></script>
+	<!-- <script type="text/javascript" src="http://www.the-art-of-web.com/hilitor.js"></script> -->
+	<!-- <script src="http://johannburkard.de/resources/Johann/jquery.highlight-5.js"></script> -->
+
+	<!-- Customized JS -->
+	<!-- <script  type="text/javascript" href="{{url_for('static', filename='mystyle.js')}}" rel="stylesheet"></script> -->
+
+	<!-- Customized JS -->
+	<!-- A simple script for pagination -->
+	<script type="text/javascript">
+		// [prevent submitting the form when it's empty]
+		var form = $('#search-form');
+		form.on('submit',function(event){
+		  event.preventDefault();
+			if($('#keywords')[0].value.length<1)
+				return false;
+		  this.submit();
+		})
+
+	</script>
+	<script type="text/javascript">
+		var output_json = '{{ output_json|tojson|safe }}';
+		window.output_json = JSON.parse(output_json);
+	</script>
+	<script src={{url_for('static', filename='js/pie.js')}}> </script>
+</html>

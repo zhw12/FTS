@@ -1,0 +1,9 @@
+#OS junk files
+*.DS_Store
+*.pyc
+
+# PyCharm
+.idea/*
+
+data/*
+embedding/*

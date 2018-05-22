@@ -1,0 +1,149 @@
+{
+   "highlight_term_list":[
+      "web",
+      "mining"
+   ],
+   "hits":{
+      "hits":[
+         {
+            "_score":23.511139,
+            "_type":"id_title_abs",
+            "_id":"25708",
+            "_source":{
+               "abstract":"research issues web data mining research issues web data mining research issues web data mining paper present overview research issues web mining discuss mining respect web data referred web data mining particular focus web data mining research context web warehousing project called whoweda warehouse web data categorized web data mining threes areas web content mining web structure mining web usage mining highlighted discussed various research issues involved web data mining category believe web data mining topic exploratory research near future",
+               "title":"Research Issues in Web Data Mining",
+               "title_length":6,
+               "abstract_length":80,
+               "id":25708
+            },
+            "_index":"citerseer_index"
+         },
+         {
+            "_score":22.997774,
+            "_type":"id_title_abs",
+            "_id":"16538",
+            "_source":{
+               "abstract":"laborious way data mining web log mining laborious way data mining web log mining laborious way data mining web log mining web large source information turned knowledge part knowledge concerns usage web invaluable organization web sites meet purposes prevent disorientation data mining already used throw light various aspects web utilization one major aspect discovery navigation patterns show new mining model necessary formalize notion navigation pattern introduce model navigation pattern discovery extending classical model association discovery establish processing framework model conventional tools association rule discovery sequence analysis cannot deal discovery problem however show used preprocessors reduce search space actual mining phase introduction information offered web grows daily obtaining information becomes mor",
+               "title":"The Laborious Way From Data Mining to Web Log Mining",
+               "title_length":10,
+               "abstract_length":110,
+               "id":16538
+            },
+            "_index":"citerseer_index"
+         },
+         {
+            "_score":22.6137,
+            "_type":"id_title_abs",
+            "_id":"3599",
+            "_source":{
+               "abstract":"webclass web mining tool webclass web mining tool webclass web mining tool paper present design webclass workbench experimentation statistical machine learning techniques problem web page classification focus particular system architecture web pages processing steps currently implemented going future activities sketched conclusions",
+               "title":"WebClass: A Web Mining Tool",
+               "title_length":5,
+               "abstract_length":41,
+               "id":3599
+            },
+            "_index":"citerseer_index"
+         },
+         {
+            "_score":22.5368,
+            "_type":"id_title_abs",
+            "_id":"50775",
+            "_source":{
+               "abstract":"hybrid approach web usage mining hybrid approach web usage mining hybrid approach web usage mining web web mining become important research area web usage mining main topic paper focuses knowledge discovery clicks web log given site called click stream especially analysis sequences clicks existing techniques analyzing click sequences different drawbacks either huge storage requirements excessive cost scalability problems additional information introduced analysis",
+               "title":"A Hybrid Approach to Web Usage Mining",
+               "title_length":7,
+               "abstract_length":62,
+               "id":50775
+            },
+            "_index":"citerseer_index"
+         },
+         {
+            "_score":22.292978,
+            "_type":"id_title_abs",
+            "_id":"39432",
+            "_source":{
+               "abstract":"web log data warehousing mining intelligent web caching web log data warehousing mining intelligent web caching web log data warehousing mining intelligent web caching introduce intelligent web caching algorithms employ predictive models web requests general idea extend lru policy web proxy servers making sensible web access models extracted web log data using data mining techniques two approaches studied particular frequent patterns decision trees experimental results new algorithms show substantial improvement existing lru based caching techniques terms hit rate designed developed prototypical system supports data warehousing web log data extraction data mining models simulation web caching algorithms",
+               "title":"Web Log Data Warehousing and Mining for Intelligent Web Caching",
+               "title_length":10,
+               "abstract_length":96,
+               "id":39432
+            },
+            "_index":"citerseer_index"
+         },
+         {
+            "_score":22.280338,
+            "_type":"id_title_abs",
+            "_id":"30442",
+            "_source":{
+               "abstract":"mining web navigation path fragments mining web navigation path fragments mining web navigation path fragments many web usage mining applications like user segmentation crucial compare navigation paths dierent users model user navigation path fragments generalized subsequences take consideration local deviations still sketch global user navigational behaviour paper presents new algorithm apriori type mining generalized subsequences user navigation paths prescribed minimal occurence given database introduction commerce needs web usage mining aims considering dierent phases consumer behaviour extending focus classical buying behaviour analysis data mining dierent kinds contacts potential customers user navigation paths web even fragments visits websites establish important source information higher level analytical tasks applications like user segmentation recommender systems etc paths dierent users compared",
+               "title":"Mining Web Navigation Path Fragments",
+               "title_length":5,
+               "abstract_length":115,
+               "id":30442
+            },
+            "_index":"citerseer_index"
+         },
+         {
+            "_score":22.278076,
+            "_type":"id_title_abs",
+            "_id":"50652",
+            "_source":{
+               "abstract":"suggest web usage mining system suggest web usage mining system suggest web usage mining system navigation web users leave many records activity huge amount data useful source knowledge sophisticated mining processes needed knowledge extracted understood used paper propose web usage mining wum system called suggest designed efficiently integrate wum process ordinary web server functionalities provide useful information make easier web user navigation optimize web server performance two quantities introduced order give measure quality wum system",
+               "title":"SUGGEST : A Web Usage Mining System",
+               "title_length":7,
+               "abstract_length":75,
+               "id":50652
+            },
+            "_index":"citerseer_index"
+         },
+         {
+            "_score":22.217678,
+            "_type":"id_title_abs",
+            "_id":"2584",
+            "_source":{
+               "abstract":"web mining pattern discovery world wide web transactions web mining pattern discovery world wide web transactions web mining pattern discovery world wide web transactions web based organizations often generate collect large volumes data daily operations analyzing data help organizations determine life time value clients design cross marketing strategies across products services evaluate effectiveness promotional campaigns find effective logical structure web space type analysis involves discovery meaningful relationships large collection primarily unstructured data often stored web server access logs propose framework web mining applications data mining knowledge discovery techniques data collected world wide web transactions present data transaction models various web mining tasks discovery association rules sequential patterns web data also present web mining system webminer implemented based upon proposed framework discuss experimental resul",
+               "title":"Web Mining: Pattern Discovery from World Wide Web Transactions",
+               "title_length":9,
+               "abstract_length":123,
+               "id":2584
+            },
+            "_index":"citerseer_index"
+         },
+         {
+            "_score":22.217678,
+            "_type":"id_title_abs",
+            "_id":"3087",
+            "_source":{
+               "abstract":"web mining pattern discovery world wide web transactions web mining pattern discovery world wide web transactions web mining pattern discovery world wide web transactions web based organizations often generate collect large volumes data daily operations analyzing data help organizations determine life time value clients design cross marketing strategies across products services evaluate effectiveness promotional campaigns find effective logical structure web space type analysis involves discovery meaningful relationships large collection primarily unstructured data often stored web server access logs propose framework web mining applications data mining knowledge discovery techniques data collected world wide web transactions present data transaction models various web mining tasks discovery association rules sequential patterns web data also present web mining system webminer implemented based upon proposed framework discuss experimental resul",
+               "title":"Web Mining: Pattern Discovery from World Wide Web Transactions",
+               "title_length":9,
+               "abstract_length":123,
+               "id":3087
+            },
+            "_index":"citerseer_index"
+         },
+         {
+            "_score":22.02821,
+            "_type":"id_title_abs",
+            "_id":"35927",
+            "_source":{
+               "abstract":"web mining knowledge discovery usage patterns web mining knowledge discovery usage patterns web mining knowledge discovery usage patterns web mining hot research topic combines two activated research areas data mining world wide web web mining research relates several research communities database information retrieval artificial intelligence although exists quite confusion web mining recognized approach categorize web mining three areas web content mining web structure mining web usage mining web content mining focuses discovery retrieval useful information web contents data documents web structure mining emphasizes discovery model underlying link structures web distinction two categories clear sometimes web usage mining relative independent isolated category mainly describes techniques discover usage pattern try predict behaviors",
+               "title":"Web Mining and Knowledge Discovery of Usage Patterns",
+               "title_length":8,
+               "abstract_length":110,
+               "id":35927
+            },
+            "_index":"citerseer_index"
+         }
+      ],
+      "total":3756,
+      "max_score":23.511139
+   },
+   "_shards":{
+      "successful":1,
+      "failed":0,
+      "total":1
+   },
+   "took":2,
+   "timed_out":false
+}

@@ -1,0 +1,100 @@
+OQL[C++]: Extending C++ with an Object Query Capability.
+.
+Transaction Management in Multidatabase Systems.
+.
+Overview of the ADDS System.
+.
+Multimedia Information Systems: Issues and Approaches.
+.
+Active Database Systems.
+.
+Where Object-Oriented DBMSs Should Do Better: A Critique Based on Early Experiences.
+.
+Distributed Databases.
+.
+An Object-Oriented DBMS War Story: Developing a Genome Mapping Database in C++.
+.
+Cooperative Transactions for Multiuser Environments.
+.
+Schema Architecture of the UniSQL/M Multidatabase System
+.
+Physical Object Management.
+.
+Introduction to Part 1: Next-Generation Database Technology.
+.
+Object-Oriented Database Systems: Promises, Reality, and Future.
+.
+Introduction to Part 2: Technology for Interoperating Legacy Databases.
+.
+On Resolving Schematic Heterogeneity in Multidatabase Systems.
+.
+Requirements for a Performance Benchmark for Object-Oriented Database Systems.
+.
+On View Support in Object-Oriented Databases Systems.
+.
+The POSC Solution to Managing E&P Data.
+.
+C++ Bindings to an Object Database.
+.
+Authorization in Object-Oriented Databases.
+.
+Query Processing in Multidatabase Systems.
+.
+Management of Uncerainty in database Systems.
+.
+Parallel Relational Database Systems.
+.
+Query Processing in Object-Oriented Database Systems.
+.
+Specification and Execution of Transactional Workflows.
+.
+Spatial Data Structures.
+.
+An overview is presented of the use of spatial data structures in spatial databases. The focus is on hierarchical data structures, including a number of variants of quadtrees, which sort the data with respect to the space occupied by it. Such techniques are known as spatial indexing methods. Hierarchical data structures are based on the principle of recursive decomposition. They are attractive because they are compact and depending on the nature of the data they save space as well as time and also facilitate operations such as search. Examples are given of the use of these data structures in the representation of different data types such as regions, points, rectangles, lines, and volumes.
+
+Spatial Data Models and Query Processing.
+.
+Pegasus: A Heterogeneous Information Management System.
+.
+Temporal Object-Oriented Databases: A Critical Comparison.
+.
+The OMG Object Model.
+.
+EDA/SQL.
+.
+The Changing Database Standards Landscape.
+.
+Modern Database Systems: The Object Model, Interoperability, and Beyond.
+.
+Inequalities: Theory of Majorization and Its Application.
+.
+Version Control in an Object-Oriented Architecture.
+.
+The GemStone Data Management System.
+.
+Storage Management in EXODUS.
+.
+A Distributed Object Manager for the Smalltalk-80 System.
+.
+Objects, Messages, and Rules in Database Design.
+.
+Active Objects: Ealities and Possibilities.
+.
+Overview of the Iris DBMS.
+.
+Features of the ORION Object-Oriented Database System.
+.
+Indexing Techniques for Object-Oriented Databases.
+.
+My Cat Is Object-Oriented.
+.
+Making Database Systems Fast Enough for CAD Applications.
+.
+Optimizing Smalltalk Message Performance.
+.
+The Common List Object-Oriented Programming Language Standard.
+.
+Object Orientation as Catalyst for Language-Database Inegration.
+.
+A Survey of Object-Oriented Concepts.
+.

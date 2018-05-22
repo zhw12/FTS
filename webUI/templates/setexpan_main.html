@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="shortcut icon" href="http://cs.illinois.edu/sites/all/themes/csdept/favicon.ico" type="image/vnd.microsoft.icon" />
+
+		<title>SetExpan</title>
+
+		<!-- Foundation CSS -->
+		<link href="{{url_for('static', filename='css/bootstrap-theme.min.css')}}" rel="stylesheet">
+		<link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+
+	</head>
+
+	<body>
+		<!-- Nav -->
+{% include 'nav.html' %}
+
+		<!-- Main -->
+		<div class="container">
+			<div class="row">
+		        <div class="col-md-12">
+					<div id="main"></div>
+					<br/><br/>
+					<center>
+		        		<a href="{{url_for('index')}}"><img src="{{url_for('static', filename='figures/search.png')}}" width="250" /></a>
+		    			<h1>SetExpan</h1>
+		    		</center>
+		    		<br/>
+		            <div ><center>
+		            	<!-- Here is the main search bar -->
+		            	<form action="set_expan_search" method="post">
+			                <div class="input-group col-md-10">
+			                    <input type="text" class="form-control input-lg" name="inputData" placeholder="Type your seed entities, separated by ','."/>
+			                    <span class="input-group-btn">
+			                        <button class="btn btn-info btn-lg" type="submit" value="Submit">
+			                            <i class="glyphicon glyphicon-search"></i>
+			                        </button>
+			                    </span>
+			                </div>
+                            <div class="choose-a-corpus">
+			                	<h3>Corpus:
+				                    <select name = "corpus">
+									  <option value="Wikipedia">Wikipedia</option>
+{#									  <option value="ToPMine">ToPMine</option>#}
+									</select>
+								</h3>
+							</div>
+			            </form></center>
+		            </div>
+		            <br>
+                    <center>
+                    <div class="ranking">
+                        <h3>Try sample queries</h3>
+                        <p>1. NBA, NCAA, NFL</p>
+                        <p>2. BBC, HBO, CNN, Fox</p>
+                        <p>3. Google, Facebook, Microsoft, Amazon</p>
+                    </div>
+                    </center>
+
+		            <!-- <script type="text/javascript">alert("hihihi");</script> -->
+					<br><br><br><br><br><br>
+<!-- Footer -->{% include 'footer.html' %}
+		        </div>
+			</div>
+		</div>
+
+	</body>
+	<script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+</html>

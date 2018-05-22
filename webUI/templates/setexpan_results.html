@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="shortcut icon" href="http://cs.illinois.edu/sites/all/themes/csdept/favicon.ico" type="image/vnd.microsoft.icon" />
+		<title>SetExpan</title>
+
+		<!-- Foundation CSS -->
+		<link href="{{url_for('static', filename='css/bootstrap-theme.min.css')}}" rel="stylesheet">
+		<link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+
+		<!-- highlightjs.org -->
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.9.0/styles/default.min.css">
+
+		<!-- Customized CSS -->
+		<link href="{{url_for('static', filename='css/SetSearch.css')}}" rel="stylesheet">
+		<!-- Following code is used to control the highlight code for different types -->
+        <style type="text/css">
+            .highlight{
+				background-color:yellow;
+			}
+			mark{
+			    background: orange;
+			    color: black;
+			    padding: 0px;
+			}
+			mark.a{
+			    background: yellow;
+			    color: black;
+			}
+			mark.b{
+			    background: lightgreen;
+			    color: black;
+			}
+			mark.c{
+			    background: lightpink;
+			    color: black;
+			}
+			mark.d{
+			    background: lightblue;
+			    color: black;
+			}
+			mark.e{
+			    background: #ff6666;
+			    color: black;
+			}
+			mark.f{
+			    background: #ff00ff;
+			    color: black;
+			}
+			mark.g{
+			    background: #5487ff;
+			    color: black;
+			}
+			mark.h{
+			    background: #dfbf9f;
+			    color: black;
+			}
+			mark.i{
+			    background: #99ffcc;
+			    color: black;
+			}
+			mark.j{
+			    background: #00ffff;
+			    color: black;
+			}
+			mark.k{
+			    background: #df9f9f;
+			    color: black;
+			}
+			mark.r{
+			    background: #ff7070;
+			    color: black;
+			}
+        </style>
+
+
+	</head>
+
+	<body>
+		<!-- Nav -->
+{% include 'nav.html' %}
+
+		<!-- Main -->
+<div class="container" id="highlightArea">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="main"></div>
+
+    <!-- The search bar -->
+    <div ><center>
+        <form action="/set_expan_search" method="post" id="search-form">
+            <div class="input-group col-md-10">
+                <input type="text" id="keywords" class="form-control input-lg" name="inputData" value="{{output_json.raw_query}}"
+                       placeholder="Type your seed entities, separated by ','."/>
+                <span class="input-group-btn">
+                    <button class="btn btn-primary btn-lg" type="submit" value="Submit">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                </span>
+
+            </div>
+            <input hidden="true" type="number" id="page" name="pageSelect" value="1"/>
+        </form></center>
+    </div>
+
+    <!-- The statistsics of results -->
+    <center><h4 style="color: #808080; ">
+        Expand <font color="orange">{{output_json.result_cnt}}</font> entities
+        given <font color="orange">{{output_json.seed_cnt}}</font> seeds
+        in <font color="orange">{{ output_json.use_time }}</font> seconds </h4>
+    <br/></center>
+
+    <hr>
+    <div class="ranking">
+        <h2>Seed Entity Set</h2>
+        <div class="multicols" style="column-count: 1; -webkit-column-count: 1; -moz-column-count: 1;">
+            <ol>
+                {% for seed_entity in output_json.seed_entities %}
+                <li>
+                    {{ seed_entity }}
+                </li>
+                {% endfor %}
+            </ol>
+        </div>
+    </div>
+
+
+            <hr>
+    <div class="ranking">
+        <h2>Expanded Entity Set</h2>
+        <div class="multicols" style="column-count: 2; -webkit-column-count: 2; -moz-column-count: 2;">
+            <ol>
+                {% for entity in output_json.expanded_eids %}
+                <li>
+                    {{ entity[1] }}
+                </li>
+                {% endfor %}
+            </ol>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<hr>
+
+
+
+
+<!-- Footer -->{% include 'footer.html' %}
+
+		        </div>
+			</div>
+		</div>
+
+	</body>
+
+	<script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+	<!-- highlight search keywords -->
+	<script type="text/javascript" src="{{ url_for('static', filename='mark.js') }}"></script>
+</html>

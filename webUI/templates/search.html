@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="shortcut icon" href="http://cs.illinois.edu/sites/all/themes/csdept/favicon.ico" type="image/vnd.microsoft.icon" />
+
+		<title>Search</title>
+
+		<!-- Foundation CSS -->
+		<link href="{{url_for('static', filename='css/bootstrap-theme.min.css')}}" rel="stylesheet">
+		<link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+
+		<!-- Customized CSS -->
+		<link href="{{url_for('static', filename='css/SetSearch.css')}}" rel="stylesheet">
+		<style type="text/css">
+		</style>
+	</head>
+
+	<body>
+		<!-- Nav -->
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="{{url_for('index')}}">NSCTA Demo</a>
+		    </div>
+
+		    <ul class="nav navbar-nav navbar-right">
+		      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+		      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		    </ul>
+		    <ul class="nav navbar-nav  navbar-right">
+		      <li class="active"><a href="{{url_for('index')}}">Home</a></li>
+		    </ul>
+		  </div>
+		</nav>
+
+		<div class="contain-to-grid sticky">
+		  <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+		    	<div id="header"></div>
+		    	<div id="nav"></div>
+		  </nav>
+		</div>
+
+		<!-- Main -->
+		<div class="container">
+			<div class="row">
+		        <div class="col-md-12">
+					<div id="main"></div>
+					<br/><br/>
+					<center>
+		        		<a href="{{url_for('index')}}"><img src="{{url_for('static', filename='figures/search.png')}}" width="250" /></a>
+		    			<h1>Search</h1>
+		    		</center>
+		    		<br/>
+		            <div ><center>
+		            	<!-- Here is the main search bar -->
+		            	<form action="document_search" method="post">
+			                <div class="input-group col-md-8">
+			                    <input type="text" class="form-control input-lg" name="inputData" placeholder="Type your query"/>
+			                    <span class="input-group-btn">
+			                        <button class="btn btn-info btn-lg" type="submit" value="Submit">
+			                            <i class="glyphicon glyphicon-search"></i>
+			                        </button>
+			                    </span>
+			                </div>
+			            </form></center>
+		            </div>
+		            <br>
+		            <!-- <script type="text/javascript">alert("hihihi");</script> -->
+					<br><br><br><br><br><br>
+<!-- Footer -->{% include 'footer.html' %}
+		        </div>
+			</div>
+		</div>
+
+	</body>
+	<!-- Attach React components -->
+  	<script type="text/javascript" src="{{ url_for('static', filename='bundle.js') }}"></script>
+	<script src="http://static.runoob.com/assets/react/react-0.14.7/build/react.min.js"></script>
+	<script src="http://static.runoob.com/assets/react/react-0.14.7/build/react-dom.min.js"></script>
+	<script src="http://static.runoob.com/assets/react/browser.min.js"></script>
+	<script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/npm.js')}}"></script>
+
+</html>

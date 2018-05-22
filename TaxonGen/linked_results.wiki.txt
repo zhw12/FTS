@@ -1,0 +1,18 @@
+logic programming	3	logic programming	0.9772182164
+knowledge discovery	3	Knowledge extraction	0.965514645
+object oriented	3	Object-oriented programming	0.9651515498
+database systems	3	Database	0.9607777763
+data mining	3	data mining	0.9591868672
+natural language	3	natural language	0.957407319
+programming language	3	programming language	0.9528009698
+information systems	3	Information system	0.9491277763
+database design	3	database design	0.9466420259
+query processing	2	Database	0.884464645
+range images	2	High-dynamic-range imaging	0.8178843031
+data model	3	data model	0.7571111069
+discovery	1	Discovery (observation)|Discovery (fiction)|Discovery (law)|Service discovery|Discovery District|Roomba|Discovery (synth)|Discovery Academy (disambiguation)|Discovery College (Hong Kong)|Discovery School (disambiguation)|Discovery Elementary School (disambiguation)|Discovery (horse)|Discovery (apple)|Discovery (elm cultivar)|Discovery Walks|Discovery Channel Pro Cycling Team|Discovery Communications|Discovery Institute|Discovery Limited|Discovery Program|Discovery Records|Wikimedia Discovery|Aero Concepts Discovery|Offpiste Discovery|SC Discovery|Land Rover Discovery|Discovery (1602 ship)|MV Discovery|Discovery I|Discovery II|Discovery III|HMS Discovery|HSC HSS Discovery|RRS Discovery|RRS Discovery II|RRS Discovery (1962)|RRS Discovery (2013)|Discovery (fireboat)|Discovery One|Space Shuttle Discovery|USS Discovery (NCC-1031)|Paradises Lost|The Discovery (Frances Sheridan play)|Plautus|The Discovery (Animorphs)|Discovery Channel|Discovery (Irish TV series)|Discovery (1960s TV series)|Discovery (British TV series)|Discovery (Canadian TV series)|The Discovery (film)|Star Trek: Discovery|Discovery, Weymouth|Howard Ferguson (composer)|Discovery Records|Discovery (band)|The Discovery (album)|Discovery (Electric Light Orchestra album)|Discovery (music video)|Discovery (Daft Punk album)|Discovery (Jewelry album)|Discovery (Mike Oldfield album)|Discovery Tour 1984|Discovery (Mr. Children album)|Discovery (Larry Carlton album)|Discovery (Pink Floyd box set)|Discovery (Shanice album)|Disc-Overy|Chris DeBurgh|"Discovery" (song)|Echoes of a Friend|All pages with a title containing Discovery|Discover (disambiguation)|Discoverer (disambiguation)|Discovery Bay (disambiguation)|Self-discovery	0.7136316005
+internet	3	internet	0.7131110204
+reasoning	3	Reason	0.7072791292
+overview	1	Overview (debate)|Overview article|A Brief Overview|Overview and Scrutiny|Overview effect|Summary (disambiguation)|Outline (list)|All pages beginning with "Overview"|All pages with a title containing Overview	0.7061028278
+programming	2	Computer programming	0.700168267
+bayesian	3	List of things named after Thomas Bayes	0.6997842285
