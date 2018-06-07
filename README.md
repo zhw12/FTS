@@ -112,7 +112,8 @@ phrase index is used in phrase suggestion,
 paper index is used in most of the functions.
  
 source venv/bin/activate
-(venv)$ python ./webUI/src/main.py
+(venv)$ cd webUI/src
+(venv)$ python main.py
 ```
 
 ### SetExpan
