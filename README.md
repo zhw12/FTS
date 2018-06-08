@@ -81,6 +81,21 @@ Download spacy model file
 (venv)$ python -m spacy download en
 ```
 
+<!-- 
+Error: setup script exited with error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+Reference: https://stackoverflow.com/questions/26053982/setup-script-exited-with-error-command-x86-64-linux-gnu-gcc-failed-with-exit
+Solution: sudo apt-get install libpq-dev python-dev libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev libffi-dev
+-->
+
+Trouble Shooting
+```
+Error: Failed building wheel for spacy
+Reference: https://stackoverflow.com/questions/43370851/failed-building-wheel-for-spacy
+Solution: pip install --no-cache-dir spacy
+```
+
+
+
 ## Start Services
 ```
 Start ElasticSearch

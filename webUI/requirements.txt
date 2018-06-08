@@ -14,5 +14,7 @@ wikipedia==1.4.0
 redis==2.10.6
 celery==4.1.0
 ply==3.10
-spacy
 filelock==2.0.12
+# install spacy separately
+# spacy
+
