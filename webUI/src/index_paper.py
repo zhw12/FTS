@@ -8,6 +8,7 @@ TYPE_NAME = 'taxongen_docs'
 ES_HOST = '127.0.0.1:9200'
 root_dir = os.path.abspath('../..')
 
+
 def create_inedx():
     NUM_OF_SHARDS = 1
     NUM_OF_REPLICAS = 0
@@ -44,6 +45,18 @@ def create_inedx():
                     },
                     "keyPhrases": {
                         "type": "string"
+                    },
+                    "autoPhrase1": {
+                        "type": "string",
+                        "index": "not_analyzed"
+                    },
+                    "autoPhrase2": {
+                        "type": "string",
+                        "index": "not_analyzed"
+                    },
+                    "autoPhrase3": {
+                        "type": "string",
+                        "index": "not_analyzed"
                     },
                     "paperAbstract": {
                         "type": "string",
@@ -103,10 +116,12 @@ def index_data():
             for _ in fin:
                 cnt += 1
         return cnt
+
     es = Elasticsearch(hosts=[ES_HOST])
 
     input_file_path = '{}/data/dblp_json_with_taxon.txt'.format(root_dir)
     doc_country_file_path = '{}/data/doc_country.txt'.format(root_dir)
+    segged_phrases_file_path = '{}/data/dblpss_120w_segged_phrases.txt'.format(root_dir)
 
     '''
     A node example:
@@ -119,7 +134,7 @@ def index_data():
     bulk_data = []
     start = time.time()
     total_docs = file_len(input_file_path)
-    with open(input_file_path) as f, open(doc_country_file_path) as fc:
+    with open(input_file_path) as f, open(doc_country_file_path) as fc, open(segged_phrases_file_path) as fs:
         for line in f:
             data = json.loads(line)
             authors = []
@@ -184,6 +199,13 @@ def index_data():
             #         else:
             #             country = r['hits']['hits'][0]['_source']['country']
 
+            line_s = fs.readline()[:-1]
+            autoPhrases = [''] * 3
+            for i, phrase in enumerate(line_s.split('\t')):
+                if i >= 3:
+                    break
+                autoPhrases[i] = phrase
+
             data_dict = {
                 'taxonIDs': data['taxonIDs'].replace(',', ' '),
                 'title': data.get('title', ''),
@@ -191,6 +213,9 @@ def index_data():
                 'authors': authors,
                 'sid': data['id'],
                 'keyPhrases': data.get('keyPhrases'),
+                'autoPhrase1': autoPhrases[0],
+                'autoPhrase2': autoPhrases[1],
+                'autoPhrase3': autoPhrases[2],
                 'paperAbstract': data.get('paperAbstract'),
                 'paperAbstract_exact': data.get('paperAbstract'),
                 'text': data.get('title', '') + ' . ' + data.get('paperAbstract'),
