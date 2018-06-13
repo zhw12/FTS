@@ -5,24 +5,29 @@
             <a class="navbar-brand" href="{{ url_for('index') }}">Faceted Taxonomy Construction and Search</a>
         </div>
 
-<!--         <ul class="nav navbar-nav  navbar-right">
-            <li><a href="{{ url_for('help') }}">Help</a></li>
-        </ul> -->
-        <ul class="nav navbar-nav  navbar-right">
+        <ul class="nav navbar-nav navbar-right">
             <li><a href="{{ url_for('tree') }}">Taxonomy Exploration</a></li>
-        </ul>
-        <ul class="nav navbar-nav  navbar-right">
             <li><a href="{{ url_for('generate_taxonomy_view') }}">TaxonGen</a></li>
-        </ul>
-        <ul class="nav navbar-nav  navbar-right">
             <li><a href="{{ url_for('set_expan') }}">SetExpan</a></li>
-        </ul>
-        <ul class="nav navbar-nav  navbar-right">
             <li><a href="{{ url_for('trend') }}">Trend</a></li>
-        </ul>
-        <ul class="nav navbar-nav  navbar-right">
             <li><a href="{{ url_for('concept') }}">Search</a></li>
+            <li class="nav navbar-nav navbar-right dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle" href="#">More <strong class="caret"></strong></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="http://128.111.54.35:5601/app/kibana#/visualize?_g=()">Kibana</a>
+                    </li>
+                    <li>
+                        <a href="http://128.111.54.35:5601/app/kibana#/visualize/edit/bfa0b3e0-6e71-11e8-8d09-514a4daea72a?_g=()">Author Cloud</a>
+                    </li>
+                    <li>
+                        <a href="http://128.111.54.35:5601/app/kibana#/visualize/edit/838dbe00-6e00-11e8-8ed4-ddcf25565d2f?_g=()">Phrase Cloud</a>
+                    </li>
+                </ul>
+            </li>
         </ul>
+
+
     </div>
 </nav>
 
