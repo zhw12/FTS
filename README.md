@@ -1,37 +1,48 @@
-# FTS-Demo
-The Demo System for Faceted Taxonomy and Search
+# FTS
+Faceted Taxonomy Construction and Search
 
-Online demo: <http://dhcp-54-50.cs.ucsb.edu:5002/>
+Online Url: <http://fts.cs.ucsb.edu/>
+
+FTS is a network-based, unified search and navigation platform,
+to ease query development and facilitate intelligence exploration
+in a large text repository, focused on scientific publications.
 
 ## Getting Started
-This is an instruction for offline deployment of the 
-FTS (Faceted Taxonomy and Search) Demo System. 
-The instruction uses Linux as an example.
+This is an instruction for offline deployment of the
+FTS System. The instruction uses Linux as an example.
 
 ### Requirements
-Main requirements:
-- python3
-- python2
-- elasticsearch
-- redis
-- celery
-- gensim
-- spacy
+```
+Python3, Python2, java, gcc, Elasticsearch, Redis
+python libraries: elasticsearch, redis, celery, gensim, spacy, etc.
+listed in webUI/requirements.txt(python3)
+webUI/requirements_python2.txt(python2)
+```
 
+#### Python requirements
+```
+In root folder, Create the virtual environments venv, venv_py2
 
-Other python requirements:
-- python3: webUI/requirements.txt
-- python2: webUI/requirements_python2.txt
+virtualenv --python=/usr/bin/python2 venv_py2
+virtualenv --python=/usr/bin/python3 venv
 
-### Installation
+Install requirements for python3:
+source venv/bin/activate
+(venv)$ pip install -r webUI/requirements.txt
+
+Install requirements for python2 (used for taxongen):
+source venv_py2/bin/activate
+(venv_py2)$ pip install -r webUI/requirements_python2.txt
+```
+
 #### Elasticsearch
-Use elasticsearch to index and search data 
+Use elasticsearch to index and search data
 ```
 Install elasticsearch-5.4.1
 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.4.1.tar.gz
 tar -xvf elasticsearch-5.4.1.tar.gz
 cd elasticsearch-5.4.1
- 
+
 Start elasticsearch
 bin/elasticsearch -d
 ```
@@ -41,7 +52,7 @@ Use redis to store long time background job, e.g. taxonomy generation
 ```
 Install redis
 sudo apt-get install redis-server
- 
+
 Start reids
 redis-server
 ```
@@ -54,25 +65,9 @@ source venv/bin/activate
 ```
 
 
-#### Python requirements
-```
-In root folder, Create the virtual environments venv, venv_py2,
-()
-
-virtualenv --python=/usr/bin/python2 venv_py2
-virtualenv --python=/usr/bin/python3 venv
- 
-Install requirements for python3:
-source venv/bin/activate
-(venv)$ pip install -r webUI/requirements.txt
- 
-Install requirements for python2:
-source venv_py2/bin/activate
-(venv_py2)$ pip install -r webUI/requirements_python2.txt
-```
 
 #### Spacy
-Use spacy to de text processing
+Use spacy to do text processing
 ```
 Install spacy in python3
 Enter python3 virtual environment, source venv/bin/activate
@@ -81,13 +76,13 @@ Download spacy model file
 (venv)$ python -m spacy download en
 ```
 
-<!-- 
+<!--
 Error: setup script exited with error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
 Reference: https://stackoverflow.com/questions/26053982/setup-script-exited-with-error-command-x86-64-linux-gnu-gcc-failed-with-exit
 Solution: sudo apt-get install libpq-dev python-dev libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev libffi-dev
 -->
 
-Trouble Shooting
+Spacy Installment Trouble Shooting
 ```
 Error: Failed building wheel for spacy
 Reference: https://stackoverflow.com/questions/43370851/failed-building-wheel-for-spacy
@@ -97,13 +92,14 @@ Solution: pip install --no-cache-dir spacy
 
 
 ## Start Services
+Start Services for the FTS system
 ```
 Start ElasticSearch
 bin/elasticsearch -d
- 
+
 Start reids
 redis-server
- 
+
 Start Celery
 run celery as a background job
 uses screen, screen -S celery
@@ -114,18 +110,24 @@ Detach from the screen,  Ctrl-a d
 ```
 
 ## Index Data
-Data file: download embedding and data folder from ftp server:
-<ftp://dhcp-54-50.cs.ucsb.edu:5003>
+###Data file
+Download embedding and data folder from sftp server and put them in the **FTS system root folder**
+```
+Data folder: embedding, data
+server: dhcp-54-35.cs.ucsb.edu
+user: fts_user
+password: fts123456
+```
 
-put them in the **demo root folder**
+
 ### Faceted Search
 ```
-Faceted Search index contains 4 parts, the author index, 
+Faceted Search index contains 4 parts, the author index,
 country index, phrase index and paper index.
-Specifically country index is used in trending, 
+Specifically country index is used in trending,
 phrase index is used in phrase suggestion,
 paper index is used in most of the functions.
- 
+
 source venv/bin/activate
 (venv)$ cd webUI/src
 (venv)$ python main.py
@@ -140,18 +142,18 @@ source venv/bin/activate
 
 ## Demo webUI
 
-To start the webUI, in the **demo root folder**, type:
+To start the webUI, in the **FTS system root folder**, type:
 
 ```
 $ source venv/bin/activate
 (venv)$ python webUI/app.py
 Use -port xxx to specify the port, by default is port 5002
- 
+
 To run webUI in background, with screen
 screen -S webUI
 $ source venv/bin/activate
 (venv)$ python webUI/app.py
 Detach from the screen,  Ctrl-a d
- 
-The demo is accessable on the corresponding port.
+
+The system is accessable on the corresponding port.
 ```
