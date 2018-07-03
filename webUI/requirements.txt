@@ -12,7 +12,7 @@ Flask-Cors==3.0.3
 gensim==3.4.0
 wikipedia==1.4.0
 redis==2.10.6
-celery==4.1.0
+celery==4.2.0
 ply==3.10
 filelock==2.0.12
 # install spacy separately

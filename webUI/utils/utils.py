@@ -2,13 +2,16 @@ import re
 import base64
 import json
 import hashlib
+from pathlib import Path
+
 from filelock import Timeout, FileLock
 import os
 import html
 
 
 # path is inherited from its parent, (which is )
-root_dir = os.path.abspath('.') # /home/hanwen/disk/demov3
+# root_dir = os.path.abspath('.') # /home/hanwen/disk/demov3
+root_dir = Path(__file__).absolute().parent.parent.parent
 # for normal use
 dictionary_file = '{}/TaxonGen/filename2query.txt'.format(root_dir)
 dictionary_lock_file = "{}/TaxonGen/filename2query.txt.lock".format(root_dir)

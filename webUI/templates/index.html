@@ -1,79 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<link rel="shortcut icon" href="http://cs.illinois.edu/sites/all/themes/csdept/favicon.ico" type="image/vnd.microsoft.icon" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" href="http://cs.illinois.edu/sites/all/themes/csdept/favicon.ico"
+          type="image/vnd.microsoft.icon"/>
+    <!--<link rel="shortcut icon" href="{{url_for('static', filename='favicon.jpg')}}"/>-->
+    <title>Faceted Taxonomy Construction and Search</title>
 
-		<title>Faceted Taxonomy Construction and Search</title>
+    <!-- Foundation CSS -->
+    <link href="{{url_for('static', filename='css/bootstrap-theme.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
 
-		<!-- Foundation CSS -->
-		<link href="{{url_for('static', filename='css/bootstrap-theme.min.css')}}" rel="stylesheet">
-		<link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <!-- Customized CSS -->
+    <link href="{{url_for('static', filename='css/SetSearch.css')}}" rel="stylesheet">
+    <style type="text/css">
+        .l-intro {
+            margin: 100px;
+        }
 
-		<!-- Customized CSS -->
-		<link href="{{url_for('static', filename='css/SetSearch.css')}}" rel="stylesheet">
-		<style type="text/css">
-		</style>
-	</head>
+        .l-intro .intro-title {
+            float: right;
+            text-align: center;
+            margin-top: 40px;
+        }
 
-	<body>
-		<!-- Nav -->
+        .l-intro p {
+            width: 440px;
+            font-size: 20px;
+            color: #547687;
+        }
+
+        .l-intro img {
+            float: left;
+        }
+
+        .r-intro {
+            margin: 100px;
+        }
+
+        .r-intro .intro-title {
+            float: left;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .r-intro p {
+            width: 440px;
+            font-size: 20px;
+            color: #547687;
+        }
+
+        .r-intro img {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+<!-- Nav -->
 {% include 'nav.html' %}
 
-		<!-- Main -->
-		<div class="container">
-			<div class="row">
-		        <div class="col-md-12">
-					<div id="main"></div>
-					<br/><br/>
-					<center>
-		        		<a href="{{url_for('index')}}"><img src="{{url_for('static', filename='figures/search.png')}}" width="250" /></a>
-		    			<h1>Faceted Taxonomy Construction and Search</h1>
-		    		</center>
-		    		<br/>
-		            <div>
-                        <!--<center>-->
-							<div class="col-md-2"></div>
-							<div class="col-md-8">
-								<center><h4>Introduction</h4></center>
-								<p>FTS (Faceted Taxonomy Construction and Search) provides a full set of functions on intelligence analysis over scientific reports and research papers.  Nowadays, intelligence analysts are flooded with documents they need to analyze.  Scientific reports and papers are extremely hard to digest and analyze due to their specialized topics.  FTS eases it using machine learning and data mining to automatically extract concepts and concept networks from a large document repository.  It also analyzes research efforts in one area over time across different countries so that analysts will be aware of research focus in China, Europe, Russia, US, etc. The system leverages techniques from network science (taxonomy tree and information network), data mining and deep learning.</p>
-								<center>
-									<h4>Major functions</h4>
-									<p>Start the demo by clicking buttons on the right of the navigation bar</p>
-									<p>1. Search (used for query concept expansion)</p>
-									<p>2. Trend (used for topic trend analysis)</p>
-									<p>3. SetExpan (used for facet completion / set expansion)</p>
-									<p>4. TaxonGen (used for generating specific taxonomy)</p>
-									<p>5. Taxonomy Exploration (used for taxonomy construction and search)</p>
-								</center>
-							</div>
-							<div class="col-md-2"></div>
-                        <!--</center>-->
-		            </div>
-		            <br>
-					<br><br><br><br><br><br>
-<!-- Footer -->{% include 'footer.html' %}
-		        </div>
-			</div>
-		</div>
+<!-- Main -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="main"></div>
+            <br/><br/>
+            <center>
+                <a href="{{url_for('index')}}"><img src="{{url_for('static', filename='figures/search.png')}}"
+                                                    width="250"/></a>
+                <h1>FTS: A Bird’s Eye View Of Science & Technology</h1>
+                    <h1>Driven by AI</h1>
+            </center>
+            <br/>
+            <div>
+                <!--<center>-->
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h4>
+                    </h4>
+                    <p>
+                        FTS, Faceted Taxonomy Construction and Search, provides a bird’s eye view of scientific papers
+                        and technical reports, making technology exploration much easier and faster. FTS leverages
+                        state-of-the-art network science, data mining and deep learning techniques to automatically mine
+                        concepts and construct concept networks like taxonomy from publication repository.
+                        The discovered concepts and their networks could significantly simplify decision making.
+                    </p>
+                    <!--<center><h4>Introduction</h4></center>-->
+                    <!--<p>FTS (Faceted Taxonomy Construction and Search) provides a full set of functions on intelligence-->
+                        <!--analysis over scientific reports and research papers. Nowadays, intelligence analysts are-->
+                        <!--flooded with documents they need to analyze. Scientific reports and papers are extremely hard to-->
+                        <!--digest and analyze due to their specialized topics. FTS eases it using machine learning and data-->
+                        <!--mining to automatically extract concepts and concept networks from a large document repository.-->
+                        <!--It also analyzes research efforts in one area over time across different countries so that-->
+                        <!--analysts will be aware of research focus in China, Europe, Russia, US, etc. The system leverages-->
+                        <!--techniques from network science (taxonomy tree and information network), data mining and deep-->
+                        <!--learning.</p>-->
+                    <!--<center>-->
+                    <!--<h4>Major functions</h4>-->
+                    <!--<p>Start the demo by clicking buttons on the right of the navigation bar</p>-->
+                    <!--<p>1. Search (used for query concept expansion)</p>-->
+                    <!--<p>2. Trend (used for topic trend analysis)</p>-->
+                    <!--<p>3. SetExpan (used for facet completion / set expansion)</p>-->
+                    <!--<p>4. TaxonGen (used for generating specific taxonomy)</p>-->
+                    <!--<p>5. Taxonomy Exploration (used for taxonomy construction and search)</p>-->
+                    <!--</center>-->
+                </div>
+                <div class="col-md-2"></div>
+                <!--</center>-->
+            </div>
+            <br>
+            <br><br><br><br><br><br>
+            <!-- Footer -->{% include 'footer.html' %}
+        </div>
+    </div>
+</div>
 
-	</body>
-	<!-- Attach React components -->
-  	<!-- <script type="text/javascript" src="{{ url_for('static', filename='bundle.js') }}"></script> -->
-	<!-- <script src="http://static.runoob.com/assets/react/react-0.14.7/build/react.min.js"></script>
-	<script src="http://static.runoob.com/assets/react/react-0.14.7/build/react-dom.min.js"></script> -->
-	<!-- <script src="http://static.runoob.com/assets/react/browser.min.js"></script> -->
-	<script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
-	<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
-	<!-- <script src="{{url_for('static', filename='js/npm.js')}}"></script> -->
-	<script type="text/javascript">
-		// [prevent submitting the form when it's empty]
-		var form = $('#search-form');
-		form.on('submit',function(event){
-			event.preventDefault();
-			if($('#keywords')[0].value.length<1)
-				return false;
-			this.submit();
-		})
-	</script>
+
+<!--<img style="float:left;" src="{{url_for('static', filename='figures/taxon_vis.png')}}" width="48%">-->
+<div class="intro-con" style="background-color: #f0f1f2; padding: 10px 50px; margin-top: 100px;">
+    <h2 style="text-align: center; margin-top: 100px;"> Major Functions </h2>
+    <ul class="intro-list">
+        <div class="l-intro clearfix">
+            <div class="intro-title">
+                <h4>Search</h4>
+                <p> FTS <a href="/search">Search</a>
+                    provides intelligent search functionality enhanced with query suggestion and taxonomy navigation.
+                </p>
+            </div>
+            <img src="{{url_for('static', filename='figures/search_result.png')}}" width="48%">
+        </div>
+        <div class="r-intro clearfix">
+            <div class="intro-title">
+                <h4>Taxonomy Exploration</h4>
+                <p> FTS <a href="/tree">Taxonomy Exploration</a>
+                    allows user to explore the generated taxonomies.
+                    <!--(e.g. computer science taxonomy constructed on DBLP)-->
+                </p>
+            </div>
+            <img src="{{url_for('static', filename='figures/taxon_vis.png')}}" width="48%">
+        </div>
+        <div class="l-intro clearfix">
+            <div class="intro-title">
+                <h4>Taxonomy Generation</h4>
+                <p> FTS <a href="/generate_taxonomy_view">Taxonomy Generation</a>
+                    allows user to generate a taxonomy by assigning documents by query.
+                    <!--(e.g. computer science taxonomy constructed on DBLP)-->
+                </p>
+            </div>
+            <img src="{{url_for('static', filename='figures/taxongen.png')}}" width="48%">
+        </div>
+        <div class="r-intro clearfix">
+            <div class="intro-title">
+                <h4>Area Analysis</h4>
+                <p> FTS <a href="/trend">Area Analysis</a>
+                    visualizes the research strength in different areas under taxonomy.
+                </p>
+            </div>
+            <img src="{{url_for('static', filename='figures/area_analysis.png')}}" width="48%">
+        </div>
+        <div class="l-intro clearfix">
+            <div class="intro-title">
+                <h4>Trend Analysis</h4>
+                <p> FTS <a href="/trend">Trend Analysis</a>
+                    provides trend analysis for different research areas across years.
+                </p>
+            </div>
+            <img src="{{url_for('static', filename='figures/trend_area.png')}}" width="48%">
+        </div>
+        <div class="r-intro clearfix">
+            <div class="intro-title">
+                <h4>Trend Analysis</h4>
+                <p> FTS <a href="/trend">Trend Analysis</a>
+                    provides trend analysis for different countries across years.
+                </p>
+            </div>
+            <img src="{{url_for('static', filename='figures/trend_country.png')}}" width="48%">
+        </div>
+        <div class="l-intro clearfix">
+            <div class="intro-title" >
+                <h4>Author Cloud</h4>
+                <p> FTS <a href="{{config.AUTHOR_CLOUD_ADDR}}">Author Cloud</a>
+                    provides function for finding major players in an area.
+                </p>
+            </div>
+            <img src="{{url_for('static', filename='figures/author_cloud.png')}}" width="48%">
+        </div>
+        <div class="r-intro clearfix">
+            <div class="intro-title" >
+                <h4>Concept Cloud</h4>
+                <p> FTS <a href="{{config.PHRASE_CLOUD_ADDR}}">Concept Cloud</a>
+                    provides function for finding influential topics in an area.
+                </p>
+            </div>
+            <img src="{{url_for('static', filename='figures/phrase_cloud.png')}}" width="48%">
+        </div>
+        <div class="l-intro clearfix">
+            <div class="intro-title" >
+                <h4>Instruction Video</h4>
+                <p> Click to download the <a href="/v/fts-video.mp4">FTS instruction video</a>.<p>
+            </div>
+            <div class="intro-title" style="float: left">
+                <h4>Repo ReadMe</h4>
+                <p> Click to download the <a href="/v/README.md">Repo Readme</a>.<p>
+            </div>
+        </div>
+    </ul>
+
+</div>
+</body>
+<!-- Attach React components -->
+<!-- <script type="text/javascript" src="{{ url_for('static', filename='bundle.js') }}"></script> -->
+<!-- <script src="http://static.runoob.com/assets/react/react-0.14.7/build/react.min.js"></script>
+<script src="http://static.runoob.com/assets/react/react-0.14.7/build/react-dom.min.js"></script> -->
+<!-- <script src="http://static.runoob.com/assets/react/browser.min.js"></script> -->
+<script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+<!-- <script src="{{url_for('static', filename='js/npm.js')}}"></script> -->
+<script type="text/javascript">
+    // [prevent submitting the form when it's empty]
+    var form = $('#search-form');
+    form.on('submit', function (event) {
+        event.preventDefault();
+        if ($('#keywords')[0].value.length < 1)
+            return false;
+        this.submit();
+    })
+</script>
 </html>

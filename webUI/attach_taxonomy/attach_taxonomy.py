@@ -9,7 +9,7 @@ __author__ : Hanwen Zha
 __description__: Function for attach a node to the general taxonomy
 __latest_update__: 2/27/2018
 '''
-
+from pathlib import Path
 
 from gensim.models import word2vec
 from collections import Counter
@@ -57,7 +57,8 @@ nlp.tokenizer = WhitespaceTokenizer(nlp.vocab)
 
 # In[6]:
 
-root_dir = os.path.abspath('.') # /home/hanwen/disk/demov3
+# root_dir = os.path.abspath('.') # /home/hanwen/disk/demov3
+root_dir = Path(__file__).absolute().parent.parent.parent
 # print('. is', os.path.abspath('.'), 'in attach_taxonomy')
 # root_dir = '/home/hanwen/disk/demov3'
 

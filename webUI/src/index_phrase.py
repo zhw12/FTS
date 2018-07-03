@@ -1,13 +1,14 @@
 import os
 import re
 import time
+from pathlib import Path
 
 from elasticsearch import Elasticsearch
 from gensim.models import word2vec
 
 # root_dir = '/home/hanwen/disk/demov3'
-root_dir = os.path.abspath('../..')
-
+# root_dir = os.path.abspath('../..')
+root_dir = Path(__file__).absolute().parent.parent.parent
 
 def displayString(w):
     return re.sub(r'</?phrase>', '', w).replace('_', ' ').replace('-', ' ')

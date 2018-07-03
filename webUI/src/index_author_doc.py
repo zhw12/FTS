@@ -1,12 +1,15 @@
 import json
 import time
 import os
+from pathlib import Path
+
 from elasticsearch import Elasticsearch
 
 INDEX_NAME = 'author_doc'
 TYPE_NAME = 'author_doc'
 ES_HOST = '127.0.0.1:9200'
-root_dir = os.path.abspath('../..')
+# root_dir = os.path.abspath('../..')
+root_dir = Path(__file__).absolute().parent.parent.parent
 
 
 def create_inedx():

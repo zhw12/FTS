@@ -3,6 +3,7 @@ import subprocess
 import sys
 import time
 import os
+from pathlib import Path
 
 from celery import Celery
 
@@ -10,6 +11,7 @@ from celery import Celery
 
 # root_dir = '/home/hanwen/disk/demov3'
 root_dir = os.path.abspath('..')
+# root_dir = Path(__file__).absolute().parent.parent
 sys.path.append('{}/TaxonGen/'.format(root_dir))
 sys.path.append('{}/webUI/'.format(root_dir))
 

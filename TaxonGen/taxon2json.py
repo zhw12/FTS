@@ -7,6 +7,8 @@ import re
 import argparse
 import base64
 import sys
+from pathlib import Path
+
 '''
     Example Line:
     */large_scale_distributed_systems	large_scale_distributed_systems,software_engineering,agile_development,software_development,software_process_improvement,software_process,agile_methods,requirements_engineering,web_services,software_reuse
@@ -14,7 +16,8 @@ import sys
 
 # runned in tasks.py --> taxongen_piepline.py --> taxon2json
 # taxon2json path is in its own directory
-root_dir = os.path.abspath('..')
+# root_dir = os.path.abspath('..')
+root_dir = Path(__file__).absolute().parent.parent
 sys.path.append('{}/webUI/'.format(root_dir))
 from utils.utils import is_single_query, encode_filename, decode_filename
 

@@ -11,12 +11,14 @@ import re
 import subprocess
 import sys
 import time
+from pathlib import Path
 from shutil import copyfile
 import logging
 
 # it is run through python {}/TaxonGen/taxongen_pipeline.py {} in tasks.py
 # root_dir = '/home/hanwen/disk/demov3'
-root_dir = os.path.abspath('..')
+# root_dir = os.path.abspath('..')
+root_dir = Path(__file__).absolute().parent.parent
 sys.path.append('{}/webUI/'.format(root_dir))
 from utils.utils import decode_filename
 

@@ -27,7 +27,8 @@ THRESHOLD = .99
 
 # file_wordvec = sys.argv[1]
 # file_wordvec = '/home/hanwen/Desktop/demo/NSCTA-Demo/concept_based_retrieval/output/SEMANTIC_SCHOLAR/wordvec'
-file_wordvec = 'embedding/wordvec'
+file_wordvec = 'embedding/word2vec_fixed_pretrained.bin'
+# file_wordvec = 'embedding/wordvec'
 
 def reverseDict(dict):
     return {v: k for k, v in dict.items()}

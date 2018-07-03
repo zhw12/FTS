@@ -10,6 +10,8 @@ import os
 import re
 import time
 import subprocess
+from pathlib import Path
+
 from elasticsearch import Elasticsearch
 from elasticsearch_dsl import Search
 from luqum.parser import parser as luqum_parser
@@ -18,6 +20,8 @@ import html
 
 from flask import (Flask, json, jsonify, render_template, request)
 from flask_cors import CORS, cross_origin
+from flask import send_from_directory
+from flask import redirect
 
 from concept_based_retrieval import util as concept_util
 from SetExpan import es, main, util
@@ -27,8 +31,6 @@ from utils.utils import is_single_query, encode_filename, decode_filename, clean
 
 app = Flask(__name__, static_url_path='/static')
 cors = CORS(app)
-app.config['CORS_HEADERS'] = 'Content-Type'
-
 '''
 use a local copy of luqum 0.6.0 
 luqum/elasticsearch/tree.py is modified at line 58
@@ -41,8 +43,9 @@ https://discuss.elastic.co/t/query-string-with-wildcard-does-not-calculate-score
 '''
 
 app = Flask(__name__)
+app.config.from_envvar('APPLICATION_SETTINGS')
 
-DEBUG_FLAG = True
+DEBUG_FLAG = app.config['DEBUG_FLAG']
 es54 = es.ES()
 eid2ename, ename2eid = util.loadEidToEntityMap("./data/wiki_entity2id.txt")
 print("[INFO] finish loading entity2id")
@@ -63,7 +66,8 @@ print("[INFO] finish loading taxonomy files")
 # part of luqum parser, generate ElasticSearch query from Lucene query
 es_builder = ElasticsearchQueryBuilder(default_operator='must', default_field='text')
 
-root_dir = os.path.abspath('.')
+# root_dir = os.path.abspath('.')
+root_dir = Path(__file__).absolute().parent.parent
 ES_HOST = '127.0.0.1:9200'
 
 
@@ -80,14 +84,21 @@ def parse_tree(node, taxonID):
     return
 
 
-@app.route('/')
+@app.route('/about')
 def index():
     return render_template('index.html')
 
+# @app.route('/video')
+# def done():
+#     return redirect('/static/fts-video.mov')
 
-@app.route('/help')
-def help():
-    return render_template('help.html')
+@app.route('/video')
+def video():
+    return render_template("video.html", filename='/static/fts-video.mp4')
+
+@app.route('/v/<filename>')
+def get_file(filename):
+    return send_from_directory(root_dir / 'resources/', filename)
 
 
 # This function is the d3.js tree interface
@@ -312,26 +323,27 @@ def set_expan_search():
     return render_template('setexpan_results.html', results=res_json, output_json=h_json_out)
 
 
-def scan_query_and_save(raw_query, query_body, min_score=0):
-    es = Elasticsearch([ES_HOST]) # '127.0.0.1:9200'
+def scan_query_and_save(raw_query, query_body, min_score=0, save=True):
+    es = Elasticsearch([ES_HOST])  # '127.0.0.1:9200'
     s = Search(using=es, index='taxongen1')
     s.update_from_dict(query_body)
     cnt = 0
     filename = encode_filename(raw_query, min_score)
     print('in scan_query_and_save', filename)
 
-    query_doc_directory = './data/query_docs'
-    if not os.path.exists(query_doc_directory):
-        os.makedirs(query_doc_directory)
-    with open('{}/{}.txt'.format(query_doc_directory, filename), 'w') as f_out:
-        for hit in s.scan():
-            # print(hit.title)
-            res = hit.title + ' ' + hit.paperAbstract
-            res = res.replace('\n', ' ').replace('\r', '')
-            # res = (res + '\n').encode('utf-8') 
-            res = res + '\n'  # Python3 write() argument must be str, not bytes
-            f_out.write(res)
-            cnt += 1
+    if save:
+        query_doc_directory = './data/query_docs'
+        if not os.path.exists(query_doc_directory):
+            os.makedirs(query_doc_directory)
+        with open('{}/{}.txt'.format(query_doc_directory, filename), 'w') as f_out:
+            for hit in s.scan():
+                # print(hit.title)
+                res = hit.title + ' ' + hit.paperAbstract
+                res = res.replace('\n', ' ').replace('\r', '')
+                # res = (res + '\n').encode('utf-8')
+                res = res + '\n'  # Python3 write() argument must be str, not bytes
+                f_out.write(res)
+                cnt += 1
 
 
 # Depreciated: Give a raw query and save the retrieved corpus
@@ -371,7 +383,6 @@ def generate_taxonomy():
             existing_raw_query, existing_min_score = decode_filename(filename[5:-5])
             existing_queries.append((existing_raw_query, existing_min_score))
 
-
     if (raw_query.lower(), min_score) in existing_queries:
         return jsonify('taxonomy exists!')
 
@@ -396,7 +407,7 @@ def generate_taxonomy():
     h_json_out = search_api_lucene_syntax(raw_query, min_score=min_score, page=page, lucene_syntax=True, save=True)
 
     task_dict = load_taxongen_tasks('./TaxonGen/taxongen_task_list.txt')
-    current_tasks = len(task_dict)
+    current_tasks = len(task_dict) + 1
 
     # check the task list before sending the task
     send_taxongen_task.apply_async(args=[raw_query, min_score], countdown=20 * (current_tasks - 1))
@@ -818,11 +829,14 @@ def search_api(query='', taxonID='', page=1, start_year=None, end_year=None, agg
 
     return h_json_out
 
+
 '''
     Simple query parser by hand,
     only works for pie/bar,
     will be replaced by search_api_lucene_syntax in the future
 '''
+
+
 def query_parser(query):
     # res =  re.split(pattern='( AND | OR )', string=query)
     if 'AND' in query:
@@ -943,8 +957,10 @@ def expand_query(query, candidate_size=40, min_score=0, min_expand_ratio=1.01):
         nn_out = []
     return nn_out
 
+
 # view function for search page
 # return main search result page -> search_results_jinja.html
+
 @app.route('/search', methods=['POST'])
 @app.route('/search/<taxonID>', methods=['POST', 'GET'])
 def search(taxonID=None):
@@ -1065,7 +1081,7 @@ def phrase_api():
     res = es.suggest(body=suggDoc, index=INDEX_NAME, request_timeout=180)
     return jsonify(res)
 
-
+@app.route('/')
 @app.route('/concept')
 @app.route('/search', methods=['GET'])
 def concept():
@@ -1104,6 +1120,7 @@ def taxononmy_save():
     return jsonify('success!')
     # return jsonify('Save  function is temporarily disabled')
     # return jsonify(data)
+
 
 def get_tree_counts(node, raw_query='', min_score=0):
     '''
@@ -1285,9 +1302,9 @@ def taxononmy_get():
                 # get_tree_counts_init(data, raw_query)
                 # get_tree_counts(data, raw_query, min_score)
         # else:
-            # get_tree_counts(data, raw_query, min_score)
-            # get_tree_counts_init(data, raw_query)
-            # pass
+        # get_tree_counts(data, raw_query, min_score)
+        get_tree_counts_init(data, raw_query)
+        # pass
 
     # get_tree_counts(data, raw_query, min_score)
     return jsonify(data)

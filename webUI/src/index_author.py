@@ -3,6 +3,7 @@ import re
 import string
 import time
 import os
+from pathlib import Path
 from elasticsearch import Elasticsearch
 
 INDEX_NAME = 'author'
@@ -11,7 +12,9 @@ ES_HOST = '127.0.0.1:9200'
 NUM_OF_SHARDS = 1
 NUM_OF_REPLICAS = 0
 
-root_dir = os.path.abspath('../..')
+# root_dir = os.path.abspath('../..')
+root_dir = Path(__file__).absolute().parent.parent.parent
+
 
 def create_author_index():
     es = Elasticsearch(hosts=[ES_HOST])
