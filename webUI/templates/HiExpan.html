@@ -48,55 +48,32 @@
             <div id="main"></div>
             <!-- The search bar -->
             <div style="text-align: center;">
-                <h2>TaxonGen (Taxonomy Generation)</h2>
-                <form action="/generate_taxonomy" method="get" id="search-form">
+                <h2>Hiexpan (User Guided Taxonomy Generation)</h2>
+                <form action="/hi_expan" method="post" id="search-form">
                     <div class="col-md-3"></div>
                     <div class="input-group col-md-6">
-                        <input type="text" id="keywords" class="form-control input-lg" name="inputData"
-                               placeholder="Generate Taxonomy based on a query"/>
-                        <span class="input-group-btn">
-                            <button class="btn btn-primary btn-lg" type="submit" value="Submit">
-                                <i class="glyphicon glyphicon-search"></i>
-                            </button>
-                        </span>
+                        <br>
+                            <textarea id="user-input" name="inputData" style="width:600px;height:600px;"
+                                      placeholder="Input seed taxonomy for HiExpan in json format. Each element in the list is a seed taxonomy node, where the first term is the node name, the second term is the level, and the third term is a list of children.
+Click Example button to see an example."></textarea>
+                        </br>
+                        <input type="text" id="filename" class="form-control" name="filename"
+                               placeholder="Specify a filename for query"/>
+                        <button id="example" onclick="showExample()" class="btn btn-primary" style="margin-top: 5px; margin-right: 10px;"> Example </button>
+                        <input type="submit" class="btn btn-primary" style="margin-top: 5px;" value="Submit">
                     </div>
-
-
-                <div style="margin-top:10px; margin-bottom:10px;">
-                    <div class="col-md-4"></div>
-                    <div class="input-group col-md-4">
-                        <input
-                                id="min_score_slider"
-                                class="form-control"
-                                data-provide="slider"
-                                type="text"
-                                data-slider-min="0"
-                                data-slider-max="20"
-                                data-slider-step="1"
-                                data-slider-value="0"/>
-                    </div>
-                </div>
                 </form>
-
-                <div style="margin-top: 10px;">
-                    <form action="/query_converter">
-                        <button class="btn btn-primary" type="submit" value="Submit">
-                            query converter
-                        </button>
-                    </form>
-                </div>
 
                 <div style="margin-top: 20px;">
 
                     <h3>Existing Taxonomies</h3>
                     <div>
-                        {% for query in output_json.existing_queries %}
+                        {% for query in output_json.existing_taxonomies %}
                         <!--<ul>-->
                         <!--{{ query }} &nbsp;-->
-                        <form action="/search" method="POST">
-                            <input type="hidden" name="inputData" value="{{ query[0]}}"/>
-                            <input type="hidden" name="min_score" value="{{ query[1]}}"/>
-                            <a href="#" onclick="this.parentNode.submit()">{{ query[0] }} &nbsp {{ query[1] }}</a>
+                        <form action="/tree" method="GET">
+                            <input type="hidden" name="filename" value="{{ query}}"/>
+                            <a href="#" onclick="this.parentNode.submit()">{{ query }}</a>
 
                         </form>
                         <!--</ul>-->
@@ -116,6 +93,7 @@
                     </div>
                     {% endif %}
                 </div>
+
             </div>
 
         </div>
@@ -185,29 +163,34 @@
         form.submit();
     }
 
+    function showExample() {
+        event.preventDefault();
+        var userInput = '[\n' +
+            '            ["ROOT", -1, ["machine learning", "data mining", "natural language processing", "information retrieval", "wireless networks"]],\n' +
+            '            ["data mining", 0, ["association rule mining", "text mining", "outlier detection"]],\n' +
+            '            ["machine learning", 0, ["support vector machines", "decision trees", "neural networks"]],\n' +
+            '            ["natural language processing", 0, ["named entity recognition", "information extraction", "machine translation"]]\n' +
+            '        ]'
+        $("#user-input")[0].value = userInput;
+        $("#filename")[0].value = 'example';
+    }
 
     var form = $('#search-form');
     form.on('submit', function (event) {
         event.preventDefault();
 
-        if ($('#keywords')[0].value.length < 1)
+        if ($('#user-input')[0].value.length < 1){
+            alert("Please provide seed taxonomy!")
             return false;
-        parameters = {"inputData": $('#keywords')[0].value, "min_score": $('#min_score_slider').data('slider').getValue()};
-        path = "/generate_taxonomy";
-        console.log("parameters", parameters);
-        $.ajax({
-            url: path,
-            type: "get", //send it through get method
-            data: parameters,
-            success: function(response) {
-                alert(response);
-            },
-            error: function(xhr) {
-                //Do Something to handle error
-                alert(xhr)
-            }
-        });
-        // this.submit();
+        }
+
+        if ($('#filename')[0].value.length < 1){
+            alert('Please input a filename!')
+            return false;
+        }
+        this.submit();
     })
+
+
 </script>
 </html>

@@ -71,6 +71,17 @@ def send_taxongen_task(raw_query, min_score):
             for raw_query, taskid in task_dict.items():
                 fout.write(raw_query + '\t' + str(taskid) + '\n')
 
+@celery.task
+def send_hiexpan_task(corpus, taxon_prefix, seed_taxonomy):
+    print('task id is {}'.format(send_hiexpan_task.request.id))
+    print('corpus is {}'.format(corpus))
+    print('seed taxonomy is {}'.format(seed_taxonomy))
+    print('command is {}'.format('python {}/HiExpan/src/HiExpan-new/main.py '
+                                 '-data {} -taxonPrefix test -user-input {}'. format(root_dir, corpus, seed_taxonomy)))
+    process = subprocess.Popen('cd {}/HiExpan/src/HiExpan-new/; python main.py '
+                               '-data {} -taxonPrefix {} -user-input \'{}\''. format(root_dir, corpus, taxon_prefix, seed_taxonomy), shell=True)
+    print('process.pid', process)
+    print('finished')
 
 
 # @periodic_task(run_every=1)

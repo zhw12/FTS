@@ -10,6 +10,7 @@ import os
 import re
 import time
 import subprocess
+import sys
 from pathlib import Path
 
 from elasticsearch import Elasticsearch
@@ -26,8 +27,9 @@ from flask import redirect
 from concept_based_retrieval import util as concept_util
 from SetExpan import es, main, util
 from attach_taxonomy.attach_taxonomy import attach_taxonomy
-from celery_task.tasks import send_taxongen_task, load_taxongen_tasks
+from celery_task.tasks import send_taxongen_task, load_taxongen_tasks, send_hiexpan_task
 from utils.utils import is_single_query, encode_filename, decode_filename, clean_raw_query
+from utils import treeNode
 
 app = Flask(__name__, static_url_path='/static')
 cors = CORS(app)
@@ -88,6 +90,7 @@ def parse_tree(node, taxonID):
 def index():
     return render_template('index.html')
 
+
 # @app.route('/video')
 # def done():
 #     return redirect('/static/fts-video.mov')
@@ -95,6 +98,7 @@ def index():
 @app.route('/video')
 def video():
     return render_template("video.html", filename='/static/fts-video.mp4')
+
 
 @app.route('/v/<filename>')
 def get_file(filename):
@@ -106,7 +110,21 @@ def get_file(filename):
 # @app.route('/taxongen')
 @app.route('/tree')
 def tree():
-    return render_template('tree.html')
+    filename = request.args.get('filename', default='')
+    if filename:
+        try:
+            with open(root_dir / 'HiExpan/data/dblp/results/{}/taxonomy_final.json'.format(filename)) as fin:
+                tree_data = json.load(fin)
+        except FileNotFoundError:
+            with open(root_dir / 'webUI/static/tree.json') as fin:
+                tree_data = json.load(fin)
+    else:
+        # default
+        with open(root_dir / 'webUI/static/tree.json') as fin:
+            tree_data = json.load(fin)
+    h_json_out = {'corpus': 'DBLP', 'tree_data': tree_data}
+
+    return render_template('tree.html', output_json=h_json_out)
 
 
 # pie chart interface
@@ -412,6 +430,51 @@ def generate_taxonomy():
     # check the task list before sending the task
     send_taxongen_task.apply_async(args=[raw_query, min_score], countdown=20 * (current_tasks - 1))
     return jsonify('taxonomy generation query submitted!')
+
+def loadEidToEntityMap(filename):
+    eid2ename = {}
+    ename2eid = {}
+    with open(filename, 'r') as fin:
+        for line in fin:
+            seg = line.strip('\r\n').split('\t')
+            eid2ename[int(seg[1])] = seg[0]
+            ename2eid[seg[0]] = int(seg[1])
+    return eid2ename, ename2eid
+
+@app.route('/hi_expan', methods=['GET', 'POST'])
+def hi_expan():
+    h_json_out = {}
+    if request.method == 'POST':
+        print(request)
+        seed_taxonomy = request.form.get('inputData')
+        seed_taxonomy = json.loads(seed_taxonomy)
+        corpus = 'dblp'
+        taxon_prefix = request.form.get('filename')
+
+        # check input entity validation
+        _, ename2eid = loadEidToEntityMap(root_dir/'HiExpan/data/{}/intermediate/entity2id.txt'.format(corpus))
+
+        invalid_entities = []
+        ename2eid['ROOT'] = 0
+        for node in seed_taxonomy:
+            for child in [node[0]] + node[2]:
+                if child not in ename2eid:
+                    invalid_entities.append(child)
+        invalid_entities = list(set(invalid_entities))
+        if invalid_entities:
+            return jsonify("Concepts not in the system:", invalid_entities)
+
+        seed_taxonomy = json.dumps(seed_taxonomy)
+
+        send_hiexpan_task.apply_async(args=[corpus, taxon_prefix, seed_taxonomy], countdown=0)
+        return jsonify("Taxonomy generation query submitted!")
+
+    existing_taxonomies = []
+    for dirname in os.listdir(root_dir / 'HiExpan/data/dblp/results'):
+        existing_taxonomies.append(dirname)
+    h_json_out['existing_taxonomies'] = existing_taxonomies
+
+    return render_template('HiExpan.html', output_json=h_json_out)
 
 
 # a simplified version of lucence syntax query
@@ -1080,6 +1143,7 @@ def phrase_api():
     # res = es.search(suggest_field='phrase',suggest_size=topK, suggest_text=query, index=INDEX_NAME, request_timeout=180)
     res = es.suggest(body=suggDoc, index=INDEX_NAME, request_timeout=180)
     return jsonify(res)
+
 
 @app.route('/')
 @app.route('/concept')

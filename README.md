@@ -75,12 +75,13 @@ Enter python3 virtual environment, source venv/bin/activate
 Download spacy model file
 (venv)$ python -m spacy download en
 ```
+Spacy Installment Trouble Shooting: <https://spacy.io/usage/#section-troubleshooting>
 
 <!--
 Error: setup script exited with error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
 Reference: https://stackoverflow.com/questions/26053982/setup-script-exited-with-error-command-x86-64-linux-gnu-gcc-failed-with-exit
 Solution: sudo apt-get install libpq-dev python-dev libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev libffi-dev
--->
+
 
 Spacy Installment Trouble Shooting
 ```
@@ -88,6 +89,7 @@ Error: Failed building wheel for spacy
 Reference: https://stackoverflow.com/questions/43370851/failed-building-wheel-for-spacy
 Solution: pip install --no-cache-dir spacy
 ```
+-->
 
 
 
@@ -113,7 +115,7 @@ Detach from the screen,  Ctrl-a d
 ###Data file
 Download embedding and data folder from sftp server and put them in the **FTS system root folder**
 ```
-Data folder: embedding, data
+Data folder: embedding, data, HiExpan/data/dblp
 server: dhcp-54-35.cs.ucsb.edu
 user: fts_user
 password: fts123456
