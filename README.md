@@ -148,14 +148,20 @@ To start the webUI, in the **FTS system root folder**, type:
 
 ```
 $ source venv/bin/activate
+(venv)$ export APPLICATION_SETTINGS=config.py
 (venv)$ python webUI/app.py
 Use -port xxx to specify the port, by default is port 5002
 
 To run webUI in background, with screen
 screen -S webUI
 $ source venv/bin/activate
+(venv)$ export APPLICATION_SETTINGS=config.py
 (venv)$ python webUI/app.py
 Detach from the screen,  Ctrl-a d
 
 The system is accessable on the corresponding port.
+
+User could use bash to excute two commands at a time
+(venv)$ bash webUI/start_server.sh
+
 ```
