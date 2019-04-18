@@ -114,8 +114,8 @@ Detach from the screen,  Ctrl-a d
 ```
 
 ## Index Data
-###Data file
-Data used in the system and pretrained embedding can be downloaded from https://drive.google.com/open?id=1YzOAbUG7jFrxmDzc1Ih_QkJWSL3tjhjk and https://drive.google.com/open?id=1Gn5aklQlHlmZzRFjUv3gYfG3jkE48BP1
+### Data file
+Data (DBLP and Semantic Scholar) used in the system and pretrained embedding can be downloaded from https://drive.google.com/open?id=1YzOAbUG7jFrxmDzc1Ih_QkJWSL3tjhjk and https://drive.google.com/open?id=1Gn5aklQlHlmZzRFjUv3gYfG3jkE48BP1
 and put in **FTS system root folder**.
 
 
