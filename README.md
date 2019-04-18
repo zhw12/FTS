@@ -1,15 +1,15 @@
 # FTS
-Faceted Taxonomy Construction and Search
-
-Online Url: <http://fts.cs.ucsb.edu/>
+The source code used for the demo FTS: Faceted Taxonomy Construction and Search for Scientific Publications, published in KDD 2018.
 
 FTS is a network-based, unified search and navigation platform,
 to ease query development and facilitate intelligence exploration
 in a large text repository, focused on scientific publications.
 
+Online Demo Url: <http://fts.cs.ucsb.edu/>
+
 ## Getting Started
 This is an instruction for offline deployment of the
-FTS System. The instruction uses Linux as an example.
+FTS System. The instruction is based on Ubuntu 16.04 LTS.
 
 ### Requirements
 ```
@@ -62,6 +62,8 @@ Use celery to manage long time background job, e.g. taxonomy generation
 ```
 source venv/bin/activate
 (venv)$ pip install celery==4.1.0
+(venv)$ pip install kombu==4.1.0
+(venv)$ pip install billiard==3.5.0.2
 ```
 
 
@@ -113,13 +115,9 @@ Detach from the screen,  Ctrl-a d
 
 ## Index Data
 ###Data file
-Download embedding and data folder from sftp server and put them in the **FTS system root folder**
-```
-Data folder: embedding, data, HiExpan/data/dblp
-server: dhcp-54-35.cs.ucsb.edu
-user: fts_user
-password: fts123456
-```
+Data used in the system and pretrained embedding can be downloaded from https://drive.google.com/open?id=1YzOAbUG7jFrxmDzc1Ih_QkJWSL3tjhjk and https://drive.google.com/open?id=1Gn5aklQlHlmZzRFjUv3gYfG3jkE48BP1
+and put in **FTS system root folder**.
+
 
 
 ### Faceted Search
